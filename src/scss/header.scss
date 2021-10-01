@@ -1,0 +1,60 @@
+.header{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #2F2F2F;
+    max-width: 100px;
+    padding: 40px 28px 22px 28px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    .navigation{
+        .navigation__brand{
+            margin-bottom: 24px;
+            user-select: none;  
+        }
+
+        .navigation__icons{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            
+            .icons__item{
+                cursor: pointer;
+                margin-bottom: 18px;
+                path, circle{
+                    transition: all .2s linear;
+                }
+
+                &:hover{
+                    path, circle{
+                        stroke: #008385;
+                    }
+                    .str_disable{
+                        stroke: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu{
+        .menu__icon{
+            cursor: pointer;
+        }
+        rect{
+            transition: all .2s linear;
+        }
+        &:hover{
+            rect{
+                fill: #008385;
+            }
+        }
+    }
+}
+
