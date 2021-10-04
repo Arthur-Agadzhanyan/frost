@@ -388,7 +388,8 @@ body{
         overflow: hidden;
 
         .swiper-wrapper{
-            height: 637px;
+            min-height: 637px;
+            height: auto;
         }
 
         .recommend__item{
