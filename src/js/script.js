@@ -61,9 +61,11 @@ const recommendSlider = new Swiper(".recommend-slider",{
     breakpoints:{
         320:{
             slidesPerView: 1,
+            autoHeight: false,
         },
         1000:{
             slidesPerView: 3,
+            autoHeight: true,
         },
         1700:{
             slidesPerView: 4,
