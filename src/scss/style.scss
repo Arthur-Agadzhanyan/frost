@@ -387,6 +387,10 @@ body{
         margin-top: 41px;
         overflow: hidden;
 
+        .swiper-wrapper{
+            height: auto;
+        }
+
         .recommend__item{
             height: 100%;
             display: flex;

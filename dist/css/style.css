@@ -896,6 +896,10 @@ body {
   overflow: hidden;
 }
 
+.recommend .recommend__slider .swiper-wrapper {
+  height: auto;
+}
+
 .recommend .recommend__slider .recommend__item {
   height: 100%;
   display: -webkit-box;
