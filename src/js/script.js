@@ -72,3 +72,23 @@ const recommendSlider = new Swiper(".recommend-slider",{
         }
     }
 })
+
+const promotionsSlider = new Swiper(".promotions-slider",{
+    slidesPerView: 6,
+    autoHeight: true,
+
+    navigation:{
+        nextEl: ".promotions__next",
+        prevEl: ".promotions__prev",
+    },
+})
+
+const eventsSlider = new Swiper(".events-slider",{
+    slidesPerView: 4,
+    autoHeight: false,
+
+    navigation:{
+        nextEl: ".events__next",
+        prevEl: ".events__prev",
+    },
+})

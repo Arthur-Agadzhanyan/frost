@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Title Верстка</title>
+    <title>Frost</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
@@ -23,7 +23,8 @@
                             <div class="slide__info">
                                 <h3 class="info__suptitle">Скидки 20% до 17 октября</h3>
                                 <h2 class="info__title">
-                                   <span class="title__bot">Каталог эксклюзи</span>вных <br><span class="title__bot">товар</span>ов
+                                    <span class="title__bot">Каталог эксклюзи</span>вных <br><span
+                                        class="title__bot">товар</span>ов
                                 </h2>
                                 <button class="info__btn">В каталог</button>
                             </div>
@@ -36,7 +37,8 @@
                             <div class="slide__info">
                                 <h3 class="info__suptitle">Скидки 20% до 17 октября</h3>
                                 <h2 class="info__title">
-                                    <span class="title__bot">Каталог эксклюзи</span>вных <br><span class="title__bot">товар</span>ов
+                                    <span class="title__bot">Каталог эксклюзи</span>вных <br><span
+                                        class="title__bot">товар</span>ов
                                 </h2>
                                 <button class="info__btn">В каталог</button>
                             </div>
@@ -49,7 +51,8 @@
                             <div class="slide__info">
                                 <h3 class="info__suptitle">Скидки 20% до 17 октября</h3>
                                 <h2 class="info__title">
-                                    <span class="title__bot">Каталог эксклюзи</span>вных <br><span class="title__bot">товар</span>ов
+                                    <span class="title__bot">Каталог эксклюзи</span>вных <br><span
+                                        class="title__bot">товар</span>ов
                                 </h2>
                                 <button class="info__btn">В каталог</button>
                             </div>
@@ -62,7 +65,8 @@
                             <div class="slide__info">
                                 <h3 class="info__suptitle">Скидки 20% до 17 октября</h3>
                                 <h2 class="info__title">
-                                    <span class="title__bot">Каталог эксклюзи</span>вных <br><span class="title__bot">товар</span>ов
+                                    <span class="title__bot">Каталог эксклюзи</span>вных <br><span
+                                        class="title__bot">товар</span>ов
                                 </h2>
                                 <button class="info__btn">В каталог</button>
                             </div>
@@ -123,9 +127,12 @@
         </section>
 
         <section class="categories">
-            <h2 class="section_title">
-                Категории
-            </h2>
+            <div class="section__header">
+                <h2 class="section_title">
+                    Категории
+                </h2>
+            </div>
+            
             <div class="categories__slider">
                 <div class="categories-slider swiper-container">
                     <!-- Additional required wrapper -->
@@ -265,7 +272,7 @@
         </section>
 
         <section class="recommend">
-            <div class="recommend__header">
+            <div class="section__header">
                 <h2 class="section_title">
                     Рекомендуем
                 </h2>
@@ -296,7 +303,7 @@
                                     <p class="info__price">
                                         510 ₽ <span class="price__unit">за 1 шт</span>
                                     </p>
-                                </div>     
+                                </div>
                                 <button class="info__btn info__btn">добавить в закупку</button>
                             </div>
                         </div>
@@ -319,7 +326,7 @@
                                         370 ₽ <span class="price__unit">за 1 кг</span>
                                     </p>
                                 </div>
-                                
+
                                 <div class="info__btn info__btn-count_units">
                                     <div class="count">
                                         <button class="count__icon">
@@ -329,9 +336,9 @@
                                                 <rect x="4" y="11.5" width="17" height="1" rx="0.5" fill="white" />
                                             </svg>
                                         </button>
-                                        
+
                                         <span>1 ШТ</span>
-                                        
+
                                         <button class="count__icon">
                                             <!-- + -->
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -364,7 +371,7 @@
                                         120 ₽ <span class="price__unit">за 1 шт</span>
                                     </p>
                                 </div>
-                                
+
                                 <button class="info__btn">добавить в закупку</button>
                             </div>
                         </div>
@@ -387,7 +394,7 @@
                                         210 ₽ <span class="price__unit">за 1 шт</span>
                                     </p>
                                 </div>
-                                
+
                                 <button class="info__btn">добавить в закупку</button>
                             </div>
                         </div>
@@ -414,7 +421,7 @@
                                         510 ₽ <span class="price__unit">за 1 шт</span>
                                     </p>
                                 </div>
-                                
+
                                 <button class="info__btn">добавить в закупку</button>
                             </div>
                         </div>
@@ -437,25 +444,394 @@
                                         120 ₽ <span class="price__unit">за 1 шт</span>
                                     </p>
                                 </div>
-                                
+
                                 <button class="info__btn">добавить в закупку</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- If we need navigation buttons -->
-                    
-                    
+
+
                 </div>
-                <div class="recommend__prev">
+                <div class="recommend__prev slider__prev">
                     <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path  class="next__icon" fill-rule="evenodd" clip-rule="evenodd" d="M0.519779 2.24627C0.226739 1.93087 0.22674 1.44278 0.51978 1.12738L0.965086 0.64809C1.29024 0.298126 1.84421 0.298126 2.16936 0.64809L8.48022 7.44056C8.77326 7.75596 8.77326 8.24404 8.48022 8.55945L2.16936 15.3519C1.84421 15.7019 1.29024 15.7019 0.965085 15.3519L0.519778 14.8726C0.226739 14.5572 0.226738 14.0691 0.519778 13.7537L5.34577 8.55945C5.63881 8.24404 5.63881 7.75596 5.34578 7.44056L0.519779 2.24627Z" fill="#585C60"/>
-                    </svg>               
+                        <path class="next__icon" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.519779 2.24627C0.226739 1.93087 0.22674 1.44278 0.51978 1.12738L0.965086 0.64809C1.29024 0.298126 1.84421 0.298126 2.16936 0.64809L8.48022 7.44056C8.77326 7.75596 8.77326 8.24404 8.48022 8.55945L2.16936 15.3519C1.84421 15.7019 1.29024 15.7019 0.965085 15.3519L0.519778 14.8726C0.226739 14.5572 0.226738 14.0691 0.519778 13.7537L5.34577 8.55945C5.63881 8.24404 5.63881 7.75596 5.34578 7.44056L0.519779 2.24627Z"
+                            fill="#585C60" />
+                    </svg>
                 </div>
-                <div class="recommend__next">
+
+                <div class="recommend__next slider__next">
                     <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path  class="next__icon" fill-rule="evenodd" clip-rule="evenodd" d="M0.519779 2.24627C0.226739 1.93087 0.22674 1.44278 0.51978 1.12738L0.965086 0.64809C1.29024 0.298126 1.84421 0.298126 2.16936 0.64809L8.48022 7.44056C8.77326 7.75596 8.77326 8.24404 8.48022 8.55945L2.16936 15.3519C1.84421 15.7019 1.29024 15.7019 0.965085 15.3519L0.519778 14.8726C0.226739 14.5572 0.226738 14.0691 0.519778 13.7537L5.34577 8.55945C5.63881 8.24404 5.63881 7.75596 5.34578 7.44056L0.519779 2.24627Z" fill="#585C60"/>
-                    </svg>    
+                        <path class="next__icon" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.519779 2.24627C0.226739 1.93087 0.22674 1.44278 0.51978 1.12738L0.965086 0.64809C1.29024 0.298126 1.84421 0.298126 2.16936 0.64809L8.48022 7.44056C8.77326 7.75596 8.77326 8.24404 8.48022 8.55945L2.16936 15.3519C1.84421 15.7019 1.29024 15.7019 0.965085 15.3519L0.519778 14.8726C0.226739 14.5572 0.226738 14.0691 0.519778 13.7537L5.34577 8.55945C5.63881 8.24404 5.63881 7.75596 5.34578 7.44056L0.519779 2.24627Z"
+                            fill="#585C60" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="promotions">
+            <div class="section__header">
+                <h2 class="section_title">
+                    Акции и скидки
+                </h2>
+                все акции
+            </div>
+            <div class="promotions__slider">
+                <div class="promotions-slider swiper-container">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="promotions__item swiper-slide">
+                            <div class="item__info">
+                                <h3 class="info__title">Большая распродажа фруктов</h3>
+                                <h3 class="info__subtitle">Персики садовые</h3>
+                            </div>
+                            <div class="item__image">
+                                <span class="item__price">150 ₽/кг</span>
+                                <img src="img/main/intro/peach.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="promotions__item swiper-slide">
+                            <div class="item__info">
+                                <h3 class="info__title">Свежая поставка товара</h3>
+                                <h3 class="info__subtitle">Арбуз желтый</h3>
+                            </div>
+                            <div class="item__image">
+                                <span class="item__price">150 ₽/кг</span>
+                                <img src="img/main/intro/watermelon.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="promotions__item swiper-slide">
+                            <div class="item__info">
+                                <h3 class="info__title">Большая распродажа фруктов</h3>
+                                <h3 class="info__subtitle">Персики садовые</h3>
+                            </div>
+                            <div class="item__image">
+                                <span class="item__price">150 ₽/кг</span>
+                                <img src="img/main/intro/peach.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="promotions__item swiper-slide">
+                            <div class="item__info">
+                                <h3 class="info__title">Свежая поставка товара</h3>
+                                <h3 class="info__subtitle">Арбуз желтый</h3>
+                            </div>
+                            <div class="item__image">
+                                <span class="item__price">150 ₽/кг</span>
+                                <img src="img/main/intro/watermelon.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="promotions__item swiper-slide">
+                            <div class="item__info">
+                                <h3 class="info__title">Большая распродажа фруктов</h3>
+                                <h3 class="info__subtitle">Персики садовые</h3>
+                            </div>
+                            <div class="item__image">
+                                <span class="item__price">150 ₽/кг</span>
+                                <img src="img/main/intro/peach.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="promotions__item swiper-slide">
+                            <div class="item__info">
+                                <h3 class="info__title">Свежая поставка товара</h3>
+                                <h3 class="info__subtitle">Арбуз желтый</h3>
+                            </div>
+                            <div class="item__image">
+                                <span class="item__price">150 ₽/кг</span>
+                                <img src="img/main/intro/watermelon.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="promotions__item swiper-slide">
+                            <div class="item__info">
+                                <h3 class="info__title">Большая распродажа фруктов</h3>
+                                <h3 class="info__subtitle">Персики садовые</h3>
+                            </div>
+                            <div class="item__image">
+                                <span class="item__price">150 ₽/кг</span>
+                                <img src="img/main/intro/peach.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="promotions__item swiper-slide">
+                            <div class="item__info">
+                                <h3 class="info__title">Свежая поставка товара</h3>
+                                <h3 class="info__subtitle">Арбуз желтый</h3>
+                            </div>
+                            <div class="item__image">
+                                <span class="item__price">150 ₽/кг</span>
+                                <img src="img/main/intro/watermelon.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="promotions__prev slider__prev">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="next__icon" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.519779 2.24627C0.226739 1.93087 0.22674 1.44278 0.51978 1.12738L0.965086 0.64809C1.29024 0.298126 1.84421 0.298126 2.16936 0.64809L8.48022 7.44056C8.77326 7.75596 8.77326 8.24404 8.48022 8.55945L2.16936 15.3519C1.84421 15.7019 1.29024 15.7019 0.965085 15.3519L0.519778 14.8726C0.226739 14.5572 0.226738 14.0691 0.519778 13.7537L5.34577 8.55945C5.63881 8.24404 5.63881 7.75596 5.34578 7.44056L0.519779 2.24627Z"
+                                fill="#585C60" />
+                        </svg>
+                    </div>
+
+                    <div class="promotions__next slider__next">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="next__icon" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.519779 2.24627C0.226739 1.93087 0.22674 1.44278 0.51978 1.12738L0.965086 0.64809C1.29024 0.298126 1.84421 0.298126 2.16936 0.64809L8.48022 7.44056C8.77326 7.75596 8.77326 8.24404 8.48022 8.55945L2.16936 15.3519C1.84421 15.7019 1.29024 15.7019 0.965085 15.3519L0.519778 14.8726C0.226739 14.5572 0.226738 14.0691 0.519778 13.7537L5.34577 8.55945C5.63881 8.24404 5.63881 7.75596 5.34578 7.44056L0.519779 2.24627Z"
+                                fill="#585C60" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="goods_of_the_day">
+            <div class="section__header">
+                <h2 class="section_title">
+                    товары дня
+                </h2>
+            </div>
+            <div class="goods_of_the_day__products">
+                <div class="products__big">
+                    <div class="big__image">
+                        <span class="big__promotion">
+                            <div class="price__item">
+                                НОВИНКА
+                            </div>
+                            <div class="price__item price__item-red">
+                                -30%
+                            </div>
+                        </span>
+                        <img src="img/main/recommend/1.png"/>
+                    </div>
+                    <div class="big__info">
+                        <div class="info__top">
+                            <p class="info__category">бакалея</p>
+                            <p class="info__title">Сливки "БМК" ультрапастер. 33%</p>
+                            <p class="info__text">Срок годности и условия хранения: в течение 7 месяцев при температуре от 0 до 20 С. После вскрытия хранить в холодильнике в течение 30 дней.</p>
+                        </div>
+                        <div class="info__bottom">
+                            <p class="info__price">
+                                510 ₽ <span class="price__unit">за 1 шт</span>
+                            </p>
+                            <button class="info__btn">добавить в закупку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item">
+                    <div class="item__image">
+                        <div class="price">
+                            <div class="price__item">
+                                НОВИНКА
+                            </div>
+                            <div class="price__item price__item-red">
+                                -30%
+                            </div>
+                        </div>
+                        <img src="img/main/recommend/4.png" />
+                    </div>
+    
+                    <div class="item__info">
+                        <div>
+                            <p class="info__category">бакалея</p>
+                            <p class="info__title">Сливки "БМК" ультрапастер. 33%</p>
+                            <p class="info__price">
+                                510 ₽ <span class="price__unit">за 1 шт</span>
+                            </p>
+                        </div>
+                        <button class="info__btn info__btn">добавить в закупку</button>
+                    </div>
+                </div>
+                <div class="products__item">
+                    <div class="item__image">
+                        <div class="price">
+                            <div class="price__item">
+                                НОВИНКА
+                            </div>
+                            <div class="price__item price__item-red">
+                                -30%
+                            </div>
+                        </div>
+                        <img src="img/main/recommend/1.png" />
+                    </div>
+    
+                    <div class="item__info">
+                        <div>
+                            <p class="info__category">бакалея</p>
+                            <p class="info__title">Сливки "БМК" ультрапастер. 33%</p>
+                            <p class="info__price">
+                                510 ₽ <span class="price__unit">за 1 шт</span>
+                            </p>
+                        </div>
+                        <button class="info__btn info__btn">добавить в закупку</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="events">
+            <div class="section__header">
+                <h2 class="section_title">
+                    будущие мероприятия
+                </h2>
+                все мероприятия
+            </div>
+
+            <div class="events__slider">
+                <div class="events-slider swiper-container">
+
+                    <div class="swiper-wrapper">
+                        
+                        <div class="slider__item swiper-slide">
+                            <div class="item__img">
+                                <img src="img/main/events/1.png"/>
+                                <div class="item__date">
+                                    24.10.2021
+                                </div>
+                            </div>
+
+                            <div class="item__info">
+                                <h3 class="info__title">Мастер класс по приготовлению муссов</h3>
+                                <p class="info__text">На водяной бане растапливаем шоколад, добавляем теплое кокосовое молоко и хорошо перемешиваем до от желтков..</p>
+                            </div>
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <div class="item__img">
+                                <img src="img/main/events/2.png"/>
+                                <div class="item__date">
+                                    24.10.2021
+                                </div>
+                            </div>
+
+                            <div class="item__info">
+                                <h3 class="info__title">Мастер класс по приготовлению муссов</h3>
+                                <p class="info__text">На водяной бане растапливаем шоколад, добавляем теплое кокосовое молоко и хорошо перемешиваем до от желтков..</p>
+                            </div>
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <div class="item__img">
+                                <img src="img/main/events/3.png"/>
+                                <div class="item__date">
+                                    24.10.2021
+                                </div>
+                            </div>
+
+                            <div class="item__info">
+                                <h3 class="info__title">Мастер класс по приготовлению муссов</h3>
+                                <p class="info__text">На водяной бане растапливаем шоколад, добавляем теплое кокосовое молоко и хорошо перемешиваем до от желтков..</p>
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="item__img">
+                                <img src="img/main/events/4.png"/>
+                                <div class="item__date">
+                                    24.10.2021
+                                </div>
+                            </div>
+
+                            <div class="item__info">
+                                <h3 class="info__title">Мастер класс по приготовлению муссов</h3>
+                                <p class="info__text">На водяной бане растапливаем шоколад, добавляем теплое кокосовое молоко и хорошо перемешиваем до от желтков..</p>
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="item__img">
+                                <img src="img/main/events/1.png"/>
+                                <div class="item__date">
+                                    24.10.2021
+                                </div>
+                            </div>
+
+                            <div class="item__info">
+                                <h3 class="info__title">Мастер класс по приготовлению муссов</h3>
+                                <p class="info__text">На водяной бане растапливаем шоколад, добавляем теплое кокосовое молоко и хорошо перемешиваем до от желтков..</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="events__prev slider__prev">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="next__icon" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.519779 2.24627C0.226739 1.93087 0.22674 1.44278 0.51978 1.12738L0.965086 0.64809C1.29024 0.298126 1.84421 0.298126 2.16936 0.64809L8.48022 7.44056C8.77326 7.75596 8.77326 8.24404 8.48022 8.55945L2.16936 15.3519C1.84421 15.7019 1.29024 15.7019 0.965085 15.3519L0.519778 14.8726C0.226739 14.5572 0.226738 14.0691 0.519778 13.7537L5.34577 8.55945C5.63881 8.24404 5.63881 7.75596 5.34578 7.44056L0.519779 2.24627Z"
+                                fill="#585C60" />
+                        </svg>
+                    </div>
+    
+                    <div class="events__next slider__next">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="next__icon" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.519779 2.24627C0.226739 1.93087 0.22674 1.44278 0.51978 1.12738L0.965086 0.64809C1.29024 0.298126 1.84421 0.298126 2.16936 0.64809L8.48022 7.44056C8.77326 7.75596 8.77326 8.24404 8.48022 8.55945L2.16936 15.3519C1.84421 15.7019 1.29024 15.7019 0.965085 15.3519L0.519778 14.8726C0.226739 14.5572 0.226738 14.0691 0.519778 13.7537L5.34577 8.55945C5.63881 8.24404 5.63881 7.75596 5.34578 7.44056L0.519779 2.24627Z"
+                                fill="#585C60" />
+                        </svg>
+                    </div>
+                </div>      
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="advantages__title">Выбирая FROST26, вы получаете:</div>
+
+            <div class="advantages__list">
+                <div class="list__item">
+                    <div class="item__image ">
+                        <div class="image__container first">
+                            <img src="img/main/advantages/1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item__info">
+                        <h3 class="info__title">
+                            Быструю доставку
+                        </h3>
+                        <p class="info__text">
+                            У нас более чем 18 000 товаров из 70 стран: от свежих овощей до изысканных деликатесов, от канцтоваров и игрушек до столового текстиля и косметики
+                        </p>
+                    </div>
+                </div>
+
+                <div class="list__item">
+                    <div class="item__image ">
+                        <div class="image__container second">
+                            <img src="img/main/advantages/2.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item__info">
+                        <h3 class="info__title">
+                            Качественные продукты
+                        </h3>
+                        <p class="info__text">
+                            Оформите карту или установите мобильное приложение и получите доступ к эксклюзивным предложениям, акциям и скидкам
+                        </p>
+                    </div>
+                </div>
+
+                <div class="list__item">
+                    <div class="item__image ">
+                        <div class="image__container third">
+                            <img src="img/main/advantages/3.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item__info">
+                        <h3 class="info__title">
+                            Клиентоориентированность
+                        </h3>
+                        <p class="info__text">
+                            Доставка продуктов осуществляется в специальных контейнерах, соблюдается товарное соседство и температурный режим.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -463,7 +839,9 @@
 
     <div class="contact_us">
         <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24.9464 10.9464C24.9464 4.90087 20.0456 0 14 0C7.95448 0 3.05361 4.90087 3.05361 10.9464C1.4907 11.141 0.0129395 12.1627 0.0129395 14.5344V20.2509C0.0129395 22.9266 1.88599 23.8997 3.66174 23.8997H5.42533C5.76117 23.8997 6.03346 23.6274 6.03346 23.2915V11.5181C6.03346 11.1822 5.76117 10.9099 5.42533 10.9099H4.26988C4.26988 5.53615 8.62624 1.17978 14 1.17978C19.3738 1.17978 23.7302 5.53615 23.7302 10.9099H22.5747C22.2389 10.9099 21.9666 11.1822 21.9666 11.5181V23.2733C21.9666 23.6091 22.2389 23.8814 22.5747 23.8814H23.7302C23.5599 28.0593 21.553 29.0384 17.5454 29.2147V28.8073C17.5454 28.1355 17.0009 27.591 16.3292 27.591H12.504C11.8322 27.591 11.2877 28.1355 11.2877 28.8073V30.7837C11.2877 31.4555 11.8322 32 12.504 32H16.3413C17.0131 32 17.5576 31.4555 17.5576 30.7837V30.431C21.4132 30.2547 24.7457 29.458 24.9464 23.8449C26.5093 23.6503 27.9871 22.6287 27.9871 20.2569V14.5405C27.9871 12.1566 26.5154 11.141 24.9464 10.9464ZM4.8172 12.0836V22.6651H3.63134C2.7313 22.6651 1.1988 22.3489 1.1988 20.2326V14.5162C1.1988 12.4181 2.71305 12.0836 3.63134 12.0836H4.8172ZM16.3413 29.8655V30.7898H12.504V28.8134H16.3413V29.8655ZM26.7708 20.2509C26.7708 22.3489 25.2566 22.6834 24.3383 22.6834H23.1828V12.1262H24.3687C25.2687 12.1262 26.8012 12.4424 26.8012 14.5587L26.7708 20.2509Z" fill="white"/>
+            <path
+                d="M24.9464 10.9464C24.9464 4.90087 20.0456 0 14 0C7.95448 0 3.05361 4.90087 3.05361 10.9464C1.4907 11.141 0.0129395 12.1627 0.0129395 14.5344V20.2509C0.0129395 22.9266 1.88599 23.8997 3.66174 23.8997H5.42533C5.76117 23.8997 6.03346 23.6274 6.03346 23.2915V11.5181C6.03346 11.1822 5.76117 10.9099 5.42533 10.9099H4.26988C4.26988 5.53615 8.62624 1.17978 14 1.17978C19.3738 1.17978 23.7302 5.53615 23.7302 10.9099H22.5747C22.2389 10.9099 21.9666 11.1822 21.9666 11.5181V23.2733C21.9666 23.6091 22.2389 23.8814 22.5747 23.8814H23.7302C23.5599 28.0593 21.553 29.0384 17.5454 29.2147V28.8073C17.5454 28.1355 17.0009 27.591 16.3292 27.591H12.504C11.8322 27.591 11.2877 28.1355 11.2877 28.8073V30.7837C11.2877 31.4555 11.8322 32 12.504 32H16.3413C17.0131 32 17.5576 31.4555 17.5576 30.7837V30.431C21.4132 30.2547 24.7457 29.458 24.9464 23.8449C26.5093 23.6503 27.9871 22.6287 27.9871 20.2569V14.5405C27.9871 12.1566 26.5154 11.141 24.9464 10.9464ZM4.8172 12.0836V22.6651H3.63134C2.7313 22.6651 1.1988 22.3489 1.1988 20.2326V14.5162C1.1988 12.4181 2.71305 12.0836 3.63134 12.0836H4.8172ZM16.3413 29.8655V30.7898H12.504V28.8134H16.3413V29.8655ZM26.7708 20.2509C26.7708 22.3489 25.2566 22.6834 24.3383 22.6834H23.1828V12.1262H24.3687C25.2687 12.1262 26.8012 12.4424 26.8012 14.5587L26.7708 20.2509Z"
+                fill="white" />
         </svg>
     </div>
     <script src="js/script.js"></script>
