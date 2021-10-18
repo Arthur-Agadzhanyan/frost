@@ -728,6 +728,7 @@ body {
 .content {
   margin-left: 100px;
   padding: 64px;
+  min-height: calc(100vh - 270px);
 }
 
 .contact_us {
@@ -2000,6 +2001,42 @@ body {
   font-size: 14px;
   line-height: 19px;
   color: #040507;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #585c60;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  margin-right: 19px;
+}
+
+.breadcrumbs a:not(:last-child)::after {
+  content: " ";
+  position: absolute;
+  top: 65%;
+  right: -17px;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  z-index: 1;
+  width: 11px;
+  height: 1px;
+  background: #585c60;
+}
+
+.breadcrumbs .active {
+  color: #AAAFB4;
+  pointer-events: none;
+}
+
+.catalog {
+  padding-top: 40px;
 }
 
 @media screen and (max-width: 1800px) {

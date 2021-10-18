@@ -20,11 +20,15 @@ body{
     padding: 0;
 }
 
+// universal------------
+
 .content{
     margin-left: 100px;
     padding: 64px;
+    min-height: calc(100vh - 270px);
 }
 
+// Main Page ----------------------------------------------
 .contact_us{
     position: fixed;
     bottom: 137px;
@@ -787,3 +791,41 @@ body{
 }
 
 // 🕷 
+
+.breadcrumbs{
+
+    a{
+        text-decoration: none;
+        @include text($grey_1,16px,600);
+
+        font-size: 12px;
+
+        font-weight: 600;
+        position: relative;
+        margin-right: 19px;
+
+        &:not(:last-child){
+            &::after{
+                content: " ";
+                position: absolute;
+                top: 65%;
+                right: -17px;
+    
+                transform: translate(0%,-50%);
+                z-index: 1;
+                width: 11px;
+                height: 1px;
+                background: $grey_1;
+            }
+        }
+    }
+
+    .active{
+        color: #AAAFB4;
+        pointer-events: none;
+    }
+}
+
+// Catalog -----------------------------------
+
+@import "./catalog/style.scss";
