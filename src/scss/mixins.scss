@@ -1,7 +1,14 @@
 @import "./variables.scss";
 
 @mixin promotion_item($item) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $grey_4;
+
     .item__info{
+        position: relative;
+
         background: linear-gradient(#005552,#008380);
         color: #fff;
 
@@ -34,8 +41,9 @@
 
     .item__price{
         position: absolute;
-        top: -8px;
+        bottom: -13px;
         left: 20px;
+        z-index: 100;
 
         padding: 3px 7px;
 
@@ -222,11 +230,11 @@
 
 @mixin slider-arrows(){
     .slider__next{
-        top: 60%;
-        right: 0px;
+        top: 55%;
+        right: -25px;
     }
     .slider__prev{
-        top: 60%;
+        top: 55%;
         left: -26px;
     } 
 }

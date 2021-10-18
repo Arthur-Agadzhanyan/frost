@@ -76,19 +76,64 @@ const recommendSlider = new Swiper(".recommend-slider",{
 const promotionsSlider = new Swiper(".promotions-slider",{
     slidesPerView: 6,
     autoHeight: true,
+    spaceBetween: 25,
 
     navigation:{
         nextEl: ".promotions__next",
         prevEl: ".promotions__prev",
     },
+
+    breakpoints:{
+        320:{
+            slidesPerView: 1,
+            autoHeight: true,
+        },
+
+        800:{
+            slidesPerView: 2,
+            autoHeight: true,
+        },
+
+        1050:{
+            slidesPerView: 3,
+            autoHeight: true,
+        },
+
+        1314:{
+            slidesPerView: 4,
+            autoHeight: true,
+        },
+        1620:{
+            slidesPerView: 5,
+            autoHeight: true,
+        },
+        1900:{
+            slidesPerView: 6,
+        }
+    }
 })
 
 const eventsSlider = new Swiper(".events-slider",{
     slidesPerView: 4,
-    autoHeight: false,
+    autoHeight: true,
+    spaceBetween: 24,
 
     navigation:{
         nextEl: ".events__next",
         prevEl: ".events__prev",
     },
+    breakpoints:{
+        320:{
+            slidesPerView: 1,
+        },
+        850:{
+            slidesPerView: 2,
+        },
+        1150:{
+            slidesPerView: 3,
+        },
+        1300:{
+            slidesPerView: 4,
+        }
+    }
 })
