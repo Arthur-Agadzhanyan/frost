@@ -178,3 +178,35 @@ const eventsSlider = new Swiper(".events-slider",{
         }
     }
 })
+
+// Opening the menu
+
+const menuBtn = document.getElementById("menuBtn");
+const menuPoppup = document.getElementById("menu_poppup");
+let menuOpened = false;
+
+if(menuPoppup){
+    menuBtn.addEventListener("click",()=>{
+        if(menuOpened){
+            document.body.style.paddingLeft = "0px"
+            document.body.style.marginLeft = "100px"
+            menuPoppup.style.left = "-100%"
+            menuOpened = false
+            return
+        } else{
+            if(window.screen.width <= 1500){
+                document.body.style.paddingLeft =  `470px`
+                document.body.style.marginLeft = "0px"
+                menuPoppup.style.left = "0"
+                menuOpened = true
+            }else{
+                document.body.style.paddingLeft =  `570px`
+                document.body.style.marginLeft = "0px"
+                menuPoppup.style.left = "0"
+                menuOpened = true
+            }
+            
+            
+        }
+    })
+}

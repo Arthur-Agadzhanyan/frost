@@ -1,4 +1,199 @@
+// 1050
 .catalog{
     padding-top: 40px;
+    padding-left: 24px;
     
+
+    .top__panel{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 16px;
+        margin-bottom: 24px;
+
+
+        .panel__title{
+            display: flex;
+            align-items: center;
+    
+            h1{
+                margin: 0;
+                @include text(#040507,32px,600);
+                font-size: 24px;
+            }
+    
+            span{
+                @include text($grey_1,16px,600);
+                font-size: 12px;
+                margin-left: 6px;
+            }
+        }
+
+        .panel__filter{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button{
+                margin-left: 18px;
+            }
+
+            .custom-select{
+                position: relative;
+                margin-left: 23px;
+                max-width: 207px;
+                width: 100%;
+
+                select{
+                    @include text(#040507, 19px,normal);
+
+                    width: 207px;
+                    padding: 7px 12px;
+
+                    outline: none;
+                    border: 0;
+
+                    cursor: pointer;
+
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+
+                    background-color: $grey_4; 
+
+                    option{
+                        max-width: 207px;
+                        padding: 7px 12px;
+                    }
+                }
+
+                .custom-arrow{
+                    position: absolute;
+                    top: 47%;
+                    right: 12px;
+                    z-index: 2;
+
+                    transform: translate(0%,-50%);
+                    display: block;
+                    pointer-events: none;
+                }
+            }
+
+            
+
+            .filter__btn{
+                padding: 0;
+                background: transparent;
+                border: 0;
+                opacity: .4;
+                cursor: pointer;
+            }
+            .active{
+                opacity: 1;
+                pointer-events: none;
+            }
+        }
+    }
+    
+    .catalog__list{
+        // padding-left: 400px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .list__item{
+            @include product($black);
+            flex: 0 1 32%;
+
+            .item__info{
+                width: 100%;
+            }
+
+            .item__image{
+                width: 100%;
+                img{
+                    margin-top: 3px;
+                }
+            }
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 1400px) {
+                flex: 0 1 48%;
+            }
+        }
+    }
+
+    .bottom__panel{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .see_more{
+            background: #fff;
+
+            padding: 11px 32px;
+            border: 1px solid $grey_3;
+
+            @include text(#040507, 19px,600);
+            letter-spacing: 0.3em;
+
+            transition: all .2s linear;
+
+            cursor: pointer;
+
+            &:hover{
+                background: $grey_3;
+                border: 1px solid $grey_3;
+            }
+        }
+        .pagination{
+            &__item{
+                padding: 11px 16px;
+                margin-left: 8px;
+                border: 1px solid $border-grey;
+
+                @include text(#040507,19px,600);
+
+                text-decoration: none;
+                transition: all .2s linear;
+
+                &:hover{
+                    background: $grey_3;
+                    border: 1px solid $grey_3;
+                }
+            }
+
+            &__points{
+                border: none;
+                pointer-events: none;
+
+                &:hover{
+                    background: transparent;
+                    border: none;
+                }
+            }
+
+            .active{
+                background: $grey_3;
+                border: 1px solid $grey_3;
+            }
+
+            @media screen and (max-width: 1100px) {
+                &__item{
+                    margin-left: 5px;
+                }
+
+                &__points{
+                    border: none;
+                    pointer-events: none;
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding-right: 24px;
+    }
 }
+

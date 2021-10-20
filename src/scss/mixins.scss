@@ -221,6 +221,7 @@
 }
 
 @mixin text($color,$lh,$fw) {
+    font-family: "Mont Blanc",sans-serif;
     font-style: normal;
     font-weight: $fw;
     font-size: 14px;

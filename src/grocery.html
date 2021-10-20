@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frost</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+    @@include('_header.html')
+
+    <div id="menu_poppup" class="menu_poppup">
+       <div class="detail__catalog">
+           
+       </div>
+    </div>
+
+    <main class="content catalog">
+        <div class="breadcrumbs">
+            <a href="/">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="/grocery.html" class="active">Бакалея</a>
+        </div>
+
+        <div class="top__panel">
+            <div class="panel__title">
+                <h1>Бакалея</h1>
+                <span>32 товаров</span>
+            </div>
+            <div class="panel__filter">
+                <button class="filter__btn"><img src="img/catalog/filter_icon_1.svg" alt="" srcset=""></button>
+                <button class="filter__btn active"><img src="img/catalog/filter_icon_2.svg" alt="" srcset=""></button>
+
+                <div class="custom-select">
+                    <select id="standard-select">
+                        <option value="По алфавиту">По алфавиту</option>
+                        <option value="По стоимости">По стоимости</option>
+                        <option value="По алфавиту">По алфавиту</option>
+                        <option value="По стоимости">По стоимости</option>
+                        <option value="По алфавиту">По алфавиту</option>
+                        <option value="По стоимости">По стоимости</option>
+                    </select>
+                    <span class="custom-arrow">
+                        <img src="img/catalog/select_arrow.svg" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog__list">
+            <div class="list__item">
+                <div class="item__image">
+                    <div class="price">
+                        <div class="price__item">
+                            НОВИНКА
+                        </div>
+                        <div class="price__item price__item-red">
+                            -30%
+                        </div>
+                    </div>
+                    <img src="img/main/recommend/1.png" />
+                </div>
+
+                <div class="item__info">
+                    <div>
+                        <p class="info__category">бакалея</p>
+                        <p class="info__title">Сливки "БМК" ультрапастер. 33%</p>
+                        <p class="info__price">
+                            510 ₽ <span class="price__unit">за 1 шт</span>
+                        </p>
+                    </div>
+                    <button class="info__btn info__btn">добавить в закупку</button>
+                </div>
+            </div>
+            <div class="list__item">
+                <div class="item__image">
+                    <div class="price">
+                        <div class="price__item">
+                            НОВИНКА
+                        </div>
+                        <div class="price__item price__item-red">
+                            -30%
+                        </div>
+                    </div>
+                    <img src="img/main/recommend/2.png" />
+                </div>
+
+                <div class="item__info">
+                    <div>
+                        <p class="info__category">бакалея</p>
+                        <p class="info__title">Сливки "БМК" ультрапастер. 33%</p>
+                        <p class="info__price">
+                            510 ₽ <span class="price__unit">за 1 шт</span>
+                        </p>
+                    </div>
+                    <button class="info__btn info__btn">добавить в закупку</button>
+                </div>
+            </div>
+            <div class="list__item">
+                <div class="item__image">
+                    <div class="price">
+                        <div class="price__item">
+                            НОВИНКА
+                        </div>
+                        <div class="price__item price__item-red">
+                            -30%
+                        </div>
+                    </div>
+                    <img src="img/main/recommend/3.png" />
+                </div>
+
+                <div class="item__info">
+                    <div>
+                        <p class="info__category">бакалея</p>
+                        <p class="info__title">Сливки "БМК" ультрапастер. 33%</p>
+                        <p class="info__price">
+                            510 ₽ <span class="price__unit">за 1 шт</span>
+                        </p>
+                    </div>
+                    <button class="info__btn info__btn">добавить в закупку</button>
+                </div>
+            </div>
+            <div class="list__item">
+                <div class="item__image">
+                    <div class="price">
+                        <div class="price__item">
+                            НОВИНКА
+                        </div>
+                        <div class="price__item price__item-red">
+                            -30%
+                        </div>
+                    </div>
+                    <img src="img/main/recommend/3.png" />
+                </div>
+
+                <div class="item__info">
+                    <div>
+                        <p class="info__category">бакалея</p>
+                        <p class="info__title">Сливки "БМК" ультрапастер. 33%</p>
+                        <p class="info__price">
+                            510 ₽ <span class="price__unit">за 1 шт</span>
+                        </p>
+                    </div>
+                    <button class="info__btn info__btn">добавить в закупку</button>
+                </div>
+            </div>
+            <div class="list__item">
+                <div class="item__image">
+                    <div class="price">
+                        <div class="price__item">
+                            НОВИНКА
+                        </div>
+                        <div class="price__item price__item-red">
+                            -30%
+                        </div>
+                    </div>
+                    <img src="img/main/recommend/4.png" />
+                </div>
+
+                <div class="item__info">
+                    <div>
+                        <p class="info__category">бакалея</p>
+                        <p class="info__title">Сливки "БМК" ультрапастер. 33%</p>
+                        <p class="info__price">
+                            510 ₽ <span class="price__unit">за 1 шт</span>
+                        </p>
+                    </div>
+                    <button class="info__btn info__btn">добавить в закупку</button>
+                </div>
+            </div>
+            <div class="list__item">
+                <div class="item__image">
+                    <div class="price">
+                        <div class="price__item">
+                            НОВИНКА
+                        </div>
+                        <div class="price__item price__item-red">
+                            -30%
+                        </div>
+                    </div>
+                    <img src="img/main/recommend/2.png" />
+                </div>
+
+                <div class="item__info">
+                    <div>
+                        <p class="info__category">бакалея</p>
+                        <p class="info__title">Сливки "БМК" ультрапастер. 33%</p>
+                        <p class="info__price">
+                            510 ₽ <span class="price__unit">за 1 шт</span>
+                        </p>
+                    </div>
+                    <button class="info__btn info__btn">добавить в закупку</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom__panel">
+            <button class="see_more">ПОКАЗАТЬ ЕЩЕ 30</button>
+            <div class="pagination">
+                <a class="pagination__item active" href="/catalog.html">1</a>
+                <a class="pagination__item" href="/catalog.html">2</a>
+                <a class="pagination__item" href="/catalog.html">3</a>
+                <span class="pagination__item pagination__points">...</span>
+                <a class="pagination__item" href="/catalog.html">46</a>
+            </div>
+        </div>
+    </main>
+
+    @@include('_footer.html')
+    <script src="js/script.js"></script>
+</body>
+
+</html>

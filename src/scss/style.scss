@@ -18,14 +18,111 @@ body{
     font-family: "Mont Blanc",sans-serif;
     margin: 0;
     padding: 0;
+    margin-left: 100px;
+
+    transition: all .3s linear;
 }
 
-// universal------------
-
 .content{
-    margin-left: 100px;
     padding: 64px;
     min-height: calc(100vh - 270px);
+}
+
+//Menu Poppup
+
+.menu_poppup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    z-index: 1000;
+    max-width: 470px;
+    width: 100%;
+    margin-left: 96px;
+    background: $black;
+    transition: all .3s linear;
+
+    border-left: 1px solid #585C60;
+
+    padding: 40px 15px 0px 15px;
+
+    color: #fff;
+
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $grey_1;
+        border-radius: 5px;
+    }
+
+    .all__catalog{
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding-bottom: 44px;
+        
+
+        .catalog__link{
+            text-decoration: none;
+            color: #fff;
+        
+            .catalog__item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 6px;
+                .item__text{
+                    margin-left: 14px;
+                    transition: all .2s linear;
+                }
+    
+                .item__arrow{
+                    margin-left: auto;
+                }
+
+                path{
+                    transition: all .2s linear;
+                }
+
+                &:hover{
+                    .item__text{
+                        margin-left: 14px;
+                        color: $green;
+                    }
+        
+                    path{
+                        fill: $green;
+                    }
+
+                    .item__arrow{
+                        path{
+                            fill: none;
+                            stroke: $green;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .detail__catalog{
+        
+    }
+
+    @media screen and (max-width: 1500px) {
+        max-width: 370px;
+    }
 }
 
 // Main Page ----------------------------------------------
