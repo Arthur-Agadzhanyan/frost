@@ -196,7 +196,7 @@ if(menuPoppup){
             menuOpened = false
             return
         } else{
-            if(window.screen.width <= 1500){
+            if(document.documentElement.clientWidth <= 1500){
                 document.body.style.paddingLeft =  `470px`
                 document.body.style.marginLeft = "0px"
                 content.style.paddingLeft = "24px"
