@@ -67,6 +67,7 @@ const categoriesSlider = new Swiper(".categories-slider",{
     // loop: true,
     grabCursor: true,
     speed: 400,
+    spaceBetween: 25,
     breakpoints:{
         320:{
             slidesPerView: 3,
@@ -84,11 +85,8 @@ const categoriesSlider = new Swiper(".categories-slider",{
             slidesPerView: 8,  
         },
         1700:{
-            slidesPerView: 11,  
+            slidesPerView: 10,  
         },
-        1800:{
-            slidesPerView: 12,  
-        }
     }
 })
 
@@ -183,6 +181,9 @@ const eventsSlider = new Swiper(".events-slider",{
 
 const menuBtn = document.getElementById("menuBtn");
 const menuPoppup = document.getElementById("menu_poppup");
+const content = document.querySelector(".content");
+const main_pop = document.querySelector(".main_poppup");
+
 let menuOpened = false;
 
 if(menuPoppup){
@@ -190,6 +191,7 @@ if(menuPoppup){
         if(menuOpened){
             document.body.style.paddingLeft = "0px"
             document.body.style.marginLeft = "100px"
+            content.style.paddingLeft = "64px"
             menuPoppup.style.left = "-100%"
             menuOpened = false
             return
@@ -197,15 +199,20 @@ if(menuPoppup){
             if(window.screen.width <= 1500){
                 document.body.style.paddingLeft =  `470px`
                 document.body.style.marginLeft = "0px"
+                content.style.paddingLeft = "24px"
                 menuPoppup.style.left = "0"
                 menuOpened = true
             }else{
                 document.body.style.paddingLeft =  `570px`
                 document.body.style.marginLeft = "0px"
+                content.style.paddingLeft = "24px"
                 menuPoppup.style.left = "0"
                 menuOpened = true
             }
             
+            if(main_pop){
+                document.body.style.paddingLeft =  `470px`
+            }
             
         }
     })
