@@ -217,3 +217,25 @@ if(menuPoppup){
         }
     })
 }
+
+
+const filterGridBtn = document.getElementById("filter__grid_btn");
+const filterListBtn = document.getElementById("filter__list_btn");
+const catalogGrid = document.querySelector(".catalog__list")
+const catalogList = document.querySelector(".catalog__large_list")
+
+if(filterGridBtn && filterListBtn){
+    filterGridBtn.addEventListener("click",()=>{
+        filterGridBtn.classList.add("active")
+        filterListBtn.classList.remove("active")
+
+        catalogGrid.style.display = "flex"
+        catalogList.style.display = "none"
+    })
+    filterListBtn.addEventListener("click",()=>{
+        filterListBtn.classList.add("active")
+        filterGridBtn.classList.remove("active")
+        catalogGrid.style.display = "none"
+        catalogList.style.display = "flex"
+    })
+}

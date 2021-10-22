@@ -2,7 +2,6 @@
 .catalog{
     padding-top: 40px;
     padding-left: 24px;
-    
 
     .top__panel{
         display: flex;
@@ -179,10 +178,178 @@
         }
     }
 
+    .catalog__large_list{
+        display: none;
+        flex-direction: column;
+
+        .list__item{
+            padding: 15px 23px;
+            border: 1px solid $grey_4;
+            margin-bottom: 24px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+                .item__info {
+                    padding-left: 20px;
+                    display: flex;
+                    align-items: center;
+
+                    .info__img{
+                        max-height: 100%;
+                    }
+                    .info__text {
+                        margin-left: 37px;
+                        .text__promotions {
+                            display: flex;
+
+                            .promotion__item {
+                                @include text(#fff,16px,600);
+                                font-size: 12px;
+                                background: $green;
+                                padding: 6px 12px;
+                                margin-right: 8px;
+                                
+                                &-red{
+                                    background: $red;
+                                }
+                            }
+                        }
+                        
+                        .text__name {
+                            @include text($black,19px,500);
+                            margin-bottom: 6px;
+                            margin-top: 10px;
+                        }
+
+                        .text__capacity {
+                            @include text($grey_2,19px,normal);
+                        }
+                    }
+                    
+                }
+                .item__wholesale {
+                    max-width: 280px;
+                    width: 100%;
+                    .wholesale__title {
+                        @include text($black,16px,600);
+                        font-size: 12px;
+                        margin-bottom: 11px;
+                    }
+                    .wholesale__list {
+                        list-style: none;
+
+                        .wholesale__item{
+                            border-bottom: 1px solid $grey_3;
+                            padding-bottom: 4px;
+                            margin-bottom: 8px;
+
+                            display: flex;
+                            align-items: center;
+
+                            .item__price {
+                                @include text($black,19px,normal)
+                            }
+                            .item__number {
+                                @include text($grey_1,16px,600);
+                                font-size: 12px;
+                                margin-left: 8px;
+                            }
+                            .item__rebate {
+                                @include text($red,21px,700);
+                                font-size: 16px;
+
+                                margin-left: auto;
+                            }
+                        }
+                    }        
+                }
+                .item__buy {
+                    text-align: right;
+
+                    .buy__price {
+                        @include text($black,24px,600);
+                        font-size: 18px;
+                        margin-bottom: 10px;
+
+                        span{
+                            @include text($grey_2,16px,600);
+                            font-size: 12px;
+                            margin-left: 10px;
+                        }
+                    }
+                    .buy__btn {
+                        padding: 11px 75px;
+                        background: $green;
+                        border: 1px solid $green;
+
+                        text-transform: uppercase;
+                        outline: none;
+                        
+                        @include text(#fff,19px,600);
+                        letter-spacing: 0.3em;
+                        cursor: pointer;
+
+                        transition: .2s linear;
+
+                        margin-bottom: 12px;
+
+                        &:hover{
+                            background: #fff;
+                            color: $green;
+                        }
+                    }
+                    .buy__availability {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .availability__blocks {
+                            display: flex;
+                            align-items: center;
+
+                            .blocks__item{
+                                width: 40px;
+                                height: 10px;
+                                background: $grey_3;
+                                margin: 0px 2px;
+
+                                &:first-child{
+                                    border-top-left-radius: 40px;
+                                    border-bottom-left-radius: 40px;
+                                }
+
+                                &:last-child{
+                                    border-top-right-radius: 40px;
+                                    border-bottom-right-radius: 40px;
+                                }
+
+                                &-green{
+                                    background: $green;
+                                }
+                            }
+                        }
+                        .availability__text {
+                            @include text($grey_1, 16px, 600);
+                            font-size: 12px;
+
+                            .text__green{
+                                color: $green;
+                            }
+                        }
+                    }
+                    
+                }
+                   
+        }
+    }
+
     .bottom__panel{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 20px;
 
         .see_more{
             background: #fff;
