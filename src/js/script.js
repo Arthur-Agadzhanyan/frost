@@ -136,6 +136,43 @@ const eventsSlider = new Swiper(".events-slider",{
     }
 })
 
+const smallProductSlider= new Swiper(".small-product-slider",{
+    slidesPerView: 4,
+    spaceBetween: 24,
+    loop: true,
+    slideToClickedSlide: true,
+    grabCursor: true,
+    slidesPerGroup: true,
+
+    direction: "vertical",
+})
+
+const bigProductSlider = new Swiper(".big-product-slider",{
+    slidesPerView: 1,
+    loop: true,
+    autoHeight: true,
+    spaceBetween: 24,
+    slidesPerGroup: true,
+
+    navigation:{
+        nextEl: ".product__next",
+        prevEl: ".product__prev",
+    },
+})
+
+
+smallProductSlider.on('slideChangeTransitionEnd', function() {
+    let index_currentSlide = smallProductSlider.realIndex + 1;
+    let currentSlide = smallProductSlider.slides[index_currentSlide]
+    bigProductSlider.slideTo(index_currentSlide, 1000, false);
+  });
+  
+bigProductSlider.on('slideChangeTransitionEnd', function() {
+    let index_currentSlide = bigProductSlider.realIndex + 4;
+    let currentSlide = bigProductSlider.slides[index_currentSlide]
+    smallProductSlider.slideTo(index_currentSlide, 1000, false);
+});
+
 // Opening the menu
 
 const menuBtn = document.getElementById("menuBtn");

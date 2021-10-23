@@ -3323,23 +3323,409 @@ body {
   line-height: 32px;
   color: #2F2F2F;
   font-size: 24px;
+  margin: 0;
+}
+
+.product_page .section__title_link {
+  text-decoration: none;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #AAAFB4;
+}
+
+.product_page .section__subtitle {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #AAAFB4;
+  margin: 0;
+}
+
+.product_page .block__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #585c60;
 }
 
 .product_page .product__container {
   max-width: 1140px;
   width: 100%;
   padding: 15px;
+  padding-top: 0;
   margin: 21px auto;
   padding-bottom: 24px;
   border-bottom: 1px solid #EFF3F3;
 }
 
+.product_page .product__container-bottom {
+  border-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .product_page .product__container .product__intro {
   margin-bottom: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product_page .product__container .product__intro .intro__sliders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_small_slider {
+  position: relative;
+  max-width: 100px;
+  width: 100%;
+  overflow: hidden;
+  margin-right: 23px;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_small_slider .small_product__items {
+  max-height: 450px;
+  height: 100%;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_small_slider .small_product__items .product__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 100%;
+  border: 1px solid #EFF3F3;
+  padding: 12px;
+  word-wrap: break-word;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_small_slider .small_product__items .product__item .item__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_big_slider {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #EFF3F3;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_big_slider .big-product-slider {
+  height: 100%;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_big_slider .big_product__items {
+  max-height: 450px;
+  width: 100%;
+  height: 100% !important;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_big_slider .big_product__items .product__item {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_big_slider .big_product__items .product__item .item__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_big_slider .slider__prev {
+  left: 5px;
+  padding: 0;
+  -webkit-transform: translate(0%, -40%);
+      -ms-transform: translate(0%, -40%);
+          transform: translate(0%, -40%);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  fill: none;
+  cursor: pointer;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_big_slider .slider__prev:hover path {
+  fill: none;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_big_slider .slider__next {
+  right: 5px;
+  padding: 0;
+  -webkit-transform: translate(0%, -40%);
+      -ms-transform: translate(0%, -40%);
+          transform: translate(0%, -40%);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  fill: none;
+  cursor: pointer;
+}
+
+.product_page .product__container .product__intro .intro__sliders .product_big_slider .slider__next:hover path {
+  fill: none;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.product_page .product__container .product__intro .intro__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-left: 24px;
+}
+
+.product_page .product__container .product__intro .intro__info .section__title {
+  margin-bottom: 6px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__promotions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__promotions .promotion__item {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  font-size: 12px;
+  background: #008385;
+  padding: 6px 12px;
+  margin-right: 8px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__promotions .promotion__item-red {
+  background: #EF3541;
+}
+
+.product_page .product__container .product__intro .intro__info .info__price {
+  margin-top: 14px;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2F2F2F;
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__price span {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #AAAFB4;
+  margin-left: 9px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy {
+  max-width: 62%;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__btn {
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+  padding: 15px 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  background: #008385;
+  color: #fff;
+  border: none;
+  margin-top: auto;
+  cursor: pointer;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  padding: 11px 15px;
+  margin-top: 16px;
+  border: 1px solid #008385;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__btn:hover {
+  background: transparent;
+  color: #008385;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__availability {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__availability .availability__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__availability .availability__blocks .blocks__item {
+  width: 40px;
+  height: 10px;
+  background: #DEE2E6;
+  margin: 0px 2px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__availability .availability__blocks .blocks__item:first-child {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__availability .availability__blocks .blocks__item:last-child {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__availability .availability__blocks .blocks__item-green {
+  background: #008385;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__availability .availability__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #585c60;
+  font-size: 12px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__availability .availability__text .text__green {
+  color: #008385;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__wholesale {
+  max-width: 100%;
+  width: 100%;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__wholesale .wholesale__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2F2F2F;
+  margin-bottom: 11px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__wholesale .wholesale__list {
+  list-style: none;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__wholesale .wholesale__list .wholesale__item {
+  border-bottom: 1px solid #EFF3F3;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__wholesale .wholesale__list .wholesale__item:last-child {
+  border-bottom: 0;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__wholesale .wholesale__list .wholesale__item .item__price {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2F2F2F;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__wholesale .wholesale__list .wholesale__item .item__number {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #AAAFB4;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.product_page .product__container .product__intro .intro__info .info__buy .buy__wholesale .wholesale__list .wholesale__item .item__rebate {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #EF3541;
+  font-size: 16px;
+  margin-left: auto;
 }
 
 .product_page .product__container .product__info {
   max-width: 550px;
+}
+
+.product_page .product__container .product__info .section__title {
+  margin-bottom: 21px;
 }
 
 .product_page .product__container .product__info .info__block {
@@ -3368,13 +3754,47 @@ body {
   margin-bottom: 10px;
 }
 
-.product_page .product__container .product__info .info__block .block__text {
+.product_page .product__container .product__info .info__block .block__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #EFF3F3;
+}
+
+.product_page .product__container .product__info .info__block .block__table .block_item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  text-align: center;
+}
+
+.product_page .product__container .product__info .info__block .block__table .block_item .item__title {
+  background: #EFF3F3;
+  padding: 9px 10px 4px 10px;
   font-family: "Mont Blanc",sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: #585c60;
+}
+
+.product_page .product__container .product__info .info__block .block__table .block_item .item__text {
+  padding: 9px 10px 4px 10px;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #008385;
+}
+
+.product_page .goods_of_the_day__products {
+  padding-top: 0;
+}
+
+.product_page .goods_of_the_day__products .products__item {
+  margin-top: 24px;
 }
 
 @media screen and (max-width: 1800px) {
