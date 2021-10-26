@@ -1248,20 +1248,22 @@ body{
 
 .mn_opened{
     .intro{
+        justify-content: space-between;
         .intro__slider{
             flex: 0 1 100%;
         }
         .intro__item{
-            margin-top: 20px;
-            flex: 0 1 49%;
+            margin-top: 40px;
+            flex: 0 1 45%;
 
             .item__image{
                 display: block;
                 text-align: center;
                 height: 100%;
-                padding: 40px 0px 20px 0px;
+                padding: 20px 0px 20px 0px;
+
                img{
-                    max-width: 80%;
+                    max-width: 90%;
                     height: 100%;
                }
             }

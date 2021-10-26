@@ -3797,6 +3797,12 @@ body {
   margin-top: 24px;
 }
 
+.mn_opened .intro {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .mn_opened .intro .intro__slider {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
@@ -3804,21 +3810,21 @@ body {
 }
 
 .mn_opened .intro .intro__item {
-  margin-top: 20px;
+  margin-top: 40px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 49%;
-          flex: 0 1 49%;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
 }
 
 .mn_opened .intro .intro__item .item__image {
   display: block;
   text-align: center;
   height: 100%;
-  padding: 40px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
 .mn_opened .intro .intro__item .item__image img {
-  max-width: 80%;
+  max-width: 90%;
   height: 100%;
 }
 
