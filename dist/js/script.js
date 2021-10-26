@@ -67,29 +67,26 @@ const categoriesSlider = new Swiper(".categories-slider",{
     // loop: true,
     grabCursor: true,
     speed: 400,
-    spaceBetween: 25,
+
     breakpoints:{
         320:{
             slidesPerView: 3,
         },
-        800:{
-            slidesPerView: 4,
-        },
-        900:{
-            slidesPerView: 5,
-        },
         1100:{
             slidesPerView: 6,  
         },
-        1400:{
+        1200:{
+            slidesPerView: 5, 
+        },
+        1500:{
             slidesPerView: 8,  
         },
         1700:{
-            slidesPerView: 10,  
+            slidesPerView: 10,
         },
     }
 })
-
+// document.querySelector(".categories-slider").offsetWidth
 const recommendSlider = new Swiper(".recommend-slider",{
     slidesPerView: 4,
     autoHeight: true,
@@ -103,6 +100,10 @@ const recommendSlider = new Swiper(".recommend-slider",{
             autoHeight: false,
         },
         1000:{
+            slidesPerView: 2,
+            autoHeight: true, 
+        },
+        1400:{
             slidesPerView: 3,
             autoHeight: true,
         },
@@ -146,9 +147,6 @@ const promotionsSlider = new Swiper(".promotions-slider",{
             slidesPerView: 5,
             autoHeight: true,
         },
-        1900:{
-            slidesPerView: 6,
-        }
     }
 })
 
@@ -214,6 +212,10 @@ bigProductSlider.on('slideChangeTransitionEnd', function() {
     smallProductSlider.slideTo(index_currentSlide, 1000, false);
 });
 
+const changeSlider = (slider, breakpoint)=>{
+    console.log(typeof slider);
+}
+
 // Opening the menu
 
 const menuBtn = document.getElementById("menuBtn");
@@ -228,6 +230,9 @@ if(menuPoppup){
         if(menuOpened){
             document.body.style.paddingLeft = "0px"
             document.body.style.marginLeft = "100px"
+            document.body.classList.remove("mn_opened")
+            
+
             content.style.paddingLeft = "64px"
             menuPoppup.style.left = "-100%"
             menuOpened = false
@@ -235,12 +240,14 @@ if(menuPoppup){
         } else{
             if(document.documentElement.clientWidth <= 1500){
                 document.body.style.paddingLeft =  `470px`
+                document.body.classList.add("mn_opened")
                 document.body.style.marginLeft = "0px"
                 content.style.paddingLeft = "24px"
                 menuPoppup.style.left = "0"
                 menuOpened = true
             }else{
                 document.body.style.paddingLeft =  `570px`
+                document.body.classList.add("mn_opened")
                 document.body.style.marginLeft = "0px"
                 content.style.paddingLeft = "24px"
                 menuPoppup.style.left = "0"
