@@ -28,6 +28,10 @@ body{
     padding: 64px;
     min-height: calc(100vh - 270px);
     padding-left: 44px;
+
+    @media screen and (max-width: 1200px) {
+        padding-right: 44px;
+    }
 }
 
 //Menu Poppup
@@ -1105,6 +1109,7 @@ body{
 
         .list__item{
             flex: 0 1 31%;
+            word-wrap: break-word;
 
             display: flex;
             flex-direction: column;
@@ -1183,7 +1188,7 @@ body{
 
             .list__item{
                 flex: 0 1 40%;
-                max-width: 70%;
+                max-width: 80%;
                 margin-bottom: 41px;
 
                 &:last-child{
@@ -1330,4 +1335,114 @@ body{
             }
     }
 
+    @media screen and (max-width: 1800px) {
+        .promotions {
+            .promotions__slider {
+                .promotions__item {  
+                    min-height: 450px;
+                    width: 100%;
+                    height: 100%;
+                    @include promotion_item(".promotion_item-second");
+        
+                    .item__info{
+                        width: 100%;
+                        padding-left: 13px;
+                        padding-right: 13px;
+                        .info__title{
+                            font-size: 28px;
+                        }
+                        .info__subtitle{
+                            font-size: 20px;
+                            padding-top: 15px;
+                        }
+                    }
+                    .item__image{
+                        width: 100%;
+                        margin-top: auto;
+
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+
+    @media screen and (max-width: 1400px) {
+        .advantages{
+            padding: 50px 45px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            .advantages__list{
+                flex-direction: column;
+                .list__item{
+                    flex: 0 1 100%;
+                    max-width: 95%;
+                    margin-bottom: 41px;
+    
+                    .item__info{
+                        width: 100%;
+                        padding-left: 85px;
+                    }
+
+                    &:last-child{
+                        margin: 0;
+                    }
+                }
+            }
+                
+        }
+
+        .goods_of_the_day{
+            .goods_of_the_day__products{
+                flex-wrap: wrap;
+                .products__big{
+                    flex: 0 1 100%;  
+                    justify-content: center;
+                    margin-bottom: 50px;
+        
+                    .big__image{
+                        flex: 0 1 40%;
+                        position: relative;
+                        margin-right: 22px;
+                        .big__promotion{
+                            position: absolute;
+                            top: 25px;
+                            right: -10px;
+                            z-index: 10;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+                    }
+
+                        img{
+                            max-height: 80vh;
+                            height: auto;
+                            max-width: 28vw;
+                        }
+                    }
+
+                    .big__info{
+                        .info__title{
+                            font-size: 17px;
+                        }
+                        .info__text{
+                            margin-bottom: 23px;
+                        }
+                    }
+
+                }
+        
+                .products__item{
+                    flex: 0 1 49%;  
+                    .item__image{
+                        max-height: 90%;
+                    }
+                }
+            }
+            
+        }
+    
+    }
 }

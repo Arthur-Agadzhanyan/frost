@@ -93,11 +93,16 @@ const promotionsSlider = new Swiper(".promotions-slider",{
             autoHeight: true,
         },
 
-        1050:{
-            slidesPerView: 3,
+        1100:{
+            slidesPerView: 2.3,
             autoHeight: true,
         },
 
+
+        1200:{
+            slidesPerView: 3,
+            autoHeight: true,
+        },
         1314:{
             slidesPerView: 4,
             autoHeight: true,
