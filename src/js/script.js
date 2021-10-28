@@ -182,7 +182,7 @@ const changeSlider = (slider, breakpoint)=>{
 
 // Opening the menu
 
-const menuBtn = document.getElementById("menuBtn");
+const menuBtn = document.querySelectorAll("#menuBtn");
 const menuPoppup = document.getElementById("menu_poppup");
 const content = document.querySelector(".content");
 const main_pop = document.querySelector(".main_poppup");
@@ -190,39 +190,65 @@ const main_pop = document.querySelector(".main_poppup");
 let menuOpened = false;
 
 if(menuPoppup){
-    menuBtn.addEventListener("click",()=>{
-        if(menuOpened){
-            document.body.style.paddingLeft = "0px"
-            document.body.style.marginLeft = "100px"
-            document.body.classList.remove("mn_opened")
-            
-
-            content.style.paddingLeft = "64px"
-            menuPoppup.style.left = "-100%"
-            menuOpened = false
-            return
-        } else{
-            if(document.documentElement.clientWidth <= 1500){
-                document.body.style.paddingLeft =  `470px`
-                document.body.classList.add("mn_opened")
-                document.body.style.marginLeft = "0px"
-                content.style.paddingLeft = "24px"
-                menuPoppup.style.left = "0"
-                menuOpened = true
+    menuBtn.forEach(btn=>{
+        btn.addEventListener("click",()=>{
+            if(document.documentElement.clientWidth > 1100){
+                if(menuOpened){
+                    document.body.style.paddingLeft = "0px"
+                    document.body.style.marginLeft = "100px"
+                    document.body.classList.remove("mn_opened") 
+        
+                    content.style.paddingLeft = "64px"
+                    menuPoppup.style.left = "-100%"
+                    menuOpened = false
+                    return
+                } 
+                else{
+                    if(document.documentElement.clientWidth <= 1500){
+                        document.body.style.paddingLeft =  `470px`
+                        document.body.classList.add("mn_opened")
+                        document.body.style.marginLeft = "0px"
+                        content.style.paddingLeft = "24px"
+                        menuPoppup.style.left = "0"
+                        menuOpened = true
+                    }else{
+                        document.body.style.paddingLeft =  `570px`
+                        document.body.classList.add("mn_opened")
+                        document.body.style.marginLeft = "0px"
+                        content.style.paddingLeft = "24px"
+                        menuPoppup.style.left = "0"
+                        menuOpened = true
+                    }
+                    
+                    if(main_pop){
+                        document.body.style.paddingLeft =  `470px`
+                    }
+                    
+                }
             }else{
-                document.body.style.paddingLeft =  `570px`
-                document.body.classList.add("mn_opened")
-                document.body.style.marginLeft = "0px"
-                content.style.paddingLeft = "24px"
-                menuPoppup.style.left = "0"
-                menuOpened = true
+                if(menuOpened){
+                    menuPoppup.style.top = "-1000px"
+                    menuPoppup.style.bottom = "initial"
+                    document.body.style.overflow = "auto"   
+                    menuOpened = false
+                    return
+                }
+                if(document.documentElement.clientWidth <= 700){
+                    menuPoppup.style.top = "66px"
+                    setTimeout(()=>menuPoppup.style.bottom = "0px",300)  
+                    document.body.style.overflow = "hidden"     
+                    menuOpened = true
+                    return
+                }else{
+                    menuPoppup.style.top = "85px"
+                    setTimeout(()=>menuPoppup.style.bottom = "0px",300)  
+                    document.body.style.overflow = "hidden"     
+                    menuOpened = true
+                    return
+                }
+                
             }
-            
-            if(main_pop){
-                document.body.style.paddingLeft =  `470px`
-            }
-            
-        }
+        })
     })
 }
 

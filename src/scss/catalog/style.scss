@@ -74,6 +74,10 @@
                         color: #fff;
                     }
                 }
+
+                @media screen and (max-width: 600px) {
+                    display: none;
+                }
             }
         }
 
@@ -125,6 +129,10 @@
                     display: block;
                     pointer-events: none;
                 }
+
+                @media screen and (max-width: 600px) {
+                    margin-left: 0px;   
+                }
             } 
 
             .filter__btn{
@@ -134,6 +142,9 @@
                 opacity: .4;
                 cursor: pointer;
                 
+                @media screen and (max-width: 600px) {
+                    display: none;
+                }
             }
             .active{
                 opacity: 1;
@@ -147,7 +158,9 @@
             }
         }
 
-        
+        @media screen and (max-width: 600px) {
+            margin: 0px 0px 13px 0px;
+        }
     }
     
     .catalog__list{
@@ -344,7 +357,29 @@
                     }
                     
                 }
-                   
+                
+            @media screen and (max-width: 850px) {
+                flex-wrap: wrap;
+
+                    .item__wholesale{
+                        flex: 0 1 45%;
+                    }
+
+                    .item__buy {
+                        flex: 0 1 55%;
+                        text-align: left;
+                        margin-top: 15px;
+                        
+                        .buy__price{
+                            font-size: 20px;
+                        }
+
+                        .buy__btn{
+                            width: 100%;
+                            padding: 11px 20px;
+                        }
+                    }
+            }
         }
     }
 
@@ -416,10 +451,58 @@
                 }
             }
         }
+
+        
     }
 
     @media screen and (max-width: 1200px) {
         padding-right: 24px;
+    }
+
+    @media screen and (max-width: 700px) {
+        .bottom__panel{
+            flex-direction: column;
+            margin-top: 0;
+            .see_more{
+                width: 100%;
+            }  
+            .pagination{
+                margin-top: 32px;
+                &__item{
+                    margin-left: 22px;
+
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .bottom__panel{
+            flex-direction: column;
+            .see_more{
+                width: 100%;
+            }  
+            .pagination{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &__item{
+                    margin-left: 0;
+
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 16px;
     }
 }
 

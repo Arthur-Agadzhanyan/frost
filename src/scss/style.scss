@@ -22,6 +22,10 @@ body{
     margin-left: 100px;
 
     transition: all .3s linear;
+
+    @media screen and (max-width: 1100px) {
+        margin-left: 0px;     
+    }
 }
 
 .content{
@@ -77,7 +81,6 @@ body{
         justify-content: space-between;
         height: 100%;
         padding-bottom: 44px;
-        
 
         .catalog__link{
             text-decoration: none;
@@ -119,7 +122,9 @@ body{
                 }
             }
         }
-        
+        .catalog__mb_icons{
+            display: none;
+        }
     }
 
     .detail__catalog{
@@ -408,6 +413,111 @@ body{
     @media screen and (max-width: 1500px) {
         max-width: 370px;
     }
+
+    @media screen and (max-width: 1100px) {
+        position: fixed;
+        top: -1000px;
+        bottom: 0;
+        left: 0;
+        bottom: initial;
+        z-index: 100000;
+
+        max-width: 100vw;
+        width: 100%;
+        
+        margin-left: 0px;
+        background: $black;
+        transition: all .3s linear;
+
+        border-left: none;
+        border-top: 1px solid rgba($grey_1, $alpha: 0.2);
+
+        padding-top: 25px;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        .all__catalog{
+            .catalog__link{
+                margin-left: 15px;
+
+                .catalog__item{
+                    margin-bottom: 27px;
+
+                    .item__text{
+                        font-size: 18px;
+                    }
+
+                    .item__arrow{
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .catalog__mb_icons{
+                display: flex;
+                justify-content: center;
+                border-top: 1px solid rgba($grey_1, $alpha: 0.2);
+                padding: 16px 0px;
+
+                
+                a{
+                    margin: 0px 21px;
+                    path, circle{
+                        transition: all .2s linear;
+                    }
+            
+                    &:hover{
+                        path, circle{
+                            stroke: #008385;
+                        }
+                        .str_disable{
+                            stroke: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .all__catalog{
+            justify-content: initial;
+            .catalog__link{
+                margin-left: 5px;
+                .catalog__item{
+                    margin-bottom: 24px;
+
+                    .item__text{
+                        font-size: 16px;
+                    }
+
+                    .item__arrow{
+                        display: none;
+                    }
+                }
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .all__catalog{
+            .catalog__link{
+                margin-left: 5px;
+                .catalog__item{
+                    margin-bottom: 24px;
+
+                    .item__text{
+                        font-size: 14px;
+                    }
+
+                    .item__arrow{
+                        display: none;
+                    }
+                }
+        }
+    }}
+}
 }
 
 .main_poppup{

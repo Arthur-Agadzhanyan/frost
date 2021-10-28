@@ -12,7 +12,6 @@
     flex-direction: column;
     justify-content: space-between;
     
-
     .navigation{
         .navigation__brand{
             margin-bottom: 24px;
@@ -64,5 +63,108 @@
             }
         }
     }
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
 }
 
+.mb__navigation{
+    position: sticky;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 10000000;
+    background: #2F2F2F;
+    padding: 16px 28px 16px 28px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 85px;
+    margin-top: -1px;
+
+    display: none;
+
+    .menu_group{
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .menu{
+        .menu__icon{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+        }
+        
+        rect{
+            transition: all .2s linear;
+        }
+        
+        &:hover{
+            rect{
+                fill: #008385;
+            }
+        }
+    }
+
+    .icons__item{
+        cursor: pointer;
+        path, circle{
+            transition: all .2s linear;
+        }
+
+        &:hover{
+            path, circle{
+                stroke: #008385;
+            }
+            .str_disable{
+                stroke: none;
+            }
+        }
+    }
+
+    .icons__item{
+        width: 32px;
+        height: 32px;
+        margin-left: 16px;
+    }
+
+    .icon_cart{
+        width: 34px;
+        height: 34px;
+    }
+
+    @media screen and (max-width: 1100px) {
+        display: flex;
+    }
+
+    @media screen and (max-width: 700px) {
+        padding: 11px 20px 11px 20px;
+        max-height: 66px;
+        .navigation__brand{
+            a{
+                img{
+                    width: 40px;
+                }
+            }
+        }
+        .menu{
+            .menu__icon{
+                cursor: pointer;
+                width: 26px;
+                height: 26px;
+            }
+        }
+        .icons__item{
+            width: 24px;
+            height: 24px;
+        }
+        .icon_cart{
+            width: 26px;
+            height: 26px;
+        }
+    }
+}
