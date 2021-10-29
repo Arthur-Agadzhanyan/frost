@@ -13,9 +13,41 @@
 <body>
     @@include('_header.html')
 
-    <div id="menu_poppup" class="menu_poppup main_poppup">
-        <ul class="all__catalog">
-            <a class="catalog__link" href="/catalog.html">
+    <div id="menu_poppup" class="menu_poppup main_poppup mobile_poppup">
+        <div id="menuBtn" class="mb_menu_poppup_trigger">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1222:1549)">
+                    <path
+                        d="M3.90506 8.13104C5.93822 8.97821 8.05678 9.51385 10.2276 9.73178L9.20423 7.9592L5.71448 8.16868C5.32687 8.19193 4.99373 7.89657 4.97048 7.50896C4.94723 7.12135 5.24259 6.78826 5.6302 6.76496L8.41809 6.59762L7.79798 5.52357L4.30823 5.73306C3.92062 5.75631 3.58748 5.46095 3.56423 5.07334C3.54098 4.68573 3.83634 4.35264 4.22395 4.32934L7.01184 4.162L6.23301 2.81298C5.45639 1.46776 3.73631 1.00689 2.39109 1.78351C1.04587 2.56018 0.584997 4.28026 1.36167 5.62548L2.46079 7.52926L3.90506 8.13104Z"
+                        fill="white" />
+                    <path
+                        d="M12.4688 9.84375C13.4018 9.84375 14.3274 9.78614 15.2431 9.67177C15.2678 9.49819 15.2813 9.321 15.2813 9.14062C15.2813 7.06955 13.6024 5.39062 11.5313 5.39062C10.8416 5.39062 10.1959 5.57766 9.64062 5.90255L11.9121 9.83691C12.0974 9.84145 12.2829 9.84375 12.4688 9.84375Z"
+                        fill="white" />
+                    <path
+                        d="M16.1909 6.9345C16.7104 5.5605 16.8056 4.52658 16.8069 4.51073C16.8399 4.12383 17.1803 3.8378 17.5671 3.86967C17.954 3.90258 18.241 4.24294 18.2081 4.62984C18.1995 4.73081 18.0043 6.85298 16.6862 9.18858C16.6854 9.27436 16.6819 9.35948 16.6769 9.44423C18.1625 9.15844 19.618 8.7202 21.0321 8.13098L21.8785 7.77834C21.7673 7.50577 21.6122 7.2517 21.4179 7.02759C22.3724 6.60436 23.0153 5.65392 23.0153 4.57031C23.0153 3.08409 21.8062 1.875 20.32 1.875C20.0845 1.875 19.8514 1.90659 19.6232 1.96917C19.3045 0.820922 18.2602 0 17.0388 0C15.8491 0 14.8192 0.775547 14.4722 1.88728C14.3893 1.87908 14.3076 1.875 14.2263 1.875C12.9411 1.875 11.8637 2.7795 11.5957 3.98522C13.6224 4.0103 15.3712 5.21048 16.1909 6.9345Z"
+                        fill="white" />
+                    <path
+                        d="M21.5735 9.4291C18.6737 10.6374 15.6104 11.25 12.4689 11.25C9.3274 11.25 6.26417 10.6374 3.36434 9.4291C2.87107 9.22356 2.33787 9.62167 2.39482 10.153C2.62906 12.3393 3.47693 20.3377 3.66663 22.1147C3.78134 23.1895 4.68307 24 5.76406 24H19.1737C20.2548 24 21.1565 23.1895 21.2712 22.1147C21.4609 20.3377 22.3088 12.3392 22.543 10.153C22.6 9.62167 22.0668 9.22356 21.5735 9.4291ZM17.8595 19.3125C17.8595 19.7008 17.5447 20.0156 17.1564 20.0156H7.78142C7.3931 20.0156 7.07829 19.7008 7.07829 19.3125V15.5625C7.07829 15.1742 7.3931 14.8594 7.78142 14.8594H17.1564C17.5447 14.8594 17.8595 15.1742 17.8595 15.5625V19.3125Z"
+                        fill="white" />
+                    <path d="M8.48438 16.2656H16.4531V18.6094H8.48438V16.2656Z" fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1222:1549">
+                        <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+    
+            <span class="item__text">Все товары</span>
+    
+            <svg class="item__arrow" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9L5 5L0.999999 1" stroke="#AAAFB4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+
+        <ul class="all__catalog mb_catalog">
+            <a class="catalog__link mb_active" href="/catalog.html">
                 <li class="catalog__item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1222:1549)">
@@ -597,6 +629,244 @@
         </ul>
     </div>
 
+    <div id="filter_poppup" class="filter_poppup">
+        <div class="filter_top_panel ">
+            <svg id="close_filter_poppup" class="item__arrow" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9L5 5L0.999999 1" stroke="#AAAFB4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3332 1.5H1.6665L8.33317 9.38333V14.8333L11.6665 16.5V9.38333L18.3332 1.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            <span class="item__text">Фильтры <span class="mb_filter__count">3</span> </span>
+        </div>
+
+        <div class="category_selected">
+            <div class="categoryes">
+                <button class="categoryes__item categoryes__dumping">Сбросить всё</button>
+
+                <div class="categoryes__item">
+                    Бренды: HIKARI
+    
+                    <button class="item__close"><img src="img/catalog/close_category.svg" alt=""></button>
+                </div>
+
+                <div class="categoryes__item">
+                    от 399 до 699
+    
+                    <button class="item__close"><img src="img/catalog/close_category.svg" alt=""></button>
+                </div>
+    
+                
+                <div class="categoryes__item">
+                    Бренды: БМК
+    
+                    <button class="item__close"><img src="img/catalog/close_category.svg" alt=""></button>
+                </div>
+            </div>
+        </div>    
+
+        <div class="detail__catalog">
+ 
+             <ul class="catalog__filters">
+                 <li class="filters__accordion">
+                     <input class="accordion__input" type="checkbox" id="cat_filter_check_1" checked>
+                     <label class="accordion__trigger" for="cat_filter_check_1">Категории </label>
+                     <div class="accordion__content">
+                         <div class="content__container">
+                             <ul class="categoryes">
+                                 <a class="categoryes__link categoryes__link-active" href="/grocery.html"><li class="categoryes__item categoryes__item-active">Все товары категории</li></a>
+                                 <a class="categoryes__link" href="/pastry.html"><li class="categoryes__item">Мука и смеси для выпечки</li></a>
+                                 <a class="categoryes__link" href=""><li class="categoryes__item">Соль, специи и сахар</li></a>
+                                 <a class="categoryes__link" href=""><li class="categoryes__item">Продукты соевые</li></a>
+                                 <a class="categoryes__link" href=""><li class="categoryes__item">Мука и смеси для выпечки</li></a>
+                                 <a class="categoryes__link" href=""><li class="categoryes__item">Соль, специи и сахар</li></a>
+                                 <a class="categoryes__link" href=""><li class="categoryes__item">Продукты соевые</li></a>
+                                 <a class="categoryes__link" href=""><li class="categoryes__item">Мука и смеси для выпечки</li></a>
+                             </ul>    
+                         </div>
+                     </div>
+                 </li>
+ 
+                 <li class="filters__accordion">
+                     <input class="accordion__input" type="checkbox" id="cat_filter_check_2" checked>
+                     <label class="accordion__trigger" for="cat_filter_check_2">Бренды</label>
+ 
+                     <div class="accordion__content">
+                         <div class="content__container">
+                             <div class="brands">
+                                 <div class="brands__search">
+                                     <input class="search__input" type="text" placeholder="Поиск">
+                                     <button class="search__icon"><img src="img/menu/brands/search.svg" alt=""></button>
+                                 </div>
+ 
+                                 <div class="brands__list">
+                                     <div class="list__item">
+                                         <label class="item__check">
+                                             <input class="check__input" type="checkbox">
+                                             <span class="check__custom"></span>
+                                             <span class="check__text">RICHEZA</span>
+                                         </label>
+                                         <span class="item__number">12</span>
+                                     </div>
+ 
+                                     <div class="list__item">
+                                         <label class="item__check">
+                                             <input class="check__input" type="checkbox" checked>
+                                             <span class="check__custom"></span>
+                                             <span class="check__text">HIKARI</span>
+                                         </label>
+                                         <span class="item__number">8</span>
+                                     </div>
+ 
+                                     <div class="list__item">
+                                         <label class="item__check">
+                                             <input class="check__input" type="checkbox" checked>
+                                             <span class="check__custom"></span>
+                                             <span class="check__text">БМК</span>
+                                         </label>
+                                         <span class="item__number">48</span>
+                                     </div>
+ 
+                                     <div class="list__item">
+                                         <label class="item__check">
+                                             <input class="check__input" type="checkbox" >
+                                             <span class="check__custom"></span>
+                                             <span class="check__text">ФРОСТМО</span>
+                                         </label>
+                                         <span class="item__number">3</span>
+                                     </div>
+ 
+                                     <div class="list__item">
+                                         <label class="item__check">
+                                             <input class="check__input" type="checkbox" checked>
+                                             <span class="check__custom"></span>
+                                             <span class="check__text">HIKARI</span>
+                                         </label>
+                                         <span class="item__number">8</span>
+                                     </div>
+ 
+                                     <div class="list__item">
+                                         <label class="item__check">
+                                             <input class="check__input" type="checkbox" checked>
+                                             <span class="check__custom"></span>
+                                             <span class="check__text">БМК</span>
+                                         </label>
+                                         <span class="item__number">48</span>
+                                     </div>
+ 
+                                     <div class="list__item">
+                                         <label class="item__check">
+                                             <input class="check__input" type="checkbox">
+                                             <span class="check__custom"></span>
+                                             <span class="check__text">ФРОСТМО</span>
+                                         </label>
+                                         <span class="item__number">3</span>
+                                     </div>
+ 
+                                     <div class="list__item">
+                                         <label class="item__check">
+                                             <input class="check__input" type="checkbox" checked>
+                                             <span class="check__custom"></span>
+                                             <span class="check__text">HIKARI</span>
+                                         </label>
+                                         <span class="item__number">8</span>
+                                     </div>
+ 
+                                     <div class="list__item">
+                                         <label class="item__check">
+                                             <input class="check__input" type="checkbox" checked>
+                                             <span class="check__custom"></span>
+                                             <span class="check__text">БМК</span>
+                                         </label>
+                                         <span class="item__number">48</span>
+                                     </div>
+ 
+                                     <div class="list__item">
+                                         <label class="item__check">
+                                             <input class="check__input" type="checkbox">
+                                             <span class="check__custom"></span>
+                                             <span class="check__text">ФРОСТМО</span>
+                                         </label>
+                                         <span class="item__number">3</span>
+                                     </div>
+ 
+                                 </div>
+                             </div>   
+                         </div>
+                     </div>
+                 </li>
+ 
+                 <li class="filters__accordion">
+                     <input class="accordion__input" type="checkbox" id="cat_filter_check_3" checked>
+                     <label class="accordion__trigger" for="cat_filter_check_3">Ценовой диапазон</label>
+                     <div class="accordion__content">
+                         <div class="content__container">
+                             <div class="prices">
+                                 <div class="prices__item">
+                                     <select name="" id="">
+                                         <option value="10">от 10</option>
+                                         <option value="50">от 50</option>
+                                         <option value="100">от 100</option>
+                                         <option value="150">от 150</option>
+                                         <option value="200">от 200</option>
+                                         <option value="300">от 300</option>
+                                     </select>
+                                 </div>
+                                 <div class="prices__item">
+                                     <select name="" id="">
+                                         <option value="1330">до 1330</option>
+                                         <option value="1430">до 1430</option>
+                                         <option value="1530">до 1530</option>
+                                         <option value="1630">до 1630</option>
+                                         <option value="1730">до 1730</option>
+                                         <option value="1830">до 1830</option>
+                                     </select>
+                                 </div>
+                                 <!-- <select name="" id=""></select> -->
+                             </div>
+                         </div>
+                     </div>
+                 </li>
+ 
+             </ul>
+        </div>
+    </div>
+
+    <div id="menuBtn" class="mb_menu_poppup_trigger ">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1222:1549)">
+                <path
+                    d="M3.90506 8.13104C5.93822 8.97821 8.05678 9.51385 10.2276 9.73178L9.20423 7.9592L5.71448 8.16868C5.32687 8.19193 4.99373 7.89657 4.97048 7.50896C4.94723 7.12135 5.24259 6.78826 5.6302 6.76496L8.41809 6.59762L7.79798 5.52357L4.30823 5.73306C3.92062 5.75631 3.58748 5.46095 3.56423 5.07334C3.54098 4.68573 3.83634 4.35264 4.22395 4.32934L7.01184 4.162L6.23301 2.81298C5.45639 1.46776 3.73631 1.00689 2.39109 1.78351C1.04587 2.56018 0.584997 4.28026 1.36167 5.62548L2.46079 7.52926L3.90506 8.13104Z"
+                    fill="white" />
+                <path
+                    d="M12.4688 9.84375C13.4018 9.84375 14.3274 9.78614 15.2431 9.67177C15.2678 9.49819 15.2813 9.321 15.2813 9.14062C15.2813 7.06955 13.6024 5.39062 11.5313 5.39062C10.8416 5.39062 10.1959 5.57766 9.64062 5.90255L11.9121 9.83691C12.0974 9.84145 12.2829 9.84375 12.4688 9.84375Z"
+                    fill="white" />
+                <path
+                    d="M16.1909 6.9345C16.7104 5.5605 16.8056 4.52658 16.8069 4.51073C16.8399 4.12383 17.1803 3.8378 17.5671 3.86967C17.954 3.90258 18.241 4.24294 18.2081 4.62984C18.1995 4.73081 18.0043 6.85298 16.6862 9.18858C16.6854 9.27436 16.6819 9.35948 16.6769 9.44423C18.1625 9.15844 19.618 8.7202 21.0321 8.13098L21.8785 7.77834C21.7673 7.50577 21.6122 7.2517 21.4179 7.02759C22.3724 6.60436 23.0153 5.65392 23.0153 4.57031C23.0153 3.08409 21.8062 1.875 20.32 1.875C20.0845 1.875 19.8514 1.90659 19.6232 1.96917C19.3045 0.820922 18.2602 0 17.0388 0C15.8491 0 14.8192 0.775547 14.4722 1.88728C14.3893 1.87908 14.3076 1.875 14.2263 1.875C12.9411 1.875 11.8637 2.7795 11.5957 3.98522C13.6224 4.0103 15.3712 5.21048 16.1909 6.9345Z"
+                    fill="white" />
+                <path
+                    d="M21.5735 9.4291C18.6737 10.6374 15.6104 11.25 12.4689 11.25C9.3274 11.25 6.26417 10.6374 3.36434 9.4291C2.87107 9.22356 2.33787 9.62167 2.39482 10.153C2.62906 12.3393 3.47693 20.3377 3.66663 22.1147C3.78134 23.1895 4.68307 24 5.76406 24H19.1737C20.2548 24 21.1565 23.1895 21.2712 22.1147C21.4609 20.3377 22.3088 12.3392 22.543 10.153C22.6 9.62167 22.0668 9.22356 21.5735 9.4291ZM17.8595 19.3125C17.8595 19.7008 17.5447 20.0156 17.1564 20.0156H7.78142C7.3931 20.0156 7.07829 19.7008 7.07829 19.3125V15.5625C7.07829 15.1742 7.3931 14.8594 7.78142 14.8594H17.1564C17.5447 14.8594 17.8595 15.1742 17.8595 15.5625V19.3125Z"
+                    fill="white" />
+                <path d="M8.48438 16.2656H16.4531V18.6094H8.48438V16.2656Z" fill="white" />
+            </g>
+            <defs>
+                <clipPath id="clip0_1222:1549">
+                    <rect width="24" height="24" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+
+        <span class="item__text">Все товары</span>
+
+        <svg class="item__arrow" width="6" height="10" viewBox="0 0 6 10" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 9L5 5L0.999999 1" stroke="#AAAFB4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
+
     <main class="content catalog">
         <div class="breadcrumbs">
             <a href="/">Главная</a>
@@ -625,6 +895,13 @@
                         <img src="img/catalog/select_arrow.svg" alt="">
                     </span>
                 </div>
+
+                <button id="mobile_filter_btn" class="mb_filter">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <path d="M18.3332 2.5H1.6665L8.33317 10.3833V15.8333L11.6665 17.5V10.3833L18.3332 2.5Z" stroke="#2F2F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="mb_filter__count">3</span>
+                </button>
             </div>
         </div>
 

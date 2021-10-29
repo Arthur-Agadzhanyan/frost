@@ -180,12 +180,14 @@ const changeSlider = (slider, breakpoint)=>{
     console.log(typeof slider);
 }
 
+
 // Opening the menu
 
 const menuBtn = document.querySelectorAll("#menuBtn");
 const menuPoppup = document.getElementById("menu_poppup");
 const content = document.querySelector(".content");
 const main_pop = document.querySelector(".main_poppup");
+const mobilePoppup = document.querySelector(".mobile_poppup"); 
 
 let menuOpened = false;
 
@@ -226,27 +228,45 @@ if(menuPoppup){
                     
                 }
             }else{
-                if(menuOpened){
-                    menuPoppup.style.top = "-1000px"
-                    menuPoppup.style.bottom = "initial"
-                    document.body.style.overflow = "auto"   
-                    menuOpened = false
-                    return
-                }
-                if(document.documentElement.clientWidth <= 700){
-                    menuPoppup.style.top = "66px"
-                    setTimeout(()=>menuPoppup.style.bottom = "0px",300)  
-                    document.body.style.overflow = "hidden"     
-                    menuOpened = true
-                    return
+                if(document.documentElement.clientWidth <= 1100 && document.documentElement.clientWidth > 600){
+                    if(menuOpened){
+                        menuPoppup.style.top = "-1000px"
+                        menuPoppup.style.bottom = "initial"
+                        document.body.style.overflow = "auto"   
+                        menuOpened = false
+                        return
+                    }
+                    if(document.documentElement.clientWidth <= 700){
+                        menuPoppup.style.top = "66px"
+                        setTimeout(()=>menuPoppup.style.bottom = "0px",300)  
+                        document.body.style.overflow = "hidden"     
+                        menuOpened = true
+                        return
+                    }else{
+                        menuPoppup.style.top = "85px"
+                        setTimeout(()=>menuPoppup.style.bottom = "0px",300)  
+                        document.body.style.overflow = "hidden"     
+                        menuOpened = true
+                        return
+                    }
                 }else{
-                    menuPoppup.style.top = "85px"
-                    setTimeout(()=>menuPoppup.style.bottom = "0px",300)  
-                    document.body.style.overflow = "hidden"     
-                    menuOpened = true
-                    return
-                }
-                
+                    if(menuOpened){
+                        mobilePoppup.style.top = "-1000px"
+                        mobilePoppup.style.bottom = "initial"
+                        document.body.style.overflow = "auto"   
+                        menuOpened = false
+                        return
+                    }else{
+                        menuPoppup.style.display = "none"
+                        mobilePoppup.style.display = "block"
+
+                        mobilePoppup.style.top = "66px"
+                        setTimeout(()=>mobilePoppup.style.bottom = "0px",300)  
+                        document.body.style.overflow = "hidden"     
+                        menuOpened = true
+                        return
+                    }
+                } 
             }
         })
     })
@@ -271,5 +291,26 @@ if(filterGridBtn && filterListBtn){
         filterGridBtn.classList.remove("active")
         catalogGrid.style.display = "none"
         catalogList.style.display = "flex"
+    })
+}
+
+// Opening mobile catalog filter
+
+const mobileFilterBtn = document.getElementById("mobile_filter_btn")
+const mobileFilterCatalogPoppup = document.getElementById("filter_poppup")
+const closeFilterPoppup = document.getElementById("close_filter_poppup")
+
+if(mobileFilterCatalogPoppup){
+    mobileFilterBtn.addEventListener("click",()=>{
+        document.body.style.overflow = "hidden"
+        mobileFilterCatalogPoppup.style.right = "0"
+        setTimeout(()=>mobileFilterCatalogPoppup.style.left = "0",300)  
+        document.body.style.overflow = "hidden"
+    })
+
+    closeFilterPoppup.addEventListener("click",()=>{
+        document.body.style.overflow = "auto"
+        mobileFilterCatalogPoppup.style.right = "-100%"
+        mobileFilterCatalogPoppup.style.left = "initial"
     })
 }

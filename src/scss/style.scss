@@ -72,6 +72,16 @@ body{
         background: $grey_1;
         border-radius: 5px;
     }
+    .mb_menu_poppup_trigger{
+        position: absolute;
+        top: -1px;
+        padding: 17px 19px;
+        border-bottom: 1px solid rgba($grey_1, 0.2);
+
+        .item__arrow{
+            transform: matrix(0, -1, -1, 0, 0, 0);
+        }
+    }
 
     .all__catalog{
         list-style: none;
@@ -127,288 +137,50 @@ body{
         }
     }
 
-    .detail__catalog{
-        .catalog__title{
-            display: flex;
-            align-items: center;
-            margin-bottom: 18px;
-            .title__text{
-                @include text(#fff,21px,600);
-                font-size: 16px;
-                margin-left: 18px;
-            }
+    .filter_top_panel {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10000;
+        width: 100%;
+
+        background: $black;
+        border-top: 1px solid rgba($grey_1, 0.2);
+
+        display: flex;
+        align-items: center;
+        padding: 17px 16px;
+
+        .item__text{
+            margin-left: 14px;
+            transition: all .2s linear;
         }
-        
-        .catalog__filters{
-            list-style: none;
-            
-            .filters__accordion{
-                position: relative;
-                border-top: 1px solid $grey_1;
-                padding: 16px 0px;
 
-                &:last-child{
-                    border-bottom: 1px solid $grey_1;
-                }
+        .item__arrow{
+            margin-left: auto;
+            transform: matrix(0, 1, 1, 0, 0, 0);
 
-                .accordion__input{
-                    position: absolute;
-                    top:0;
-                    left:0;
-                    opacity: 0;
-                }
+        }
 
-                .accordion__trigger{
-                    position: relative;
-                    display: block;
-                    cursor: pointer;
+        .item__text{
+            margin-left: 14px;
+            color: $green;
+        }
 
-                    @include text($grey_2, 21px, bold);
-                    font-size: 16px;
+        path{
+            fill: $green;
+            transition: all .2s linear;
+        }
 
-                    transition: all .2s linear;
-
-                    &:after{
-                        content: " ";
-                        position: absolute;
-                        top: 35%;
-                        right: 0;
-                        z-index: 1;
-                        
-                        background: url("../img/menu/category_arrow.svg") no-repeat center;
-                        width: 8px;
-                        height: 8px;
-                        
-                        -moz-transform: scale(-1, -1);
-                        -o-transform: scale(-1, -1);
-                        -webkit-transform: scale(-1, -1);
-                        transform: scale(-1, -1);
-
-                        transition: all .2s linear;
-                    }
-                }
-                .accordion__content{
-                    opacity: 0;
-                    overflow-y: hidden;
-
-                    .content__container{
-                        animation-name: accordionReverceAnim;
-                        animation-duration: .3s;
-                        animation-fill-mode: forwards;
-
-                        // Категории
-                        .categoryes{
-                            list-style: none;
-
-                            .categoryes__link{
-                                text-decoration: none;
-                                &-active{
-                                    pointer-events: none;
-                                }
-                            }
-
-                            .categoryes__item{
-                                @include text($grey_1,19px,600);
-                                margin-top: 16px;
-                                
-
-                                &-active{
-                                    color: #fff;
-                                    pointer-events: none;
-                                }
-                            }
-                        }
-
-                        //Бренды
-                        .brands{
-                            margin-top: 15px;
-
-                            .brands__search{
-                                width: 100%;
-                                background: $grey_1;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                border-radius: 4px;
-                                margin-bottom: 20px;
-
-
-                                .search__input{
-                                    flex: 0 90%;
-                                    @include text($grey_3,19px,300);
-
-                                    padding: 8px 0px 8px 16px;
-                                    background: transparent;
-                                    border: none;
-                                    outline: none;
-
-                                    &::placeholder{
-                                        @include text($grey_3,19px,300);
-                                    }
-                                }
-
-                                .search__icon{
-                                    flex: 0 10%;
-                                    padding: 8px 12px 8px 0px;
-                                    background: transparent;
-                                    border: none;
-                                    outline: none;
-
-                                    cursor: pointer;
-                                }
-                            }
-
-                            .brands__list{
-                                max-height: 250px;
-                                overflow-y: auto;
-
-                                &::-webkit-scrollbar {
-                                    width: 2px;
-                                }
-                            
-                                &::-webkit-scrollbar-track {
-                                    background: transparent;
-                                }
-                            
-                                &::-webkit-scrollbar-thumb {
-                                    background: $grey_1;
-                                    border-radius: 5px;
-                                }
-
-                                .list__item{
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-                                    margin-bottom: 14px;
-
-                                    .item__check{
-                                        display: flex;
-                                        align-items: center;
-                                        
-                                        cursor: pointer;
-
-                                        .check__input{
-                                            display: none;
-                                        }
-
-                                        .check__custom{
-                                            position: relative;
-
-                                            display: block;
-                                            width: 22px;
-                                            height: 22px;
-                                            border-radius: 4px;
-                                            background: $grey_1;
-                                            transition: .1s linear;
-
-                                            &:before{
-                                                opacity: 0;
-
-                                                content: "";
-                                                position: absolute;
-                                                top: 50%;
-                                                left: 50%;
-                                                transform: translate(-50%,-50%);
-
-                                                width: 15px;
-                                                height: 11px;
-                                                background: url("../img/menu/brands/checked.svg") no-repeat center;
-
-                                                transition: .1s linear;
-                                            }
-                                        }
-
-                                        .check__input:checked + .check__custom{
-                                            background: $yellow;
-                                        }
-
-                                        .check__input:checked + .check__custom:before{
-                                            opacity: 1;
-                                        }
-        
-                                        .check__text{
-                                            margin-left: 12px;
-                                            @include text($grey_1, 19px, 600);
-                                            transition: .1s linear;
-                                        }
-
-                                        .check__input:checked ~ .check__text{
-                                            color: #fff;
-                                        }
-                                    }
-                                   
-                                    .item__number{
-                                        @include text($grey_2,16px,600);
-                                        font-size: 12px;
-                                        margin-right: 10px;
-                                    }
-                                }
-                            }
-                        }
-
-                        //Ценовой диапазон
-                        .prices{
-                            margin-top: 15px;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-
-                            &__item{
-                                flex: 0 1 49%;
-                                position: relative;
-
-                                select{
-                                    width: 100%;
-                                    @include text(#fff,19px,300);
-                                    font-family: "Mont Blanc",sans-serif;
-
-                                    background: $grey_1;
-                                    border: none;
-                                    outline: none;
-                                    border-radius: 4px;
-
-                                    -moz-appearance: none;
-                                    -webkit-appearance: none;
-                                    appearance: none;
-
-                                    padding: 11px 16px;
-                                    cursor: pointer;
-
-                                    option{
-                                        padding: 11px 16px;
-                                        border: none;
-                                        outline: none;
-                                        cursor: pointer;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .accordion__input:checked ~ .accordion__trigger{
-                    &::after{
-                        -moz-transform: scale(1, 1);
-                        -o-transform: scale(1, 1);
-                        -webkit-transform: scale(1, 1);
-                        transform: scale(1, 1);
-                    }
-                }
-
-                .accordion__input:checked ~ .accordion__content{
-                    opacity: 1;
-                }
-
-                .accordion__input:checked ~ .accordion__content .content__container{
-                    animation-name: accordionAnim;
-                    animation-duration: .3s;
-                    animation-fill-mode: forwards;
-                }
+        .item__arrow{
+            path{
+                fill: none;
+                stroke: $green;
             }
-
-            
         }
     }
+
+    @include detail_catalog();
 
     @media screen and (max-width: 1500px) {
         max-width: 370px;
@@ -500,8 +272,33 @@ body{
         }
     }
 
+    @media screen and (max-width: 600px) {
+        .mb_catalog{
+            padding-top: 55px;
+
+            .mb_active{
+                pointer-events: none;
+                .item__text{
+                    color: $green;
+                }
+            
+                path{
+                    fill: $green;
+                    transition: all .2s linear;
+                }
+            
+                .item__arrow{
+                    path{
+                        fill: none;
+                        stroke: $green;
+                    }
+                }
+            }
+        }
+    }
     @media screen and (max-width: 450px) {
         .all__catalog{
+            
             .catalog__link{
                 margin-left: 5px;
                 .catalog__item{
@@ -518,6 +315,205 @@ body{
         }
     }}
 }
+}
+
+.filter_poppup{
+    display: none;
+    position: fixed;
+    top: 66px;
+    right: -100%;
+    bottom: 0;
+    z-index: 100000;
+
+    max-width: 100vw;
+    width: 100%;
+        
+    margin-left: 0px;
+    background: $black;
+    transition: all .3s linear;
+
+    border-left: none;
+    border-top: 1px solid rgba($grey_1, $alpha: 0.2);
+
+    padding: 60px 15px 30px 15px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: $grey_1;
+        border-radius: 5px;
+    }
+
+
+    .filter_top_panel {
+        position: absolute;
+
+        left: 0;
+        top: -1px;
+        z-index: 10000;
+        width: 100%;
+
+        background: $black;
+        border-top: 1px solid rgba($grey_1, 0.2);
+        border-bottom: 1px solid rgba($grey_1, 0.2);
+
+        display: flex;
+        align-items: center;
+        padding: 17px 16px;
+
+        
+
+        .item__text{
+            position: relative;
+            margin-left: 14px;
+            transition: all .2s linear;
+
+            .mb_filter__count{
+                @include text(#fff,13px,600);
+                font-size: 10px;
+                background: $red;
+                padding: 1px 4.5px;
+                border-radius: 100%;
+    
+                position: absolute;
+                top: -4px;
+                right: -18px;
+            }
+        }
+
+        .item__arrow{
+            margin-right: 15px;
+            transform: rotate(180deg);
+        }
+
+        .item__text{
+            margin-left: 10px;
+            color: #fff;
+        }
+
+        path{
+            transition: all .2s linear;
+        }
+
+        .item__arrow{
+            path{
+                fill: none;
+                stroke: #fff;
+            }
+        }
+    }
+
+    .category_selected{
+        @include categoryItems();
+
+        .categoryes{
+            display: flex;
+            flex-wrap: wrap;
+            
+            .categoryes__dumping{
+                background: #fff;
+                color: $black;
+
+                &:hover{
+                    color: #fff;
+                    background: transparent;
+                }
+            }
+        }
+    }
+
+    @include detail_catalog();
+    
+    .detail__catalog{
+        .catalog__title{
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            .title__text{
+                @include text(#fff,21px,600);
+                font-size: 16px;
+                margin-left: 18px;
+            }
+        }
+        
+        .catalog__filters{
+            list-style: none;
+
+            .filters__accordion{
+                border-top: none;
+                border-bottom: 1px solid $grey_1;
+
+                .accordion__content{
+                    height: 1px;
+                    transition: .2s linear;
+                }
+
+                .accordion__input:checked ~ .accordion__content{
+                    opacity: 1;
+                    height: initial;
+                    transition: .2s linear;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        display: block;
+    }
+}
+
+.mb_menu_poppup_trigger{
+    display: none;
+    position: sticky;
+    top: 66px;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+
+    background: $black;
+    border-top: 1px solid rgba($grey_1, 0.2);
+
+    align-items: center;
+    padding: 17px 16px;
+
+    .item__text{
+        margin-left: 14px;
+        transition: all .2s linear;
+    }
+
+    .item__arrow{
+        margin-left: auto;
+        transform: matrix(0, 1, 1, 0, 0, 0);
+
+    }
+
+    .item__text{
+        margin-left: 14px;
+        color: $green;
+    }
+
+    path{
+        fill: $green;
+        transition: all .2s linear;
+    }
+
+    .item__arrow{
+        path{
+            fill: none;
+            stroke: $green;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+    }
 }
 
 .main_poppup{

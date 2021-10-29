@@ -86,7 +86,7 @@
             justify-content: space-between;
             align-items: center;
 
-            button{
+            .filter__btn{
                 margin-left: 18px;
             }
 
@@ -146,6 +146,33 @@
                     display: none;
                 }
             }
+
+            .mb_filter{
+                position: relative;
+                display: none;
+                margin-left: 13px;
+                margin-right: 8px;
+                background: transparent;
+                border: 0;
+                cursor: pointer;
+
+                .mb_filter__count{
+                    @include text(#fff,13px,600);
+                    font-size: 10px;
+                    background: $red;
+                    padding: 2px 4px;
+                    border-radius: 100%;
+
+                    position: absolute;
+                    top: -13px;
+                    right: -10px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    display: block;
+                }
+            }
+
             .active{
                 opacity: 1;
                 pointer-events: none;
@@ -160,6 +187,28 @@
 
         @media screen and (max-width: 600px) {
             margin: 0px 0px 13px 0px;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin: 13px 0px 13px 0px;
+
+            .panel__filter{
+                margin-top: 12px;
+                width: 100%;
+
+                .custom-select{
+                    max-width: 90%;
+                    background-color: $grey_4;
+                    select{
+                        width: 100%;
+
+                        option{
+                            max-width: 240px;
+                            padding: 7px 12px;
+                        }
+                    }
+                }
+            }
         }
     }
     
@@ -505,7 +554,6 @@
         padding: 16px;
     }
 }
-
 
 .mn_opened{
     .catalog{
