@@ -29,10 +29,22 @@ const categoriesSlider = new Swiper(".categories-slider",{
 
     breakpoints:{
         320:{
-            slidesPerView: 3,
+            slidesPerView: 3.7,
+        },
+        420:{
+            slidesPerView: 4,  
+        },
+        540:{
+            slidesPerView: 4.2,  
+        },
+        700:{
+            slidesPerView: 5.5,  
+        },
+        900:{
+            slidesPerView: 6.5,  
         },
         1100:{
-            slidesPerView: 6,  
+            slidesPerView: 4.5,  
         },
         1200:{
             slidesPerView: 5, 
@@ -55,16 +67,19 @@ const recommendSlider = new Swiper(".recommend-slider",{
     },
     breakpoints:{
         320:{
-            slidesPerView: 1,
-            autoHeight: false,
+            slidesPerView: 2.15,
+        },
+        400:{
+            slidesPerView: 2.3,
+        },
+        700:{
+            slidesPerView: 2.3,
         },
         1000:{
             slidesPerView: 2,
-            autoHeight: true, 
         },
         1400:{
             slidesPerView: 3,
-            autoHeight: true,
         },
         1700:{
             slidesPerView: 4,
@@ -84,17 +99,29 @@ const promotionsSlider = new Swiper(".promotions-slider",{
 
     breakpoints:{
         320:{
-            slidesPerView: 1,
+            slidesPerView: 2.2,
+            autoHeight: true,
+            spaceBetween: 8,
+        },
+
+        500:{
+            slidesPerView: 2.4,
+            autoHeight: true,
+            spaceBetween: 8,
+        },
+
+        700:{
+            slidesPerView: 2.8,
             autoHeight: true,
         },
 
-        800:{
-            slidesPerView: 2,
+        900:{
+            slidesPerView: 3.4,
             autoHeight: true,
         },
 
-        1100:{
-            slidesPerView: 2.3,
+        1101:{
+            slidesPerView: 2.4,
             autoHeight: true,
         },
 
