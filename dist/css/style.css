@@ -6031,6 +6031,10 @@ body {
     padding-bottom: 42px;
   }
 
+  .advantages {
+    margin-right: 16px;
+  }
+
   .catalog .catalog__list .list__item .item__info .info__btn-count_units {
     padding: 15px 50px;
   }
@@ -6200,6 +6204,24 @@ body {
   .goods_of_the_day__products .products__big .big__info .info__bottom .info__price {
     font-size: 33px;
     line-height: 32px;
+  }
+
+  .advantages__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    color: #040507;
+    font-size: 28px;
+  }
+
+  .advantages__list .list__item {
+    max-width: 98%;
+  }
+
+  .advantages {
+    padding: 75px 54px;
   }
 }
 
@@ -6470,6 +6492,43 @@ body {
 
   .menu_poppup .all__catalog .catalog__link .catalog__item .item__arrow {
     display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .advantages__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: #040507;
+    font-size: 23px;
+  }
+
+  .advantages__list .list__item .item__info .info__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: #040507;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .advantages__list .list__item .item__info .info__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #040507;
+    font-size: 13px;
+  }
+
+  .advantages__list .list__item {
+    max-width: 100%;
   }
 }
 
@@ -6795,6 +6854,84 @@ body {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .advantages__list .list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .advantages__list .list__item .item__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+  }
+
+  .advantages__list .list__item .item__image::after {
+    content: " ";
+    position: absolute;
+    bottom: -8px;
+    left: initial;
+    right: -8px;
+    z-index: 1;
+    width: 140px;
+    height: 142px;
+    background: #fff;
+  }
+
+  .advantages__list .list__item .item__image .first {
+    padding: 45px 30px;
+  }
+
+  .advantages__list .list__item .item__image .second {
+    padding: 34px;
+  }
+
+  .advantages__list .list__item .item__image .third {
+    padding: 37px;
+  }
+
+  .advantages__list .list__item .item__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 65%;
+            flex: 0 1 65%;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+
+  .advantages__list .list__item .item__info .info__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #040507;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .advantages__list .list__item .item__info .info__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #040507;
+    font-size: 13px;
+  }
+
+  .advantages {
+    padding: 16px 16px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .content {
     padding-left: 16px;
@@ -6860,6 +6997,85 @@ body {
 
   .events .events__more {
     font-size: 17px;
+  }
+
+  .advantages__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #040507;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-bottom: 16px;
+  }
+
+  .advantages__list .list__item .item__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+  }
+
+  .advantages__list .list__item .item__image::after {
+    content: " ";
+    position: absolute;
+    bottom: -8px;
+    left: initial;
+    right: -8px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+
+  .advantages__list .list__item .item__image .first {
+    padding: 30px 0px;
+    text-align: center;
+  }
+
+  .advantages__list .list__item .item__image .second {
+    padding: 0;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .advantages__list .list__item .item__image .third {
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .advantages__list .list__item .item__image img {
+    max-width: 55px;
+  }
+
+  .advantages__list .list__item .item__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    max-width: 70%;
+    margin-left: 10px;
+  }
+
+  .advantages__list .list__item .item__info .info__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #040507;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .advantages__list .list__item .item__info .info__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #040507;
+    font-size: 12px;
   }
 
   .catalog .catalog__list .list__item .item__image {
@@ -6940,6 +7156,16 @@ body {
   .goods_of_the_day__products .products__big .big__info .info__text {
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .advantages__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #040507;
+    font-size: 18px;
   }
 
   .catalog .top__panel {
@@ -7254,6 +7480,83 @@ body {
     font-size: 12px;
   }
 
+  .advantages__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #040507;
+    font-size: 16px;
+  }
+
+  .advantages__list .list__item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .advantages__list .list__item .item__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 24%;
+            flex: 0 1 24%;
+  }
+
+  .advantages__list .list__item .item__image .first {
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .advantages__list .list__item .item__image .second {
+    padding: 0;
+    padding: 15px 0px;
+    text-align: center;
+  }
+
+  .advantages__list .list__item .item__image .third {
+    padding: 15px 0px;
+    text-align: center;
+  }
+
+  .advantages__list .list__item .item__image img {
+    max-width: 41px;
+  }
+
+  .advantages__list .list__item .item__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    max-width: 70%;
+    margin-left: 10px;
+  }
+
+  .advantages__list .list__item .item__info .info__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #040507;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .advantages__list .list__item .item__info .info__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #040507;
+    font-size: 12px;
+  }
+
+  .advantages {
+    padding-left: 9px;
+    padding-right: 12px;
+  }
+
   .catalog .catalog__list .list__item .item__image .price {
     top: 5px;
     font-size: 8px;
@@ -7392,6 +7695,89 @@ body {
   .goods_of_the_day__products .products__big .big__info .info__text {
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .advantages__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #040507;
+    font-size: 14px;
+  }
+
+  .advantages__list .list__item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .advantages__list .list__item .item__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 10%;
+            flex: 0 1 10%;
+  }
+
+  .advantages__list .list__item .item__image .first {
+    padding: 16px 8px 12px 8px;
+    text-align: left;
+  }
+
+  .advantages__list .list__item .item__image .first img {
+    max-width: 40px;
+    max-height: 24px;
+  }
+
+  .advantages__list .list__item .item__image .second {
+    padding: 0;
+    padding: 14px 13px 12px 13px;
+    text-align: left;
+  }
+
+  .advantages__list .list__item .item__image .second img {
+    max-width: 30px;
+  }
+
+  .advantages__list .list__item .item__image .third {
+    padding: 12px 13px;
+    text-align: left;
+  }
+
+  .advantages__list .list__item .item__image .third img {
+    max-width: 31px;
+  }
+
+  .advantages__list .list__item .item__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 79.5%;
+            flex: 0 1 79.5%;
+    max-width: 79.5%;
+    margin-left: 10px;
+    margin-top: -2px;
+  }
+
+  .advantages__list .list__item .item__info .info__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #040507;
+    font-size: 12px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+  }
+
+  .advantages__list .list__item .item__info .info__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #040507;
+    font-size: 12px;
+    margin-left: 2px;
   }
 }
 
