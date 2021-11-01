@@ -141,30 +141,45 @@ const promotionsSlider = new Swiper(".promotions-slider",{
     }
 })
 
-const eventsSlider = new Swiper(".events-slider",{
-    slidesPerView: 4,
-    autoHeight: true,
-    spaceBetween: 24,
-
-    navigation:{
-        nextEl: ".events__next",
-        prevEl: ".events__prev",
-    },
-    breakpoints:{
-        320:{
-            slidesPerView: 1,
+if(document.documentElement.clientWidth > 700){
+    const eventsSlider = new Swiper(".events-slider",{
+        slidesPerView: 4,
+        autoHeight: true,
+        spaceBetween: 24,
+    
+        navigation:{
+            nextEl: ".events__next",
+            prevEl: ".events__prev",
         },
-        850:{
-            slidesPerView: 2,
-        },
-        1150:{
-            slidesPerView: 3,
-        },
-        1300:{
-            slidesPerView: 4,
+        breakpoints:{
+            320:{
+                slidesPerView: 1,
+            },
+            600:{
+                slidesPerView: 3,
+            },
+            750:{
+                slidesPerView: 3.4,
+            },
+            950:{
+                slidesPerView: 3.7,
+            },
+            1100:{
+                slidesPerView: 2.3,
+            },
+            1300:{
+                slidesPerView: 2.7,
+            },
+            1400:{
+                slidesPerView: 3,
+            },
+            1600:{
+                slidesPerView: 4,
+            }
         }
-    }
-})
+    })
+}
+
 
 const smallProductSlider= new Swiper(".small-product-slider",{
     slidesPerView: 4,

@@ -3248,6 +3248,18 @@ body {
   position: relative;
 }
 
+.events .ds {
+  display: block;
+}
+
+.events .events__grid {
+  display: none;
+}
+
+.events .events__more {
+  display: none;
+}
+
 .events .events__slider {
   overflow-x: hidden;
   margin-top: 32px;
@@ -5842,6 +5854,10 @@ body {
     margin-left: 0px;
   }
 
+  .content {
+    padding-bottom: 44px;
+  }
+
   .main_page {
     padding-right: 0;
   }
@@ -5943,8 +5959,21 @@ body {
     width: 120px;
   }
 
+  .categories .categories__slider {
+    margin-top: 22px;
+  }
+
+  .categories {
+    margin-bottom: 42px;
+  }
+
   .recommend .recommend__slider .recommend__item .item__info .info__btn-count_units {
     padding: 15px 50px;
+  }
+
+  .recommend .recommend__slider {
+    padding-bottom: 42px;
+    margin-top: 22px;
   }
 
   .slider__prev {
@@ -5953,6 +5982,10 @@ body {
 
   .slider__next {
     display: none !important;
+  }
+
+  .promotions .promotions__slider {
+    padding-bottom: 32px;
   }
 
   .promotions .slider__next {
@@ -5965,6 +5998,11 @@ body {
 
   .goods_of_the_day__products .products__item .item__info .info__btn-count_units {
     padding: 15px 50px;
+  }
+
+  .goods_of_the_day__products {
+    padding-top: 22px;
+    padding-bottom: 42px;
   }
 
   .goods_of_the_day__products .products__big {
@@ -5987,6 +6025,10 @@ body {
 
   .events .events__slider .slider__prev {
     display: none !important;
+  }
+
+  .events .events__slider {
+    padding-bottom: 42px;
   }
 
   .catalog .catalog__list .list__item .item__info .info__btn-count_units {
@@ -6031,6 +6073,27 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+  .events .events__slider .slider__item .item__info .info__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #040507;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .events .events__slider .slider__item .item__info .info__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #585C60;
+    font-size: 13px;
+  }
+
   .catalog .catalog__large_list .list__item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -6251,6 +6314,94 @@ body {
 
   .goods_of_the_day__products .products__big .big__info {
     margin-left: 15px;
+  }
+
+  .events .ds {
+    display: none;
+  }
+
+  .events .events__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-right: 16px;
+    margin-top: 18px;
+  }
+
+  .events .events__grid .grid__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+    margin-bottom: 12px;
+  }
+
+  .events .events__grid .grid__item .item__img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .events .events__grid .grid__item .item__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .events .events__grid .grid__item .item__img .item__date {
+    position: absolute;
+    bottom: -8px;
+    left: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.3em;
+    background: #008385;
+    padding: 4px 11px;
+    color: #fff;
+  }
+
+  .events .events__grid .grid__item .item__info {
+    max-width: 100%;
+  }
+
+  .events .events__grid .grid__item .item__info .info__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #040507;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .events .events__grid .grid__item .item__info .info__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #585C60;
+    font-size: 15px;
+  }
+
+  .events .events__more {
+    display: block;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #585c60;
+    font-size: 21px;
   }
 
   .catalog .bottom__panel {
@@ -6647,6 +6798,7 @@ body {
 @media screen and (max-width: 500px) {
   .content {
     padding-left: 16px;
+    padding-bottom: 16px;
   }
 
   .section__header .section_title {
@@ -6673,6 +6825,41 @@ body {
   .goods_of_the_day__products .products__item .item__image img {
     max-width: 100%;
     max-height: 230px;
+  }
+
+  .events .events__grid .grid__item .item__img .item__date {
+    font-size: 10px;
+    padding: 4px 7px;
+    letter-spacing: 0.2em;
+  }
+
+  .events .events__grid .grid__item .item__info {
+    max-width: 100%;
+  }
+
+  .events .events__grid .grid__item .item__info .info__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #040507;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .events .events__grid .grid__item .item__info .info__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #585C60;
+    font-size: 13px;
+  }
+
+  .events .events__more {
+    font-size: 17px;
   }
 
   .catalog .catalog__list .list__item .item__image {
@@ -6817,6 +7004,10 @@ body {
     padding-top: 8px;
   }
 
+  .categories {
+    margin-bottom: 32px;
+  }
+
   .recommend .recommend__slider .recommend__item .item__image .price {
     top: 5px;
     font-size: 8px;
@@ -6858,7 +7049,12 @@ body {
     padding: 8px 10px;
   }
 
+  .recommend .recommend__slider .recommend__item .item__info {
+    padding-top: 12px;
+  }
+
   .recommend .recommend__slider {
+    margin-top: 12px;
     padding-bottom: 36px;
   }
 
@@ -6879,6 +7075,10 @@ body {
   .promotions .promotions__slider .promotions__item {
     min-height: 305px;
     max-height: 305px;
+  }
+
+  .promotions .promotions__slider {
+    margin-top: 12px;
   }
 
   .goods_of_the_day__products .products__big .big_ds {
@@ -6995,11 +7195,63 @@ body {
     padding: 8px 10px;
   }
 
+  .goods_of_the_day__products .products__item .item__info {
+    padding-top: 12px;
+  }
+
   .goods_of_the_day__products .products__item .item__image .price .price__item {
     top: 5px;
     font-size: 10px;
     line-height: 11px;
     right: -5px;
+  }
+
+  .goods_of_the_day__products {
+    padding-top: 11px;
+    padding-bottom: 32px;
+  }
+
+  .events .events__grid {
+    margin-top: 12px;
+  }
+
+  .events .events__grid .grid__item {
+    margin-bottom: 8px;
+  }
+
+  .events .events__grid .grid__item .item__img {
+    margin-bottom: 12px;
+  }
+
+  .events .events__grid .grid__item .item__img .item__date {
+    font-size: 8px;
+    padding: 0px 4px;
+    left: 8px;
+  }
+
+  .events .events__grid .grid__item .item__info {
+    max-width: 100%;
+  }
+
+  .events .events__grid .grid__item .item__info .info__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #040507;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .events .events__grid .grid__item .item__info .info__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #585C60;
+    font-size: 12px;
   }
 
   .catalog .catalog__list .list__item .item__image .price {
@@ -7041,6 +7293,10 @@ body {
   .catalog .catalog__list .list__item .item__info .info__btn {
     font-size: 12px;
     padding: 8px 10px;
+  }
+
+  .catalog .catalog__list .list__item .item__info {
+    padding-top: 12px;
   }
 
   .catalog .bottom__panel {
