@@ -397,3 +397,25 @@ if(mobileFilterCatalogPoppup){
         mobileFilterCatalogPoppup.style.left = "initial"
     })
 }
+
+let lastScroll = 0;
+const defaultOffset = 250;
+const categoryPoppupTrigger = document.querySelector('.categoryPoppupTrigger');
+
+const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+const containHide = () => categoryPoppupTrigger.classList.contains('hide-category-trigger');
+
+window.addEventListener('scroll', () => {
+   if(categoryPoppupTrigger){
+        if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
+            //scroll down
+            categoryPoppupTrigger.classList.add('hide-category-trigger');
+        }
+        else if(scrollPosition() < lastScroll && containHide()){
+            //scroll up
+            categoryPoppupTrigger.classList.remove('hide-category-trigger');
+        }
+
+        lastScroll = scrollPosition();
+   }
+})

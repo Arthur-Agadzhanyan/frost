@@ -2069,6 +2069,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 17px 16px;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .mb_menu_poppup_trigger .item__text {
@@ -2100,6 +2103,12 @@ body {
 .mb_menu_poppup_trigger .item__arrow path {
   fill: none;
   stroke: #008385;
+}
+
+.hide-category-trigger {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .main_poppup {

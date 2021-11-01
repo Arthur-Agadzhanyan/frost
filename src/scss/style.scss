@@ -508,6 +508,8 @@ body{
     align-items: center;
     padding: 17px 16px;
 
+    transition: all .2s linear;
+
     .item__text{
         margin-left: 14px;
         transition: all .2s linear;
@@ -539,6 +541,10 @@ body{
     @media screen and (max-width: 600px) {
         display: flex;
     }
+}
+
+.hide-category-trigger{
+    transform: translateY(-100%);
 }
 
 .main_poppup{
