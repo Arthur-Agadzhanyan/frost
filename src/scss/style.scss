@@ -2451,10 +2451,10 @@ body{
 
         @media screen and (max-width: 400px) {
             &:not(:last-child){
-                &::after{
-                    background: #AAAFB4;
-                }
+            &::after{
+                background: #AAAFB4;
             }
+        }
         }
     }
 }
