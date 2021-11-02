@@ -221,7 +221,6 @@ if(document.documentElement.clientWidth > 700){
     })
 }
 
-
 const smallProductSlider= new Swiper(".small-product-slider",{
     slidesPerView: 4,
     spaceBetween: 24,
@@ -240,10 +239,24 @@ const bigProductSlider = new Swiper(".big-product-slider",{
     spaceBetween: 24,
     slidesPerGroup: true,
 
-    navigation:{
-        nextEl: ".product__next",
-        prevEl: ".product__prev",
-    },
+    breakpoints:{
+        320:{
+            pagination:{
+                el: '.big_slider__pagination',
+                clickable: true
+            },
+            navigation:{
+                nextEl: ".slider__right_arrow",
+                prevEl: ".slider__left_arrow",
+            },
+        },
+        1100:{
+            navigation:{
+                nextEl: ".product__next",
+                prevEl: ".product__prev",
+            },
+        }
+    }
 })
 
 
@@ -262,7 +275,6 @@ bigProductSlider.on('slideChangeTransitionEnd', function() {
 const changeSlider = (slider, breakpoint)=>{
     console.log(typeof slider);
 }
-
 
 // Opening the menu
 

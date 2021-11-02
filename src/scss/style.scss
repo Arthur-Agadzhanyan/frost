@@ -1223,6 +1223,7 @@ body{
     .recommend__slider{
         margin-top: 41px;
         overflow-x: hidden;
+        overflow-y: initial;
         padding-bottom: 56px;
 
         .swiper-wrapper{
@@ -2401,7 +2402,10 @@ body{
 // 🕷 
 
 .breadcrumbs{
-
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $grey_2;
     a{
         text-decoration: none;
         @include text($grey_1,16px,600);
@@ -2426,11 +2430,32 @@ body{
                 background: $grey_1;
             }
         }
+
+        @media screen and (max-width: 400px) {
+            @include text($grey_1,14px,600);
+
+            font-size: 10px;
+            margin-right: 17px;
+
+            &:not(:last-child){
+                &::after{
+                    top: 60%;
+                }
+            }
+        }
     }
 
     .active{
         color: #AAAFB4;
         pointer-events: none;
+
+        @media screen and (max-width: 400px) {
+            &:not(:last-child){
+                &::after{
+                    background: #AAAFB4;
+                }
+            }
+        }
     }
 }
 

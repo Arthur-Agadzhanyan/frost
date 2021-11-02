@@ -166,6 +166,11 @@
         flex-direction: column;
         justify-content: space-between;
 
+        a{
+            text-decoration: none;
+            color: $black
+        }
+
         .item__image{
             position: relative;
             display: flex;
