@@ -1228,7 +1228,9 @@ body{
         .swiper-wrapper{
             min-height: 637px;
             @media screen and (max-width:600px) {
-                min-height: 337px;
+                min-height: initial;
+                max-height: 100%;
+                height: auto;
             }
         }
 

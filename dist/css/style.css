@@ -7122,7 +7122,9 @@ body {
   }
 
   .recommend .recommend__slider .swiper-wrapper {
-    min-height: 337px;
+    min-height: initial;
+    max-height: 100%;
+    height: auto;
   }
 
   .recommend .recommend__slider .recommend__item .item__image .price .price__item {
