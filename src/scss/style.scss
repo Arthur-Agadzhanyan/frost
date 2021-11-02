@@ -1223,14 +1223,13 @@ body{
     .recommend__slider{
         margin-top: 41px;
         overflow-x: hidden;
-        overflow-y: initial;
         padding-bottom: 56px;
 
         .swiper-wrapper{
             min-height: 637px;
             height: auto;
             @media screen and (max-width:600px) {
-                min-height: initial;
+                min-height: 337px;
             }
         }
 

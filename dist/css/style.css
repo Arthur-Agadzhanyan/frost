@@ -2498,7 +2498,6 @@ body {
 .recommend .recommend__slider {
   margin-top: 41px;
   overflow-x: hidden;
-  overflow-y: initial;
   padding-bottom: 56px;
 }
 
@@ -7124,7 +7123,7 @@ body {
   }
 
   .recommend .recommend__slider .swiper-wrapper {
-    min-height: initial;
+    min-height: 337px;
   }
 
   .recommend .recommend__slider .recommend__item .item__image .price .price__item {
