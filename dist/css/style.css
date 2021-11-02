@@ -2503,7 +2503,6 @@ body {
 
 .recommend .recommend__slider .swiper-wrapper {
   min-height: 637px;
-  height: auto;
 }
 
 .recommend .recommend__slider .recommend__item {
