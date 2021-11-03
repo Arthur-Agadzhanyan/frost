@@ -2469,6 +2469,9 @@ body{
 
 // On menu open -------------------
 
+@import "./events/style.scss";
+
+
 .mn_opened{
     .intro{
         justify-content: space-between;
