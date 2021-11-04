@@ -277,6 +277,39 @@ const changeSlider = (slider, breakpoint)=>{
     console.log(typeof slider);
 }
 
+//login slider ----------------------
+// if(document.documentElement.clientWidth <= 1700){
+// }
+
+const loginPromotionsSlider = new Swiper(".login-promotions-slider",{
+    slidesPerView: 2.5,
+    autoHeight: true,
+    spaceBetween: 25,
+    breakpoints:{
+        320:{
+            slidesPerView: 2.1, 
+            spaceBetween: 8,
+        },
+        350:{
+            slidesPerView: 2.3, 
+            spaceBetween: 8,
+        },
+        450:{
+            slidesPerView: 2.5, 
+            spaceBetween: 12,
+        },
+        700:{
+            slidesPerView: 3.2, 
+        },
+        950:{
+            slidesPerView: 2.2,
+        },
+        1100:{
+            slidesPerView: 2.5,
+        }
+    }
+})
+
 // Opening the menu
 
 const menuBtn = document.querySelectorAll("#menuBtn");
