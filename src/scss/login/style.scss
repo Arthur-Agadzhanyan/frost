@@ -70,6 +70,14 @@
                             }
                         }
 
+                        .reg__title{
+                            margin-bottom: 12px;
+                        }
+
+                        .reg__text{
+                            margin-bottom: 12px;
+                        }
+
                         .form__div{
                             position: relative;
                         }
@@ -288,8 +296,13 @@
                 .content__title{
                     @include text($black,32px,600);
                     font-size: 24px;
-                    min-width: 0;
                     margin-bottom: 24px;
+
+                    @media screen and (max-width: 450px) {
+                        @include text($black,19px,600);
+                        font-size: 16px;
+                        margin-bottom: 12px;
+                    }
                 }
 
                 .content__list {
@@ -590,7 +603,7 @@
                 padding-bottom: 20px;
                 padding-top: 40px;
                 .block__container {
-                    padding: 16px 24px;
+                    padding: 24px 16px;
                     padding-top: 0px;
                     margin-left: auto;
                     height: 100%;

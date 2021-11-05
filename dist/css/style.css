@@ -4836,6 +4836,14 @@ body {
   margin-bottom: 24px;
 }
 
+.login_page .page__wrapper .green_block .block__content .content__container .content__form .reg__title {
+  margin-bottom: 12px;
+}
+
+.login_page .page__wrapper .green_block .block__content .content__container .content__form .reg__text {
+  margin-bottom: 12px;
+}
+
 .login_page .page__wrapper .green_block .block__content .content__container .content__form .form__div {
   position: relative;
 }
@@ -5047,7 +5055,6 @@ body {
   line-height: 32px;
   color: #2F2F2F;
   font-size: 24px;
-  min-width: 0;
   margin-bottom: 24px;
 }
 
@@ -7035,7 +7042,7 @@ body {
   }
 
   .login_page .page__wrapper .green_block .block__container {
-    padding: 16px 24px;
+    padding: 24px 16px;
     padding-top: 0px;
     margin-left: auto;
     height: 100%;
@@ -8998,6 +9005,17 @@ body {
 
   .login_page .page__wrapper .green_block .block__content .content__bottom .bottom__phone {
     margin-bottom: 21px;
+  }
+
+  .login_page .page__wrapper .login__promotions__content .content__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2F2F2F;
+    font-size: 16px;
+    margin-bottom: 12px;
   }
 
   .login_page .page__wrapper .login__promotions__content .content__slider .swiper-wrapper {
