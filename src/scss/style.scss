@@ -21,7 +21,7 @@ body{
     font-family: "Mont Blanc",sans-serif;
     margin: 0;
     padding: 0;
-    margin-left: 100px;
+    margin-left: 96px;
 
     transition: all .3s linear;
 
@@ -2473,7 +2473,9 @@ body{
 
 @import "./login/style.scss";
 
+// Detail event page
 
+@import "./event_details/style.scss";
 
 // On menu open -------------------
 

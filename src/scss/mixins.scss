@@ -965,3 +965,187 @@
     width: 100%;
     margin: $margin;
 }
+
+@mixin formInput() {
+    .form__div{
+        position: relative;
+    }
+
+    .form__input{
+        padding: 18px 16px;
+        padding-top: 19px;
+        width: 100%;
+        font-size: 14px;
+        border: 0;
+        outline: none;
+        background: #fff;
+        color: $black;
+
+        @media screen and (max-width: 450px)  {
+            padding: 14px 12px;
+            padding-top: 11px;
+        }
+    }
+
+    .form__label{
+        position: absolute;
+        left: 17px;
+        top: 20px;
+        z-index: 1;
+        color: $grey_2;
+        font-size: 14px;
+        transition: .3s;
+        cursor: text;
+
+        @media screen and (max-width: 450px)  {
+            left: 12px;
+            top: 11px;
+        }
+    }
+    
+    /*Input focus sticky top label*/
+    .form__input:focus + .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+        top:8px;
+        left: 16px;
+        font-size: 12px;
+        font-weight: 500;
+        z-index: 10;
+
+        @media screen and (max-width: 450px)  {
+            top: 2px;
+            left: 12px;
+            font-size: 10px;
+        }
+    }
+
+    .form__input:focus, .form__input:not(:placeholder-shown){
+        padding-top: 27px;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 450px)  {
+            padding-top: 18px;
+            padding-bottom: 7px;
+        }
+    }
+}
+
+@mixin green_form_block(){
+    .green_form_block{
+        padding: 57px 15px;
+        background: $green;
+
+        .block__content{
+            max-width: 840px;
+
+            margin: 0 auto;
+            text-align: center;
+
+            .content__text {
+                @include text(#fff,32px,600);
+                font-size: 24px;
+                margin-bottom: 24px;
+                
+            }
+    
+            .content__form {
+                display: flex;
+                justify-content: space-between;
+
+                flex-wrap: wrap;
+    
+                @include formInput();
+                .form__div{
+                    position: relative;
+                    flex: 0 1 48.5%;
+                    margin-bottom: 24px;
+                }
+
+                .form__btn{
+                    margin-bottom: 25px;
+                    flex: 0 1 48.5%;
+                    @include text($black,19px,normal);
+                    letter-spacing: 0.3em;
+                    padding: 16px;
+                    font-weight: 600;
+                    background: $yellow;
+                    border: 1px solid $yellow;
+
+                    cursor: pointer;
+
+                    transition: .2s linear;
+
+                    &:hover{
+                        background: $black;
+                        color: $yellow;
+                    }
+                }
+
+                .form__check_item{
+                    flex: 0 1 48.5%;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 0;
+                    margin-left: auto;
+                    text-align: left;
+
+                    .item__check{
+                        display: flex;
+                        align-items: center;
+                        
+                        cursor: pointer;
+
+                        .check__input{
+                            display: none;
+                        }
+
+                        .check__custom{
+                            position: relative;
+
+                            display: block;
+                            width: 22px;
+                            height: 22px;
+                            border-radius: 4px;
+                            background: white;
+                            transition: .1s linear;
+
+                            &:before{
+                                opacity: 0;
+
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+
+                                width: 15px;
+                                height: 11px;
+                                background: url("../img/menu/brands/checked.svg") no-repeat center;
+
+                                transition: .1s linear;
+                            }
+                        }
+
+                        .check__input:checked + .check__custom{
+                            background: $yellow;
+                        }
+
+                        .check__input:checked + .check__custom:before{
+                            opacity: 1;
+                        }
+
+                        .check__text{
+                            margin-left: 8px;
+                            @include text(#fff, 19px, 600);
+                            font-size: 12px;
+                            transition: .1s linear;
+                        }
+                    }
+                }
+            }
+        }
+        
+
+    }
+}

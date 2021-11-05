@@ -337,7 +337,7 @@ if(menuPoppup){
             if(document.documentElement.clientWidth > 1100){
                 if(menuOpened){
                     document.body.style.paddingLeft = "0px"
-                    document.body.style.marginLeft = "100px"
+                    document.body.style.marginLeft = "96px"
                     document.body.classList.remove("mn_opened") 
         
                     content.style.paddingLeft = "64px"
@@ -347,14 +347,14 @@ if(menuPoppup){
                 } 
                 else{
                     if(document.documentElement.clientWidth <= 1500){
-                        document.body.style.paddingLeft =  `470px`
+                        document.body.style.paddingLeft =  `466px`
                         document.body.classList.add("mn_opened")
                         document.body.style.marginLeft = "0px"
                         content.style.paddingLeft = "24px"
                         menuPoppup.style.left = "0"
                         menuOpened = true
                     }else{
-                        document.body.style.paddingLeft =  `570px`
+                        document.body.style.paddingLeft =  `566px`
                         document.body.classList.add("mn_opened")
                         document.body.style.marginLeft = "0px"
                         content.style.paddingLeft = "24px"
@@ -363,7 +363,7 @@ if(menuPoppup){
                     }
                     
                     if(main_pop){
-                        document.body.style.paddingLeft =  `470px`
+                        document.body.style.paddingLeft =  `466px`
                     }
                     
                 }
