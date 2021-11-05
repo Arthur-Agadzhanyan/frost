@@ -15,6 +15,8 @@
 @import "./header.scss";
 @import "./footer.scss";
 
+@import "./modals.scss";
+
 body{
     font-family: "Mont Blanc",sans-serif;
     margin: 0;
@@ -2471,6 +2473,8 @@ body{
 
 @import "./login/style.scss";
 
+
+
 // On menu open -------------------
 
 @import "./events/style.scss";
@@ -2784,3 +2788,5 @@ body{
         }
     }
 }
+
+

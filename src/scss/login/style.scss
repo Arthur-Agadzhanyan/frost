@@ -115,14 +115,26 @@
                         
                         /*Input focus sticky top label*/
                         .form__input:focus + .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
-                            top: 2px;
-                            left: 12px;
+                            top:8px;
+                            left: 16px;
                             font-size: 12px;
                             font-weight: 500;
                             z-index: 10;
 
                             @media screen and (max-width: 450px)  {
+                                top: 2px;
+                                left: 12px;
                                 font-size: 10px;
+                            }
+                        }
+
+                        .form__input:focus, .form__input:not(:placeholder-shown){
+                            padding-top: 29px;
+                            padding-bottom: 8px;
+
+                            @media screen and (max-width: 450px)  {
+                                padding-top: 18px;
+                                padding-bottom: 7px;
                             }
                         }
 
@@ -187,6 +199,8 @@
                                 }
                             }
                         }
+
+                        
                     }
                    
                     @media screen and (max-width: 600px) {

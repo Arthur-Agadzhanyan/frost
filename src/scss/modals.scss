@@ -1,0 +1,131 @@
+body{
+    background: #000;
+}
+
+.close{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+
+    cursor: pointer;
+
+    
+    @media screen and (max-width: 450px) {
+        top: 25px;
+        right: 25px;
+    }
+}
+
+// .modal_bell{
+//     @include modal()    
+// }
+
+.login_modal{
+    @include modal(800px);
+
+    transition: .2s linear;
+
+    .modal__container{
+        @include modalContainer(322px,0 auto);
+
+        @media screen and (max-width: 450px) {
+            @include modalContainer(191px, 0px auto)
+        }
+    }
+
+    .form__container{
+        @include modalContainer(322px, 22px auto);
+
+        @media screen and (max-width: 450px) {
+            @include modalContainer(256px, 0px auto);
+            margin-bottom: 0px;
+        }
+    }
+
+    .modal__content{
+        padding-top: 104px;
+        padding-bottom: 103px;
+
+        @media screen and (max-width: 450px) {
+            padding-top: 19px !important;
+            padding-bottom: 46px !important;
+        }
+
+        &__text{
+
+            @media screen and (max-width: 450px) {
+                @include text($grey_1,16px,600);
+                font-size: 12px;  
+                max-width: 266px;
+            }
+        }
+    }
+
+    &__text{
+        margin-top: 24px;
+    }
+
+
+    @media screen and (max-width: 450px) {
+        @include modal(300px);
+    }
+
+    &-second{
+        .modal__container{
+            @media screen and (max-width: 450px) {
+                max-width: 266px !important;
+                font-size: 16px;
+            }
+        }
+
+        .modal__content{
+
+            &__text{
+                max-width: 422px;
+                margin-bottom: 16px !important;
+
+                @media screen and (max-width: 450px) {
+                    @include text($grey_1,16px,400);
+                    font-size: 12px;  
+                    max-width: 256px;
+                    
+                }
+            }
+
+            @media screen and (max-width: 450px) {
+                padding-top: 56px !important;
+            }
+        }
+    }
+
+    &-reg{
+        .modal__container{
+            @media screen and (max-width: 450px) {
+                max-width: 266px !important;
+                font-size: 16px;
+            }
+        }
+
+        .modal__content{
+            .modal__container{
+                max-width: initial !important;
+            }
+
+            &__text{
+                max-width: 380px;
+                margin-bottom: 20px !important;
+
+                @media screen and (max-width: 450px) {
+                    @include text($grey_1,16px,400);
+                    font-size: 12px;  
+                    max-width: 273px;
+                    
+                }
+            }
+
+            @media screen and (max-width: 450px) {
+                padding-top: 56px !important;
+            }
+        }
+    }
+}

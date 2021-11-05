@@ -790,3 +790,178 @@
 
     }
 }
+
+// modals
+
+@mixin modal($width){
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1001;
+
+    display: none; // to flex
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    transition: all .2s linear;
+    opacity: 0;
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 200;
+        background: rgba(0,0,0,.4);
+    }
+
+    .modal__content{
+        position: relative;
+        z-index: 300;
+
+        max-width: $width;
+        padding: 73px 15px 60px 15px;
+        width: 100%;
+        background: #fff;
+
+        text-align: center;
+
+        &__title{
+            @include text($black,32px,600);
+            font-size: 24px;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 450px) {
+                @include text($black,21px,600);
+                font-size: 17px;  
+            }
+        }
+
+        &__text{
+            @include text($grey_1,19px,normal);
+
+            margin: 0 auto;
+        }
+
+        &__form{
+            margin-top: 23px;
+
+            .form__div{
+                position: relative;
+            }
+
+            .form__input{
+                padding: 18px 16px;
+                padding-top: 19px;
+                width: 100%;
+                font-size: 14px;
+                margin-bottom: 16px;
+                border: 1px solid $grey_2;
+                outline: none;
+                background: #fff;
+                color: $black;
+                transition: .2s linear;
+
+                @media screen and (max-width: 450px)  {
+                    padding: 14px 10px;
+                    padding-bottom: 6px;
+                }
+            }
+
+            .form__label{
+                position: absolute;
+                left: 17px;
+                top: 20px;
+                color: $grey_2;
+                font-size: 14px;
+                transition: .3s;
+
+                @media screen and (max-width: 450px)  {
+                    left: 12px;
+                    top: 14px;
+                }
+            }
+            
+            /*Input focus sticky top label*/
+            .form__input:focus + .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+                top: 8px;
+                left: 16px;
+                font-size: 12px;
+                font-weight: 500;
+                z-index: 10;
+
+                @media screen and (max-width: 450px)  {
+                    top: 2px;
+                    left: 12px;
+                    font-size: 10px;
+                }
+            }
+
+            .form__input:focus, .form__input:not(:placeholder-shown){
+                padding-top: 28px;
+                padding-bottom: 8px;
+
+                @media screen and (max-width: 450px)  {
+                    padding-top: 16px;
+                    padding-bottom: 5px;
+                }
+            }
+
+            @media screen and (max-width: 450px) {
+                margin-top: 16px;
+            }
+        }
+
+        .modal__btn{
+            max-width: 322px;
+            width: 100%;
+            padding: 11px 15px 10px 15px;
+            margin-top: 8px;
+
+            text-transform: uppercase;
+            background: $green;
+            border: 1px solid $green;
+
+            cursor: pointer;
+            
+            @include text(#fff,19px,600);
+            letter-spacing: 0.3em;
+
+            transition: .2s linear;
+
+            &:hover{
+                color: $green;
+                background: #fff;
+            }
+
+            @media screen and (max-width: 450px) {
+                margin-top: 0px;
+                font-size: 12px;
+                letter-spacing: 0.2em;
+            }
+        }
+
+        &__phone{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 31px;
+        }
+    }
+
+    // @media screen and (max-width: 450px) {
+    //     .overlay{
+    //         background: #fff;
+    //         user-select: none;
+    //     }
+    // }
+}
+
+@mixin modalContainer($width,$margin){
+    max-width: $width;
+    width: 100%;
+    margin: $margin;
+}

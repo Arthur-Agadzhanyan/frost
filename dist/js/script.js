@@ -277,10 +277,6 @@ const changeSlider = (slider, breakpoint)=>{
     console.log(typeof slider);
 }
 
-//login slider ----------------------
-// if(document.documentElement.clientWidth <= 1700){
-// }
-
 const loginPromotionsSlider = new Swiper(".login-promotions-slider",{
     slidesPerView: 2.5,
     autoHeight: true,
@@ -309,6 +305,62 @@ const loginPromotionsSlider = new Swiper(".login-promotions-slider",{
         }
     }
 })
+
+// modals-----------------------------------------------
+const changePassInput = document.getElementById("changePassInput")
+const openChangePassInput = document.getElementById("openChangePassInput")
+
+const changePassText = document.getElementById("changePassText")
+const openChangePassText = document.getElementById("openChangePassText")
+
+const closeModal = document.querySelectorAll(".close_modal")
+
+if(openChangePassInput && changePassInput){
+    openChangePassInput.onclick = (e)=>{
+        changePassInput.style.display = "flex"
+        document.body.style.overflow = "hidden"
+        setTimeout(()=>changePassInput.style.opacity = "1",50)
+    
+        return
+    }
+}
+
+if(openChangePassText && changePassText){
+    openChangePassText.onsubmit = (e)=>{
+        e.preventDefault()
+        if(changePassInput){
+            changePassInput.style.opacity = "0"
+            document.body.style.overflow = "auto"
+            setTimeout(()=>changePassInput.style.display = "none",300)
+        }
+
+        changePassText.style.display = "flex"
+        document.body.style.overflow = "hidden"
+        setTimeout(()=>changePassText.style.opacity = "1", 200)
+        return
+    }
+}
+
+
+if(closeModal){
+    closeModal.forEach(el=>{
+        el.addEventListener("click",()=>{
+            if(changePassInput){
+                changePassInput.style.opacity = "0"
+                document.body.style.overflow = "auto"
+                setTimeout(()=>changePassInput.style.display = "none",300)
+            }
+            
+            if(changePassText){
+                changePassText.style.opacity = "0"
+                document.body.style.overflow = "auto"
+                setTimeout(()=>changePassText.style.display = "none",300)
+            }
+
+            return
+        })
+    })
+}
 
 // Opening the menu
 
