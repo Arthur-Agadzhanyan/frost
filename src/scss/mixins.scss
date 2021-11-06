@@ -1044,7 +1044,15 @@
                 @include text(#fff,32px,600);
                 font-size: 24px;
                 margin-bottom: 24px;
-                
+                @media screen and (max-width: 450px) {
+                    @include text(#fff,28px,600);
+                    font-size: 20px; 
+                }
+                @media screen and (max-width: 350px) {
+                    @include text(#fff,24px,600);
+                    font-size: 18px; 
+                    margin-bottom: 16px;
+                }
             }
     
             .content__form {
@@ -1058,6 +1066,10 @@
                     position: relative;
                     flex: 0 1 48.5%;
                     margin-bottom: 24px;
+
+                    @media screen and (max-width: 450px) {
+                        margin-bottom: 16px;
+                    }
                 }
 
                 .form__btn{
@@ -1077,6 +1089,11 @@
                     &:hover{
                         background: $black;
                         color: $yellow;
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        padding: 11px 16px;
+                        margin-bottom: 16px;
                     }
                 }
 
@@ -1104,8 +1121,8 @@
                             position: relative;
 
                             display: block;
-                            width: 22px;
-                            height: 22px;
+                            min-width: 22px;
+                            min-height: 22px;
                             border-radius: 4px;
                             background: white;
                             transition: .1s linear;
@@ -1137,15 +1154,25 @@
 
                         .check__text{
                             margin-left: 8px;
-                            @include text(#fff, 19px, 600);
+                            @include text(#fff, 12px, 600);
                             font-size: 12px;
                             transition: .1s linear;
                         }
                     }
+                    @media screen and (max-width: 650px) {
+                        margin-left: 0;
+                    }
                 }
+
+                @media screen and (max-width: 650px) {
+                    flex-direction: column;
+                }
+
             }
         }
         
-
+        @media screen and (max-width: 350px) {
+            padding: 24px 16px;
+        }
     }
 }
