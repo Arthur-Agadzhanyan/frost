@@ -2461,11 +2461,11 @@ body{
     }
 }
 
-// Catalog Page -----------------------------------
+// Catalog Page
 
 @import "./catalog/style.scss";
 
-// Product Page ------------------------
+// Product Page
 
 @import "./product/style.scss";
 
@@ -2474,14 +2474,15 @@ body{
 @import "./login/style.scss";
 
 // Detail event page
-
 @import "./event_details/style.scss";
 
-// On menu open -------------------
-
+// All events page
 @import "./events/style.scss";
 
+// How order page
+@import "./how_order/style.scss";
 
+// On menu open -------------------
 .mn_opened{
     .intro{
         justify-content: space-between;
