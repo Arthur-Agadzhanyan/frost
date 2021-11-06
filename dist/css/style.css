@@ -5850,6 +5850,83 @@ body {
   margin-top: 0;
 }
 
+.how_order_page {
+  padding-top: 40px;
+  min-height: 50vh;
+}
+
+.how_order_page .page__content {
+  max-width: 810px;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+.how_order_page .page__content .content__title {
+  margin: 0;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  color: #2F2F2F;
+  font-size: 24px;
+  margin-bottom: 13px;
+  text-align: center;
+}
+
+.how_order_page .page__content .content__list {
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.how_order_page .page__content .content__list .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 46%;
+          flex: 0 1 46%;
+  margin-bottom: 56px;
+}
+
+.how_order_page .page__content .content__list .list__item .item__number {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  color: #2F2F2F;
+  font-size: 19px;
+  padding: 12px 0px;
+  background: #FFC709;
+  text-align: center;
+  min-width: 47px;
+  min-height: 47px;
+  margin-right: 17px;
+}
+
+.how_order_page .page__content .content__list .list__item .item__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #585c60;
+}
+
 .mn_opened .intro {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -7638,6 +7715,10 @@ body {
     margin-right: auto;
     margin-left: 18px;
   }
+
+  .how_order_page {
+    padding-right: 24px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -7914,6 +7995,14 @@ body {
 
   .advantages {
     padding: 75px 54px;
+  }
+
+  .how_order_page .page__content .content__list {
+    margin-top: 30px;
+  }
+
+  .how_order_page {
+    padding-bottom: 0px;
   }
 }
 
@@ -8259,6 +8348,16 @@ body {
   }
 
   .event_details_page .detail_event__block .block__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #2F2F2F;
+    font-size: 22px;
+  }
+
+  .how_order_page .page__content .content__title {
     font-family: "Mont Blanc",sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -8806,6 +8905,22 @@ body {
 
   .events_page .catalog__list .list__item:last-child {
     margin-right: 0;
+    margin-left: 0;
+  }
+
+  .how_order_page .page__content .content__title {
+    text-align: left;
+  }
+
+  .how_order_page .page__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 24px;
+  }
+
+  .how_order_page .page__content {
+    max-width: 450px;
     margin-left: 0;
   }
 }
@@ -9414,6 +9529,10 @@ body {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+
+  .how_order_page {
+    padding-right: 16px;
   }
 }
 
@@ -10105,6 +10224,20 @@ body {
     padding: 11px 16px;
     margin-bottom: 16px;
   }
+
+  .how_order_page .page__content .content__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2F2F2F;
+    font-size: 18px;
+  }
+
+  .how_order_page .page__content .content__list {
+    margin-top: 12px;
+  }
 }
 
 @media screen and (max-width: 450px) and (max-width: 450px) {
@@ -10747,6 +10880,20 @@ body {
   .events_page .catalog__list .list__item .item__info .info__title {
     font-size: 12px;
   }
+
+  .how_order_page .page__content .content__list .list__item .item__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #585c60;
+    font-size: 12px;
+  }
+
+  .how_order_page .page__content .content__list .list__item {
+    margin-bottom: 12px;
+  }
 }
 
 @media screen and (max-width: 400px) and (max-width: 600px) {
@@ -10951,6 +11098,16 @@ body {
 
   .events_page .catalog__list .item__img {
     margin-bottom: 12px;
+  }
+
+  .how_order_page .page__content .content__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2F2F2F;
+    font-size: 14px;
   }
 }
 

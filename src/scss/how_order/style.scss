@@ -1,0 +1,110 @@
+.how_order_page{
+    padding-top: 40px;
+    min-height: 50vh;
+
+    .page__content{
+        max-width: 810px;
+        margin: 0 auto;
+        margin-top: 14px;
+
+        .content__title{
+            margin: 0;
+            @include text($black,32px,600);
+            font-size: 24px;
+            margin-bottom: 13px;
+
+            text-align: center;
+
+            @media screen and (max-width: 700px){
+                @include text($black,26px,600);
+                font-size: 22px;
+            }
+
+            @media screen and (max-width: 600px){
+                text-align: left;
+            }
+
+            @media screen and (max-width: 450px) {
+                @include text($black,22px,600);
+                font-size: 18px;
+            }
+            @media screen and (max-width: 350px) {
+                @include text($black,19px,600);
+                font-size: 14px;
+                
+            }
+        }
+
+        .content__list{
+            margin-top: 65px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .list__item{
+                display: flex;
+                align-items: center;
+
+                flex: 0 1 46%;
+                margin-bottom: 56px;
+
+                .item__number{
+                    @include text($black,23px,600);
+                    font-size: 19px;
+                    padding: 12px 0px;
+                    background: $yellow;
+
+                    text-align: center;
+
+                    min-width: 47px;
+                    min-height: 47px;
+                    margin-right: 17px;
+                }
+
+                .item__text{
+                    @include text($grey_1,19px,normal);
+
+                    @media screen and (max-width: 400px) {
+                        @include text($grey_1,16px,normal);
+                        font-size: 12px;
+                    }
+                }
+
+                @media screen and (max-width: 600px ){
+                    flex: 0 1 100%;  
+                    margin-bottom: 24px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    margin-bottom: 12px;
+                }
+            }
+
+            @media screen and (max-width: 800px ){
+                margin-top: 30px;
+            }
+
+            @media screen and (max-width: 450px) {
+                margin-top: 12px;
+            }
+        }
+
+        @media screen and (max-width: 600px){
+            max-width: 450px;
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        padding-right: 24px;
+    }
+    @media screen and (max-width: 800px) {
+        padding-bottom: 0px;
+    }
+    @media screen and (max-width: 500px) {
+        padding-right: 16px;
+    }
+
+}
