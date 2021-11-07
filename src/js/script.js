@@ -219,12 +219,11 @@ const bigProductSlider = new Swiper(".big-product-slider",{
     }
 })
 
-
 smallProductSlider.on('slideChangeTransitionEnd', function() {
     let index_currentSlide = smallProductSlider.realIndex + 1;
     let currentSlide = smallProductSlider.slides[index_currentSlide]
     bigProductSlider.slideTo(index_currentSlide, 1000, false);
-  });
+});
   
 bigProductSlider.on('slideChangeTransitionEnd', function() {
     let index_currentSlide = bigProductSlider.realIndex + 4;
@@ -458,6 +457,7 @@ if(mobileFilterCatalogPoppup){
 let lastScroll = 0;
 const defaultOffset = 250;
 const categoryPoppupTrigger = document.querySelector('.categoryPoppupTrigger');
+const scrollTopBtn = document.getElementById("scroll_top_btn")
 
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
 const containHide = () => categoryPoppupTrigger.classList.contains('hide-category-trigger');
@@ -475,4 +475,15 @@ window.addEventListener('scroll', () => {
 
         lastScroll = scrollPosition();
    }
+   if(scrollTopBtn){
+       if(window.scrollY > 700){
+            scrollTopBtn.classList.remove("scroll_top_btn-hide")
+       }else{
+        scrollTopBtn.classList.add("scroll_top_btn-hide")
+       }
+   }
+})
+
+scrollTopBtn.addEventListener('click',()=>{
+    window.scrollTo(0,0)
 })
