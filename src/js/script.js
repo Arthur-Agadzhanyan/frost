@@ -335,18 +335,30 @@ if(menuPoppup){
         btn.addEventListener("click",()=>{
             if(document.documentElement.clientWidth > 1100){
                 if(menuOpened){
-                    document.body.style.paddingLeft = "0px"
-                    document.body.style.marginLeft = "96px"
-                    document.body.classList.remove("mn_opened") 
-        
-                    content.style.paddingLeft = "64px"
-                    menuPoppup.style.left = "-100%"
-                    menuOpened = false
-                    return
+                    if(document.documentElement.clientWidth <= 1500){
+                        document.body.style.paddingLeft = "0px"
+                        document.body.style.marginLeft = "96px"
+                        document.body.classList.remove("mn_opened") 
+            
+                        content.style.paddingLeft = "24px"
+                        menuPoppup.style.left = "-100%"
+                        menuOpened = false
+                        return
+                    }else{
+                        document.body.style.paddingLeft = "0px"
+                        document.body.style.marginLeft = "96px"
+                        document.body.classList.remove("mn_opened") 
+            
+                        content.style.paddingLeft = "64px"
+                        menuPoppup.style.left = "-100%"
+                        menuOpened = false
+                        return
+                    }
                 } 
                 else{
                     if(document.documentElement.clientWidth <= 1500){
-                        document.body.style.paddingLeft =  `466px`
+                        console.log("aaa");
+                        document.body.style.paddingLeft = `466px`
                         document.body.classList.add("mn_opened")
                         document.body.style.marginLeft = "0px"
                         content.style.paddingLeft = "24px"
@@ -360,11 +372,10 @@ if(menuPoppup){
                         menuPoppup.style.left = "0"
                         menuOpened = true
                     }
-                    
+
                     if(main_pop){
                         document.body.style.paddingLeft =  `466px`
                     }
-                    
                 }
             }else{
                 if(document.documentElement.clientWidth <= 1100 && document.documentElement.clientWidth > 600){
@@ -410,7 +421,6 @@ if(menuPoppup){
         })
     })
 }
-
 
 const filterGridBtn = document.getElementById("filter__grid_btn");
 const filterListBtn = document.getElementById("filter__list_btn");
