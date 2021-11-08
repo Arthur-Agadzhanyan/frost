@@ -6310,6 +6310,82 @@ input:focus .search_page__mb_search {
   stroke: #008385;
 }
 
+.page_404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding-left: 0px !important;
+  padding-right: 24px;
+}
+
+.no-webp .page_404 .page__container {
+  background: url("../img/404_page/cart.png") center no-repeat; }
+
+.page_404 .page__container {
+  max-width: 1443px;
+  width: 100%;
+  text-align: center;
+  min-height: 455px;
+}
+
+.page_404 .page__container .page__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  color: #2F2F2F;
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+.page_404 .page__container .page__status {
+  margin: 0;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 224px;
+  color: #585c60;
+  font-size: 200px;
+  margin-bottom: 50px;
+}
+
+.page_404 .page__container .page__link {
+  padding: 18px 40px;
+  padding-top: 19px;
+  background: #008385;
+  border: 1px solid #008385;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.3em;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.page_404 .page__container .page__link:hover {
+  color: #008385;
+  background: transparent;
+}
+
+.page_404 .page_img {
+  display: none;
+}
+
 .mn_opened .intro {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -8048,6 +8124,10 @@ input:focus .search_page__mb_search {
   .product_page {
     padding-right: 24px;
   }
+
+  .page_404 {
+    padding-right: 0px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -9489,6 +9569,50 @@ input:focus .search_page__mb_search {
     padding-left: 16px !important;
     padding-right: 16px;
   }
+
+  .page_404 .page__container .page__status {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 174px;
+    color: #585c60;
+    font-size: 150px;
+  }
+
+  .page_404 .page__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: none !important;
+    background: none;
+  }
+
+  .page_404 {
+    position: relative;
+    margin-top: 15px;
+  }
+
+  .page_404 .page_img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -7px;
+    z-index: -1;
+    width: 100vw;
+    max-height: 100%;
+    margin-left: -4px;
+  }
 }
 
 @media screen and (max-width: 600px) and (max-width: 600px) {
@@ -10199,6 +10323,10 @@ input:focus .search_page__mb_search {
     display: -ms-flexbox;
     display: flex;
   }
+
+  .page_404 {
+    min-height: 70vh;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -10903,6 +11031,45 @@ input:focus .search_page__mb_search {
   .how_order_page .page__content .content__list {
     margin-top: 12px;
   }
+
+  .page_404 .page__container .page__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    color: #2F2F2F;
+    font-size: 20px;
+  }
+
+  .page_404 .page__container .page__status {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 144px;
+    color: #585c60;
+    font-size: 120px;
+    margin-bottom: 20px;
+  }
+
+  .page_404 .page__container .page__link {
+    padding: 12px 70px;
+  }
+
+  .page_404 .page__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .page_404 {
+    min-height: 70vh;
+  }
+
+  .page_404 .page_img {
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: 450px) and (max-width: 450px) {
@@ -11605,6 +11772,37 @@ input:focus .search_page__mb_search {
   .search_page .page__section .catalog__list .event__item .item__info .info__title {
     font-size: 12px;
   }
+
+  .page_404 .page__container .page__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2F2F2F;
+    font-size: 18px;
+  }
+
+  .page_404 .page__container .page__status {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 115px;
+    color: #585c60;
+    font-size: 94px;
+    margin-bottom: 20px;
+  }
+
+  .page_404 .page__container .page__link {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 400px) and (max-width: 600px) {
@@ -11877,3 +12075,5 @@ input:focus .search_page__mb_search {
     max-height: 265px;
   }
 }
+
+.webp .page_404 .page__container { background: url(../img/404_page/cart.webp) center no-repeat; }

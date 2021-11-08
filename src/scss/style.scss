@@ -2541,6 +2541,9 @@ body{
 // Search page
 @import "./search_page/style.scss";
 
+// 404 page
+@import "./404_page/style.scss";
+
 // On menu open -------------------
 .mn_opened{
     .intro{
