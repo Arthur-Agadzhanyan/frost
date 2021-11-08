@@ -561,6 +561,26 @@ template {
   width: 100%;
 }
 
+.header .navigation .navigation__icons .icon__cart {
+  position: relative;
+}
+
+.header .navigation .navigation__icons .icon__cart span {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 13px;
+  color: #fff;
+  font-size: 10px;
+  background: #EF3541;
+  padding: 1.5px 5px;
+  border-radius: 100%;
+}
+
 .header .navigation .navigation__icons .icons__item {
   cursor: pointer;
   margin-bottom: 18px;
@@ -673,6 +693,26 @@ template {
   width: 32px;
   height: 32px;
   margin-left: 16px;
+}
+
+.mb__navigation .icon__cart {
+  position: relative;
+}
+
+.mb__navigation .icon__cart span {
+  position: absolute;
+  top: 0px;
+  right: -1px;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 13px;
+  color: #fff;
+  font-size: 10px;
+  background: #EF3541;
+  padding: 1.5px 5px;
+  border-radius: 100%;
 }
 
 .mb__navigation .icon_cart {
@@ -8551,6 +8591,26 @@ input:focus .search_page__mb_search {
   .mb__navigation .icons__item {
     width: 24px;
     height: 24px;
+  }
+
+  .mb__navigation .icon__cart {
+    position: relative;
+  }
+
+  .mb__navigation .icon__cart span {
+    position: absolute;
+    top: -2px;
+    right: -4px;
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 13px;
+    color: #fff;
+    font-size: 10px;
+    background: #EF3541;
+    padding: 1.5px 5px;
+    border-radius: 100%;
   }
 
   .mb__navigation .icon_cart {

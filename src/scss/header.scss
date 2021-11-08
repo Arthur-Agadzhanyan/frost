@@ -23,6 +23,22 @@
             align-items: center;
             flex-direction: column;
             width: 100%;
+
+            .icon__cart{
+                position: relative;
+                span{
+                    position: absolute;
+                    top:-1px;
+                    right: -2px;
+
+                    @include text(#fff,13px,600);
+                    font-size: 10px;
+                    background: $red;
+                    padding: 1.5px 5px;
+
+                    border-radius: 100%;
+                }
+            }
             
             .icons__item{
                 cursor: pointer;
@@ -132,6 +148,22 @@
         margin-left: 16px;
     }
 
+    .icon__cart{
+        position: relative;
+        span{
+            position: absolute;
+            top:0px;
+            right: -1px;
+
+            @include text(#fff,13px,600);
+            font-size: 10px;
+            background: $red;
+            padding: 1.5px 5px;
+
+            border-radius: 100%;
+        }
+    }
+
     .icon_cart{
         width: 34px;
         height: 34px;
@@ -158,10 +190,28 @@
                 height: 26px;
             }
         }
+        
         .icons__item{
             width: 24px;
             height: 24px;
         }
+
+        .icon__cart{
+            position: relative;
+            span{
+                position: absolute;
+                top: -2px;
+                right: -4px;
+    
+                @include text(#fff,13px,600);
+                font-size: 10px;
+                background: $red;
+                padding: 1.5px 5px;
+    
+                border-radius: 100%;
+            }
+        }
+
         .icon_cart{
             width: 26px;
             height: 26px;
