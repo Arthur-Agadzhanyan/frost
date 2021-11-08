@@ -6386,6 +6386,130 @@ input:focus .search_page__mb_search {
   display: none;
 }
 
+.loyalty_page {
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+.loyalty_page .detail_event__block {
+  max-width: 840px;
+  margin: 0 auto;
+  margin-top: 16px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.loyalty_page .detail_event__block .block__title {
+  margin: 0;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  color: #2F2F2F;
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+
+.loyalty_page .detail_event__block .block__image {
+  margin-top: 19px;
+  text-align: left;
+  margin-bottom: 54px;
+}
+
+.loyalty_page .detail_event__block .block__image img {
+  width: 100%;
+}
+
+.loyalty_page .detail_event__block .block__text {
+  text-align: left;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #585c60;
+  margin-bottom: 25px;
+}
+
+.loyalty_page .detail_event__block .block__text p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.shipping_and_payment_page {
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.shipping_and_payment_page .page__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  color: #2F2F2F;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+.shipping_and_payment_page .page__line {
+  border: 0;
+  border-top: 1px solid rgba(55, 56, 57, 0.1);
+  margin-bottom: 23px;
+}
+
+.shipping_and_payment_page .payment__block {
+  max-width: 700px;
+  width: 100%;
+  margin-left: 147px;
+  padding-right: 16px;
+}
+
+.shipping_and_payment_page .payment__block .block__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2F2F2F;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.shipping_and_payment_page .payment__block .block__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #585c60;
+  margin-bottom: 18px;
+}
+
+.shipping_and_payment_page .payment__block .block__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.shipping_and_payment_page .payment__block .block__images .images__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31%;
+          flex: 0 1 31%;
+}
+
+.shipping_and_payment_page .payment__block .block__images .images__item img {
+  width: 100%;
+}
+
 .mn_opened .intro {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -8252,6 +8376,10 @@ input:focus .search_page__mb_search {
     color: #585C60;
     font-size: 14px;
   }
+
+  .loyalty_page {
+    padding-right: 24px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -8920,6 +9048,16 @@ input:focus .search_page__mb_search {
   }
 
   .how_order_page .page__content .content__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #2F2F2F;
+    font-size: 22px;
+  }
+
+  .loyalty_page .detail_event__block .block__title {
     font-family: "Mont Blanc",sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -9778,6 +9916,45 @@ input:focus .search_page__mb_search {
   .event_details_page {
     padding-bottom: 0px;
   }
+
+  .loyalty_page .detail_event__block {
+    text-align: left;
+  }
+
+  .loyalty_page .detail_event__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .loyalty_page .detail_event__block .block__title {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 12px;
+  }
+
+  .loyalty_page .detail_event__block .block__image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 16px;
+    margin-top: 0 !important;
+  }
+
+  .loyalty_page .detail_event__block .block__text {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .loyalty_page {
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -10326,6 +10503,28 @@ input:focus .search_page__mb_search {
 
   .page_404 {
     min-height: 70vh;
+  }
+
+  .loyalty_page {
+    padding-right: 16px;
+  }
+
+  .shipping_and_payment_page .page__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2F2F2F;
+    font-size: 16px;
+  }
+
+  .shipping_and_payment_page .payment__block .block__title {
+    font-size: 14px;
+  }
+
+  .shipping_and_payment_page .payment__block .block__text {
+    font-size: 12px;
   }
 }
 
@@ -11070,6 +11269,31 @@ input:focus .search_page__mb_search {
   .page_404 .page_img {
     height: 100vh;
   }
+
+  .loyalty_page .detail_event__block .block__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2F2F2F;
+    font-size: 18px;
+  }
+
+  .loyalty_page .detail_event__block .block__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #585c60;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .loyalty_page .detail_event__block .block__text p:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (max-width: 450px) and (max-width: 450px) {
@@ -11803,6 +12027,10 @@ input:focus .search_page__mb_search {
     color: #fff;
     font-size: 12px;
   }
+
+  .loyalty_page .detail_event__block .block__image {
+    margin-bottom: 12px;
+  }
 }
 
 @media screen and (max-width: 400px) and (max-width: 600px) {
@@ -12022,6 +12250,21 @@ input:focus .search_page__mb_search {
   .search_page .page__section .events__list .event__item,
   .search_page .page__section .catalog__list .event__item {
     margin-bottom: 12px;
+  }
+
+  .loyalty_page .detail_event__block .block__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2F2F2F;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .loyalty_page .detail_event__block .block__image {
+    margin-top: 12px;
   }
 }
 

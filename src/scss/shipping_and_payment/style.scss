@@ -1,0 +1,63 @@
+.shipping_and_payment_page{
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+
+    .page__title{
+        @include text($black,32px,600);
+        font-size: 24px;
+        margin: 0;
+        margin-top: 16px;
+        margin-bottom: 18px;
+    
+        @media screen and (max-width: 500px) {
+            @include text($black,20px,600);
+            font-size: 16px;
+        }
+    }
+
+    .page__line{
+        border: 0;
+        border-top: 1px solid rgba(55, 56, 57, .1);
+        margin-bottom: 23px;
+    }
+    
+    .payment__block{
+        max-width: 700px;
+        width: 100%;
+        margin-left: 147px;
+        padding-right: 16px;
+
+        .block__title{
+            @include text($black,24px,700);
+            font-size: 18px;
+            margin-bottom: 6px;
+
+            @media screen and (max-width: 500px) {
+                font-size: 14px;
+            }
+        }
+
+        .block__text{
+            @include text($grey_1,19px,normal);
+            margin-bottom: 18px;
+    
+            @media screen and (max-width: 500px) {
+                font-size: 12px;
+            }
+        }
+
+        .block__images{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-bottom: 45px;
+            .images__item{
+                flex: 0 1 31%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
