@@ -1,6 +1,6 @@
 .shipping_and_payment_page{
     padding-top: 40px;
-    padding-left: 0;
+    padding-left: 0 !important;
     padding-right: 0;
 
     .page__title{
@@ -20,6 +20,10 @@
         border: 0;
         border-top: 1px solid rgba(55, 56, 57, .1);
         margin-bottom: 23px;
+        
+        @media screen and (max-width: 500px) {
+            margin-bottom: 8px;
+        }
     }
     
     .payment__block{
@@ -28,12 +32,15 @@
         margin-left: 147px;
         padding-right: 16px;
 
+        transition: .3s linear;
+
         .block__title{
             @include text($black,24px,700);
             font-size: 18px;
             margin-bottom: 6px;
 
             @media screen and (max-width: 500px) {
+                @include text($black, 17px,700);
                 font-size: 14px;
             }
         }
@@ -43,7 +50,9 @@
             margin-bottom: 18px;
     
             @media screen and (max-width: 500px) {
+                @include text($grey_1,16px,normal);
                 font-size: 12px;
+                margin-bottom: 10px;
             }
         }
 
@@ -58,6 +67,248 @@
                     width: 100%;
                 }
             }
+            @media screen and (max-width: 500px) {
+                margin: 22px 0px;
+            }
+        }
+
+        .block__city_list{
+            margin-top: 27px;
+            
+            .list__item{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $grey_4;
+                padding-bottom: 7px;
+                margin-top: 13px;
+
+                .item__name {
+                    @include text($black,19px,normal);
+
+                    @media screen and (max-width: 500px) {
+                        @include text($black,16px,normal);
+                        font-size: 12px;
+
+                        p{
+                            display: inline;
+                        }
+                    }
+                }
+
+                .item__days {
+                    max-width: 250px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .days__item{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        flex: 0 1 19%;
+                        background: $grey_3;
+                        margin-left: 4px;
+                        text-transform: uppercase;
+                        padding: 1px 6px;
+                        padding-bottom: 2px;
+                        border-radius: 3px;
+
+                        @include text($grey_3,16px,normal);
+                        font-size: 12px;
+
+                        &-red{
+                            color: #fff;
+                            background: $red;
+                        }
+
+                        &-yellow{
+                            color: #fff;
+                            background: #F09E00;
+                        }
+
+                        &-green{
+                            color: #fff;
+                            background: $green;
+                        }
+
+                        &-blue{
+                            color: #fff;
+                            background: #0089B5;
+                        }
+
+                        &-pink{
+                            color: #fff;
+                            background: #D807B6;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 650px){
+                    flex-direction: column;
+
+                    .item__days {
+                        max-width: initial;
+                        margin-top: 9px;
+
+                        .days__item{
+                            justify-content: initial;
+                            flex: 0 1 18%;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                margin-top: 0px;
+            }
+        }
+
+        .block__order_collection{
+            margin: 22px 0px;
+           p{
+                @include text($grey_1,16px,600);
+                font-size: 12px;
+        
+                @media screen and (max-width: 500px) {
+                    
+                    margin-bottom: 10px;
+                } 
+           }
+
+           .red{
+                color: $red;
+           }
+        }
+    }
+
+    .mobile__links{
+        display: none;
+        margin-bottom: 10px;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            width: 1px;
+            height: 0;
+        }
+    
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .links__item{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+            margin-right: 12px;
+            
+
+            span{
+                margin-left: 7px;
+                white-space: nowrap;
+
+                @include text($grey_2,19px,bold)
+            }
+
+            @media screen and (max-width: 400px) {
+                span{
+                    @include text($grey_2,16px,bold);
+                    font-size: 12px;
+                }
+            }
+
+            &-active{
+                pointer-events: none;
+                path{
+                    fill: $green;
+                }
+
+                span{
+                    color: $green !important;
+                }
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            display: flex;
+            align-items: center;
+            padding-left: 16px;
+        }
+
+        @media screen and (max-width: 400px) {
+            display: flex;
+            padding-right: 8px;
+        }
+    }
+
+    
+
+    @media screen and (max-width: 1100px){
+        .payment__block{
+            padding-left: 44px !important;
+            padding-right: 44px !important;
+            margin-left: 0;
+        }
+    }
+    @media screen and (max-width: 700px){
+        padding-right: 0px !important;
+        .payment__block{
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        .payment__block{
+            padding-left: 16px !important;
+            padding-right: 16px !important;
+        }
+    }
+}
+
+.delivery{
+    .payment__block{
+
+        .block__title{
+            margin-bottom: 16px;
+            @media screen and (max-width: 500px) {
+                @include text($black, 17px,700);
+                margin-bottom: 12px;
+                font-size: 14px;
+            }
+            @media screen and (max-width: 400px) {
+                @include text($black, 16px,700);
+                font-size: 12px; 
+            }
+        }
+        .block__text{
+            @media screen and (max-width: 500px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+.rights{
+    .payment__block{
+        .block__title{
+            margin-bottom: 12px;
+        }
+
+        .block__contacts{
+            margin-top: 4px;
+            max-width: 460px;
+        }
+    } 
+}
+
+.mn_opened{
+    .shipping_and_payment_page{
+        
+        .payment__block{
+            padding-left: 22px !important;
+            margin-left: 0;
         }
     }
 }
