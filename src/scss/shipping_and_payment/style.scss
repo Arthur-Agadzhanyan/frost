@@ -1,7 +1,7 @@
 .shipping_and_payment_page{
     padding-top: 40px;
     padding-left: 0 !important;
-    padding-right: 0;
+    padding-right: 0 !important;
 
     .page__title{
         @include text($black,32px,600);
@@ -230,10 +230,9 @@
             }
         }
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 600px) {
             display: flex;
             align-items: center;
-            padding-left: 16px;
         }
 
         @media screen and (max-width: 400px) {
@@ -241,8 +240,6 @@
             padding-right: 8px;
         }
     }
-
-    
 
     @media screen and (max-width: 1100px){
         .payment__block{
@@ -257,12 +254,19 @@
             padding-left: 24px !important;
             padding-right: 24px !important;
         }
+
+        .mobile__links{
+            padding-left: 24px;
+        }
     }
 
     @media screen and (max-width: 500px){
         .payment__block{
             padding-left: 16px !important;
             padding-right: 16px !important;
+        }
+        .mobile__links{
+            padding-left: 17px;
         }
     }
 }

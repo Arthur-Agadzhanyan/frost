@@ -1202,6 +1202,10 @@ body {
   border-radius: 5px;
 }
 
+.menu_poppup-p0 {
+  padding: 0 !important;
+}
+
 .menu_poppup .mb_menu_poppup_trigger {
   position: absolute;
   top: -1px;
@@ -1711,6 +1715,46 @@ body {
           animation-duration: .3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.menu_poppup .shipping_and_payment {
+  margin-top: 124px;
+  border-top: 1px solid #373839;
+  padding: 24px 28px;
+}
+
+.menu_poppup .shipping_and_payment .shipping_and_payment__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  margin-bottom: 46px;
+}
+
+.menu_poppup .shipping_and_payment .shipping_and_payment__item span {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 13px;
+}
+
+.menu_poppup .shipping_and_payment .shipping_and_payment__item-active {
+  pointer-events: none;
+}
+
+.menu_poppup .shipping_and_payment .shipping_and_payment__item-active span {
+  color: #008385 !important;
+}
+
+.menu_poppup .shipping_and_payment .shipping_and_payment__item-active path {
+  fill: #008385;
 }
 
 .filter_poppup {
@@ -6388,7 +6432,7 @@ input:focus .search_page__mb_search {
 
 .loyalty_page {
   padding-top: 40px;
-  padding-bottom: 0px;
+  padding-bottom: 30px;
 }
 
 .loyalty_page .detail_event__block {
@@ -6439,7 +6483,7 @@ input:focus .search_page__mb_search {
 .shipping_and_payment_page {
   padding-top: 40px;
   padding-left: 0 !important;
-  padding-right: 0;
+  padding-right: 0 !important;
 }
 
 .shipping_and_payment_page .page__title {
@@ -9249,6 +9293,10 @@ input:focus .search_page__mb_search {
     font-size: 22px;
   }
 
+  .loyalty_page {
+    padding-bottom: 0px;
+  }
+
   .shipping_and_payment_page {
     padding-right: 0px !important;
   }
@@ -9256,6 +9304,10 @@ input:focus .search_page__mb_search {
   .shipping_and_payment_page .payment__block {
     padding-left: 24px !important;
     padding-right: 24px !important;
+  }
+
+  .shipping_and_payment_page .mobile__links {
+    padding-left: 24px;
   }
 }
 
@@ -9964,6 +10016,15 @@ input:focus .search_page__mb_search {
     max-height: 100%;
     margin-left: -4px;
   }
+
+  .shipping_and_payment_page .mobile__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 600px) and (max-width: 600px) {
@@ -10163,10 +10224,6 @@ input:focus .search_page__mb_search {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-  }
-
-  .loyalty_page {
-    padding-bottom: 0px;
   }
 }
 
@@ -10783,19 +10840,13 @@ input:focus .search_page__mb_search {
     margin-bottom: 10px;
   }
 
-  .shipping_and_payment_page .mobile__links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 16px;
-  }
-
   .shipping_and_payment_page .payment__block {
     padding-left: 16px !important;
     padding-right: 16px !important;
+  }
+
+  .shipping_and_payment_page .mobile__links {
+    padding-left: 17px;
   }
 
   .delivery .payment__block .block__title {
