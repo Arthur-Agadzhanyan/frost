@@ -13,62 +13,6 @@
 <body>
     @@include('_header.html')
 
-    <div id="menu_poppup" class="menu_poppup menu_poppup-p0">
-        <div class="contacts">
-            <div class="contacts__buttons">
-                <a href="/contacts.html" class="buttons__item buttons__item-active">
-                    <button class="item__button">СТАВРОПОЛЬ</button>
-                </a>
-                
-                <a href="/contacts-essent.html" class="buttons__item">
-                    <button class="item__button">ЕССЕНТУКИ</button>
-                </a>
-            </div>
-
-            <div class="contacts__info">
-
-                <div class="info__block">
-                    <h2 class="block__title">Адрес:</h2>
-                    <p class="block__text">г. Ставрополь, ул. </p>
-                    <p class="block__text">Заводская, д.11</p>
-                </div>
-
-                <div class="info__block">
-                    <h2 class="block__title">Режим работы:</h2>
-                    <p class="block__text"> Понедельник-суббота: </p>
-                    <p class="block__text"> с 9:00-18:00 </p>
-                    <p class="block__text"> Воскресенье-выходной </p>
-                </div>
-
-                <div class="info__block">
-                    <h2 class="block__title">Телефон:</h2>
-                    <p class="block__text">8-800-700-2019</p>
-                </div>
-
-                <div class="info__block">
-                    <h2 class="block__title">Эл. почта:</h2>
-                    <p class="block__text">info@frost26..beget.tech</p>
-                </div>
-
-                <div class="info__block social__links">
-                    <!-- Instagram -->
-                    <a href="#" class="links__item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.80863 2 5.71294 3.05041 4.26718C3.38964 3.80026 3.80026 3.38964 4.26718 3.05041C5.71294 2 7.80863 2 12 2C16.1914 2 18.2871 2 19.7328 3.05041C20.1997 3.38964 20.6104 3.80026 20.9496 4.26718C22 5.71294 22 7.80863 22 12C22 16.1914 22 18.2871 20.9496 19.7328C20.6104 20.1997 20.1997 20.6104 19.7328 20.9496C18.2871 22 16.1914 22 12 22C7.80863 22 5.71294 22 4.26718 20.9496C3.80026 20.6104 3.38964 20.1997 3.05041 19.7328C2 18.2871 2 16.1914 2 12ZM12 6.70588C9.07632 6.70588 6.70588 9.07632 6.70588 12C6.70588 14.9237 9.07632 17.2941 12 17.2941C14.9237 17.2941 17.2941 14.9237 17.2941 12C17.2941 9.07632 14.9237 6.70588 12 6.70588ZM12 15.3088C10.1762 15.3088 8.69118 13.8238 8.69118 12C8.69118 10.1749 10.1762 8.69118 12 8.69118C13.8238 8.69118 15.3088 10.1749 15.3088 12C15.3088 13.8238 13.8238 15.3088 12 15.3088ZM18.3966 6.30883C18.3966 6.69844 18.0808 7.01427 17.6912 7.01427C17.3016 7.01427 16.9857 6.69844 16.9857 6.30883C16.9857 5.91923 17.3016 5.60339 17.6912 5.60339C18.0808 5.60339 18.3966 5.91923 18.3966 6.30883Z" fill="white"/>
-                        </svg>
-                    </a>
-
-                    <!-- Facebook -->
-                    <a href="#" class="links__item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77727 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="white"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="menu_poppup" class="menu_poppup mobile_poppup">
         <ul class="all__catalog">
             <a class="catalog__link" href="/catalog.html">
@@ -653,115 +597,188 @@
         </ul>
     </div>
 
-    <main class="content shipping_and_payment_page contacts_page">
-        <div class="payment__block">
-            <div class="breadcrumbs">
-                <a href="/">Главная</a>
-                <a href="/contacts.html" class="active">Контакты</a>    
-            </div> 
+    <main class="content cart_page">
+        <div class="breadcrumbs">
+            <a href="/">Главная</a>
+            <a href="/loyalty.html" class="active">Корзина</a>    
+        </div>
 
-            <h1 class="page__title">Контакты</h1>
+        <div class="cart__content">
+            <h1 class="page__title">Корзина</h1>
+            <div class="content__blocks">
+                <div class="blocks__list">
 
-            <div class="mobile__block">
-                <div class="mobile__block__buttons">
-                    <a href="/contacts.html" class="buttons__item buttons__item-active">
-                        <button class="item__button">СТАВРОПОЛЬ</button>
-                    </a>
-                    
-                    <a href="/contacts-essent.html" class="buttons__item">
-                        <button class="item__button">ЕССЕНТУКИ</button>
-                    </a>
+                    <div class="list__item">
+                        <div class="item__info">
+                            <img class="info__img" src="img/catalog/product.png"/>
+                            <div class="info__content">
+                                <div class="content__text">
+                                    Сливки "БМК" ультрапастер. 33%
+                                </div>
+                                <div class="content__measure">
+                                    <div class="custom-select">
+                                        <select id="standard-select">
+                                            <option value="2 шт">2 шт</option>
+                                            <option value="5 шт">5 шт</option>
+                                            <option value="10 шт">10 шт</option>
+                                            <option value="20 шт">20 шт</option>
+                                            <option value="50 шт">50 шт</option>
+                                            <option value="100 шт">100 шт</option>
+                                        </select>
+                                        <span class="custom-arrow">
+                                            <img src="img/catalog/select_arrow.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <span class="measure__price measure__price-x">x</span>
+                                    <span class="measure__price">
+                                        216  ₽
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__price">1 200 ₽</div>
+                        <button class="item__close">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.9449 15.66C17.3049 16.02 17.3049 16.58 16.9449 16.94C16.7649 17.12 16.5449 17.2 16.3049 17.2C16.0649 17.2 15.8449 17.12 15.6649 16.94L12.0049 13.28L8.34491 16.94C8.16491 17.12 7.94492 17.2 7.70492 17.2C7.46492 17.2 7.24493 17.12 7.06493 16.94C6.70493 16.58 6.70493 16.02 7.06493 15.66L10.7249 12L7.06493 8.34004C6.70493 7.98004 6.70493 7.42004 7.06493 7.06004C7.42493 6.70004 7.98491 6.70004 8.34491 7.06004L12.0049 10.72L15.6649 7.06004C16.0249 6.70004 16.5849 6.70004 16.9449 7.06004C17.3049 7.42004 17.3049 7.98004 16.9449 8.34004L13.2849 12L16.9449 15.66Z" fill="#AAAFB4"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="list__item">
+                        <div class="item__info">
+                            <img class="info__img" src="img/catalog/product.png"/>
+                            <div class="info__content">
+                                <div class="content__text">
+                                    Сливки "БМК" ультрапастер. 33%
+                                </div>
+                                <div class="content__measure">
+                                    <div class="custom-select">
+                                        <select id="standard-select">
+                                            <option value="2 шт">2 шт</option>
+                                            <option value="5 шт">5 шт</option>
+                                            <option value="10 шт">10 шт</option>
+                                            <option value="20 шт">20 шт</option>
+                                            <option value="50 шт">50 шт</option>
+                                            <option value="100 шт">100 шт</option>
+                                        </select>
+                                        <span class="custom-arrow">
+                                            <img src="img/catalog/select_arrow.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <span class="measure__price measure__price-x">x</span>
+                                    <span class="measure__price">
+                                        216  ₽
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__price">1 200 ₽</div>
+                        <button class="item__close">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.9449 15.66C17.3049 16.02 17.3049 16.58 16.9449 16.94C16.7649 17.12 16.5449 17.2 16.3049 17.2C16.0649 17.2 15.8449 17.12 15.6649 16.94L12.0049 13.28L8.34491 16.94C8.16491 17.12 7.94492 17.2 7.70492 17.2C7.46492 17.2 7.24493 17.12 7.06493 16.94C6.70493 16.58 6.70493 16.02 7.06493 15.66L10.7249 12L7.06493 8.34004C6.70493 7.98004 6.70493 7.42004 7.06493 7.06004C7.42493 6.70004 7.98491 6.70004 8.34491 7.06004L12.0049 10.72L15.6649 7.06004C16.0249 6.70004 16.5849 6.70004 16.9449 7.06004C17.3049 7.42004 17.3049 7.98004 16.9449 8.34004L13.2849 12L16.9449 15.66Z" fill="#AAAFB4"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="list__item">
+                        <div class="item__info">
+                            <img class="info__img" src="img/catalog/product.png"/>
+                            <div class="info__content">
+                                <div class="content__text">
+                                    Сливки "БМК" ультрапастер. 33%
+                                </div>
+                                <div class="content__measure">
+                                    <div class="custom-select">
+                                        <select id="standard-select">
+                                            <option value="2 шт">2 шт</option>
+                                            <option value="5 шт">5 шт</option>
+                                            <option value="10 шт">10 шт</option>
+                                            <option value="20 шт">20 шт</option>
+                                            <option value="50 шт">50 шт</option>
+                                            <option value="100 шт">100 шт</option>
+                                        </select>
+                                        <span class="custom-arrow">
+                                            <img src="img/catalog/select_arrow.svg" alt="">
+                                        </span>
+                                    </div>
+
+                                    <span class="measure__price measure__price-x">x</span>
+
+                                    <span class="measure__price">
+                                         216  ₽
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__price">1 200 ₽</div>
+                        <button class="item__close">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.9449 15.66C17.3049 16.02 17.3049 16.58 16.9449 16.94C16.7649 17.12 16.5449 17.2 16.3049 17.2C16.0649 17.2 15.8449 17.12 15.6649 16.94L12.0049 13.28L8.34491 16.94C8.16491 17.12 7.94492 17.2 7.70492 17.2C7.46492 17.2 7.24493 17.12 7.06493 16.94C6.70493 16.58 6.70493 16.02 7.06493 15.66L10.7249 12L7.06493 8.34004C6.70493 7.98004 6.70493 7.42004 7.06493 7.06004C7.42493 6.70004 7.98491 6.70004 8.34491 7.06004L12.0049 10.72L15.6649 7.06004C16.0249 6.70004 16.5849 6.70004 16.9449 7.06004C17.3049 7.42004 17.3049 7.98004 16.9449 8.34004L13.2849 12L16.9449 15.66Z" fill="#AAAFB4"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="list__item">
+                        <div class="item__info">
+                            <img class="info__img" src="img/catalog/product.png"/>
+                            <div class="info__content">
+                                <div class="content__text">
+                                    Сливки "БМК" ультрапастер. 33%
+                                </div>
+                                <div class="content__measure">
+                                    <div class="custom-select">
+                                        <select id="standard-select">
+                                            <option value="2 шт">2 шт</option>
+                                            <option value="5 шт">5 шт</option>
+                                            <option value="10 шт">10 шт</option>
+                                            <option value="20 шт">20 шт</option>
+                                            <option value="50 шт">50 шт</option>
+                                            <option value="100 шт">100 шт</option>
+                                        </select>
+                                        <span class="custom-arrow">
+                                            <img src="img/catalog/select_arrow.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <span class="measure__price measure__price-x">x</span>
+
+                                    <span class="measure__price measure__price-red">
+                                         167  ₽
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__price">1 200 ₽</div>
+                        <button class="item__close">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.9449 15.66C17.3049 16.02 17.3049 16.58 16.9449 16.94C16.7649 17.12 16.5449 17.2 16.3049 17.2C16.0649 17.2 15.8449 17.12 15.6649 16.94L12.0049 13.28L8.34491 16.94C8.16491 17.12 7.94492 17.2 7.70492 17.2C7.46492 17.2 7.24493 17.12 7.06493 16.94C6.70493 16.58 6.70493 16.02 7.06493 15.66L10.7249 12L7.06493 8.34004C6.70493 7.98004 6.70493 7.42004 7.06493 7.06004C7.42493 6.70004 7.98491 6.70004 8.34491 7.06004L12.0049 10.72L15.6649 7.06004C16.0249 6.70004 16.5849 6.70004 16.9449 7.06004C17.3049 7.42004 17.3049 7.98004 16.9449 8.34004L13.2849 12L16.9449 15.66Z" fill="#AAAFB4"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-    
-                <div class="mobile__block__info">
-    
-                    <div class="info__block">
-                        <h2 class="block__title">Адрес:</h2>
-                        <p class="block__text">г. Ставрополь, ул. </p>
-                        <p class="block__text">Заводская, д.11</p>
+                <div class="blocks__conclusion">
+                    <div class="conclusion__top">
+                        <h3 class="top__title">ИТОГ</h3>
+
+                        <p class="top__warning top__warning-big">Минимальная сумма заказа: 3 000 ₽</p>
+                        <p class="top__warning top__warning-small">Для заказа наберите еще на 500 ₽</p>
+                        <p class="top__text">4 товара (3.86 кг)</p>
+                        <p class="top__price">Сумма: 2 500 ₽</p>
+                        <button class="top__btn">ПОЛУЧИТЬ СЧЕТ</button>
                     </div>
-    
-                    <div class="info__block">
-                        <h2 class="block__title">Режим работы:</h2>
-                        <p class="block__text"> Понедельник-суббота: </p>
-                        <p class="block__text"> с 9:00-18:00 </p>
-                        <p class="block__text"> Воскресенье-выходной </p>
-                    </div>
-    
-                    <div class="info__block">
-                        <h2 class="block__title">Телефон:</h2>
-                        <p class="block__text">8-800-700-2019</p>
-                    </div>
-    
-                    <div class="info__block">
-                        <h2 class="block__title">Эл. почта:</h2>
-                        <p class="block__text">info@frost26..beget.tech</p>
-                    </div>
-    
-                    <div class="info__block social__links">
-                        <!-- Instagram -->
-                        <a href="#" class="links__item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.80863 2 5.71294 3.05041 4.26718C3.38964 3.80026 3.80026 3.38964 4.26718 3.05041C5.71294 2 7.80863 2 12 2C16.1914 2 18.2871 2 19.7328 3.05041C20.1997 3.38964 20.6104 3.80026 20.9496 4.26718C22 5.71294 22 7.80863 22 12C22 16.1914 22 18.2871 20.9496 19.7328C20.6104 20.1997 20.1997 20.6104 19.7328 20.9496C18.2871 22 16.1914 22 12 22C7.80863 22 5.71294 22 4.26718 20.9496C3.80026 20.6104 3.38964 20.1997 3.05041 19.7328C2 18.2871 2 16.1914 2 12ZM12 6.70588C9.07632 6.70588 6.70588 9.07632 6.70588 12C6.70588 14.9237 9.07632 17.2941 12 17.2941C14.9237 17.2941 17.2941 14.9237 17.2941 12C17.2941 9.07632 14.9237 6.70588 12 6.70588ZM12 15.3088C10.1762 15.3088 8.69118 13.8238 8.69118 12C8.69118 10.1749 10.1762 8.69118 12 8.69118C13.8238 8.69118 15.3088 10.1749 15.3088 12C15.3088 13.8238 13.8238 15.3088 12 15.3088ZM18.3966 6.30883C18.3966 6.69844 18.0808 7.01427 17.6912 7.01427C17.3016 7.01427 16.9857 6.69844 16.9857 6.30883C16.9857 5.91923 17.3016 5.60339 17.6912 5.60339C18.0808 5.60339 18.3966 5.91923 18.3966 6.30883Z" fill="white"/>
-                            </svg>
-                        </a>
-    
-                        <!-- Facebook -->
-                        <a href="#" class="links__item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77727 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="white"/>
-                            </svg>
-                        </a>
+                    <div class="conclusion__bottom">
+                        <div class="bottom__text">
+                            Для получения скидки <span class="bottom__text-red">10%</span> 
+                            <br> 
+                            закажите еще на <span class="bottom__text-red">1300 ₽</span>
+                        </div>
+
+                        <a class="bottom__link" href="/catalog.html">В каталог</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <hr class="page__line">      
-        
-        <div class="contacts_map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1717f183cd4797e1f31a431cedbba20f5dd8a244df02e8e01f71580d84228dce&amp;width=100%&amp;height=100%&amp;lang=ru_UA&amp;scroll=true"></script>
-        </div> 
 
     </main>
-    
-    <div class="green_form_block">
-        <div class="block__content">
-
-            <div class="content__text">
-                <p>Есть вопросы?</p>
-                <p>Оставьте контакты и мы перезвоним вам!</p>
-            </div>
-            
-            <form id="openTextModal" class="content__form">
-                <div class="form__div">
-                    <input type="text" class="form__input" placeholder=" " id="input1" required>
-                    <label for="input1" class="form__label">Имя</label>
-                </div>
-
-                <div class="form__div">
-                    <input type="text" class="form__input" placeholder=" " id="input2" required>
-                    <label for="input2" class="form__label">Имя</label>
-                </div>
-
-                <div class="form__div">
-                    <input type="text" class="form__input" placeholder=" " id="input3" required>
-                    <label for="input3" class="form__label">Имя</label>
-                </div>
-
-                <button class="form__btn">ЗАПИСАТЬСЯ</button>
-
-                <div class="form__check_item">
-                    <label class="item__check">
-                        <input class="check__input" type="checkbox" required>
-                        <span class="check__custom"></span>
-                        <span class="check__text">Принимаю условия пользовательского соглашения</span>
-                    </label>
-                </div>
-
-            </form>
-        </div>
-    </div>
 
     <div id="textModal" class="login_modal login_modal-reg">
         <div class="overlay"></div>

@@ -2672,6 +2672,9 @@ body{
 // Shipping and payment
 @import "./shipping_and_payment/style.scss";
 
+// Shipping and payment
+@import "./cart/style.scss";
+
 // On menu open -------------------
 .mn_opened{
     .intro{

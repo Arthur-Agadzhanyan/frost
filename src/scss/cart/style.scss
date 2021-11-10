@@ -1,0 +1,218 @@
+.cart_page{
+    min-height: 100vh;
+    .cart__content{
+        max-width: 1130px;
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+
+        .page__title{
+            @include text($black,32px,600);
+            font-size: 24px;
+            margin: 0;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        
+            @media screen and (max-width: 500px) {
+                @include text($black,20px,600);
+                font-size: 16px;
+            }
+        }
+
+        .content__blocks {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+            .blocks__list {
+                flex: 0 1 59%;
+
+                .list__item{
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $grey_4;
+                    padding-left: 5px;
+                    padding-bottom: 10px;
+                    margin-bottom: 16px;
+
+                    .item__info{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 16px;
+                        .info__img {
+                            max-height: 85px;
+                        }
+                        .info__content {
+                            margin-left: 24px;
+                            .content__text {
+                                @include text($black,19px,normal)
+                            }
+                            .content__measure {
+                                display: flex;
+                                align-items: center;
+                                margin-top: 8px;
+                                .custom-select{
+                                    position: relative;
+                                    max-width: 84px;
+                                    width: 100%;
+                    
+                                    select{
+                                        @include text(#040507, 19px,normal);
+                    
+                                        max-width: 84px;
+                                        width: 100%;
+                                        padding: 4px 12px 5px 10px;
+                    
+                                        outline: none;
+                                        border: 1px solid $grey_3;
+                                        border-radius: 4px;
+                    
+                                        cursor: pointer;
+                    
+                                        appearance: none;
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                    
+                                        option{
+                                            max-width: 207px;
+                                            padding: 7px 12px;
+                                        }
+                                    }
+                    
+                                    .custom-arrow{
+                                        position: absolute;
+                                        top: 12px;
+                                        right: 12px;
+                                        z-index: 2;
+                    
+                                        transform: translate(0%,-50%);
+                                        display: block;
+                                        pointer-events: none;
+                                    }
+                    
+                                    @media screen and (max-width: 600px) {
+                                        margin-left: 0px;   
+                                    }
+                                } 
+                    
+                                .measure__price{
+                                    margin-left: 6px;
+                                    @include text($grey_1, 19px, 600);
+
+                                    &-x{
+                                        margin-left: 10px;  
+                                    }
+
+                                    &-red{
+                                        @include text($red, 19px, 600);
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+
+                    .item__price{
+                        margin-top: auto;
+                        margin-bottom: 15px;
+                        @include text($black,24px,bold);
+                        font-size: 18px;
+                    }
+
+                    .item__close{
+                        padding: 0;
+                        cursor: pointer;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        z-index: 100;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        path{
+                            transition: .2s linear;
+                        }
+
+                        &:hover{
+                            path{
+                                fill: $green
+                            }
+                        }
+                    }
+                }
+            }
+            .blocks__conclusion {
+                flex: 0 1 38%;
+                border: 1px solid $grey_4;
+
+                .conclusion__top {
+                    padding: 24px;
+                    .top__title {
+                        @include text($black,24px,bold);
+                        font-size: 18px;
+                        margin-bottom: 8px;
+                    }
+                    .top__warning-big {
+                        @include text($red,19px,600);
+                    }
+                    .top__warning-small {
+                        @include text($red,16px,600);
+                        font-size: 12px;
+                        margin-bottom: 12px;
+                        
+                    }
+                    .top__text {
+                        @include text($black,19px,normal);
+                        margin-bottom: 13px;
+                    }
+                    .top__price {
+                        @include text($black,32px,bold);
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    .top__btn {
+                        @include text(#fff,19px,normal);
+                        width: 100%;
+                        padding: 11px 10px 10px 10px;
+                        background: $green;
+                        color: #fff;
+                        letter-spacing: 0.3em;
+                        text-transform: uppercase;
+                        border: 1px solid $green;
+                        transition: .2s linear;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: $green;
+                            background: #fff;
+                        }
+                    }
+                }
+                
+                .conclusion__bottom {
+                    background: $grey_4;
+                    padding: 16px 24px;
+                    text-align: center;
+                    padding-bottom: 22px;
+
+                    .bottom__text{
+                        @include text($grey_1,19px,600);
+                        margin-bottom: 15px;
+                        .bottom__text-red{
+                            color: $red;
+                        }
+                    }
+
+                    .bottom__link{
+                        @include text($green, 19px, 600);
+                        text-transform: uppercase;
+                        letter-spacing: 0.3em;
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
