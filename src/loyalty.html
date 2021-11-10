@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
@@ -627,7 +627,7 @@
             </div>
             
 
-            <form class="content__form">
+            <form id="openTextModal" class="content__form">
                 <div class="form__div">
                     <input type="text" class="form__input" placeholder=" " id="input1" required>
                     <label for="input1" class="form__label">Имя</label>
@@ -654,6 +654,25 @@
                 </div>
 
             </form>
+        </div>
+    </div>
+
+    <div id="textModal" class="login_modal login_modal-reg">
+        <div class="overlay"></div>
+        <div class="modal__content">
+            <div class="close close_modal">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+                    <path d="M13.5929 11.8799C14.0729 12.3599 14.0729 13.1066 13.5929 13.5866C13.3529 13.8266 13.0596 13.9332 12.7396 13.9332C12.4196 13.9332 12.1263 13.8266 11.8863 13.5866L7.00624 8.70656L2.12622 13.5866C1.88622 13.8266 1.5929 13.9332 1.2729 13.9332C0.952904 13.9332 0.659583 13.8266 0.419583 13.5866C-0.0604167 13.1066 -0.0604167 12.3599 0.419583 11.8799L5.29956 6.99989L0.419583 2.11989C-0.0604167 1.63989 -0.0604167 0.893219 0.419583 0.413219C0.899583 -0.0667806 1.64622 -0.0667806 2.12622 0.413219L7.00624 5.29322L11.8863 0.413219C12.3663 -0.0667806 13.1129 -0.0667806 13.5929 0.413219C14.0729 0.893219 14.0729 1.63989 13.5929 2.11989L8.71288 6.99989L13.5929 11.8799Z" fill="#585C60"/>
+                </svg>               
+            </div>
+    
+            <div class="modal__container">
+                <h2 class="modal__content__title">Обратная связь</h2>
+            </div>
+            
+            <p class="modal__content__text">Спасибо за оставленные данные, мы позвоним вам в течение часа</p>
+
+            <button class="modal__btn close_modal">Закрыть</button>
         </div>
     </div>
 

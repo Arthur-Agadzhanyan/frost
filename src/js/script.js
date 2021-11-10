@@ -268,8 +268,8 @@ const loginPromotionsSlider = new Swiper(".login-promotions-slider",{
 const changePassInput = document.getElementById("changePassInput")
 const openChangePassInput = document.getElementById("openChangePassInput")
 
-const changePassText = document.getElementById("changePassText")
-const openChangePassText = document.getElementById("openChangePassText")
+const textModal = document.getElementById("textModal")
+const openTextModal = document.getElementById("openTextModal")
 
 const closeModal = document.querySelectorAll(".close_modal")
 
@@ -283,8 +283,8 @@ if(openChangePassInput && changePassInput){
     }
 }
 
-if(openChangePassText && changePassText){
-    openChangePassText.onsubmit = (e)=>{
+if(openTextModal && textModal){
+    openTextModal.onsubmit = (e)=>{
         e.preventDefault()
         if(changePassInput){
             changePassInput.style.opacity = "0"
@@ -292,9 +292,9 @@ if(openChangePassText && changePassText){
             setTimeout(()=>changePassInput.style.display = "none",300)
         }
 
-        changePassText.style.display = "flex"
+        textModal.style.display = "flex"
         document.body.style.overflow = "hidden"
-        setTimeout(()=>changePassText.style.opacity = "1", 200)
+        setTimeout(()=>textModal.style.opacity = "1", 200)
         return
     }
 }
@@ -309,10 +309,10 @@ if(closeModal){
                 setTimeout(()=>changePassInput.style.display = "none",300)
             }
             
-            if(changePassText){
-                changePassText.style.opacity = "0"
+            if(textModal){
+                textModal.style.opacity = "0"
                 document.body.style.overflow = "auto"
-                setTimeout(()=>changePassText.style.display = "none",300)
+                setTimeout(()=>textModal.style.display = "none",300)
             }
 
             return

@@ -249,6 +249,92 @@ body{
         }
     }
 
+    .contacts{
+        margin-top: 124px;
+        border-top: 1px solid #373839;
+        padding: 24px 28px;
+        padding-left: 65px;
+
+        &__buttons{
+            display: flex;
+            justify-content: space-between;
+
+            .buttons__item{
+                flex: 0 1 48%;
+
+                .item__button{
+                    width: 100%;
+
+                    padding-top: 11px;
+                    padding-bottom: 10px;
+                    cursor: pointer;
+                    text-align: center;
+
+                    @include text(#fff,19px,600);
+
+                    letter-spacing: 0.3em;
+
+                    border: 1px solid #fff;
+                    background: transparent;
+                    text-transform: uppercase;
+
+                    transition: .2s linear;
+
+                    &:hover{
+                        color: $black;
+                        background: #fff;
+                    }
+                }
+
+                &-active{
+                    pointer-events: none;
+                    .item__button{
+                        border: 1px solid $green;
+                        background: $green;
+                    }
+                }
+            }
+        }
+
+        &__info{
+            margin-top: 24px;
+
+            .info__block{
+                margin-bottom: 24px;
+                .block__title{
+                    @include text($grey_2, 19px, normal);
+                    margin-bottom: 2px;
+                }
+
+                .block__text{
+                    @include text(#fff, 24px, 600);
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .social__links{
+            .links__item{
+                text-decoration: none;
+                margin-right: 25px;
+
+                path{
+                    transition: .2s linear;
+                }
+
+                &:hover{
+                    path{
+                        fill: $green
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1500px) {
+            padding-left: 24px;
+        }
+    }
+
     @media screen and (max-width: 1500px) {
         max-width: 370px;
     }
@@ -542,7 +628,7 @@ body{
     top: 66px;
     left: 0;
     right: 0;
-    z-index: 10000;
+    z-index: 100;
 
     background: $black;
     border-top: 1px solid rgba($grey_1, 0.2);
