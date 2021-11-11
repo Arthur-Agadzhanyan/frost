@@ -7269,6 +7269,23 @@ input:focus .search_page__mb_search {
   text-decoration: none;
 }
 
+.mn_opened .cart_page .content__blocks {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mn_opened .cart_page .content__blocks .blocks__list {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+}
+
+.mn_opened .cart_page .content__blocks .blocks__conclusion {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
 .mn_opened .intro {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -9025,6 +9042,10 @@ input:focus .search_page__mb_search {
   .contacts_page .contacts_map {
     height: 63vh;
   }
+
+  .cart_page {
+    padding-right: 24px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -9152,6 +9173,23 @@ input:focus .search_page__mb_search {
 
   .loyalty_page {
     padding-right: 24px;
+  }
+
+  .cart_page .cart__content .content__blocks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .cart_page .cart__content .content__blocks .blocks__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .cart_page .cart__content .content__blocks .blocks__conclusion {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
 }
 
@@ -9550,6 +9588,16 @@ input:focus .search_page__mb_search {
   .product_page .product__container {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .cart_page .cart__content {
+    padding: 0;
+  }
+
+  .cart_page .cart__content .content__blocks .blocks__conclusion {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 80%;
+            flex: 0 1 80%;
   }
 }
 
@@ -11436,6 +11484,44 @@ input:focus .search_page__mb_search {
     color: #2F2F2F;
     font-size: 16px;
   }
+
+  .cart_page .cart__content .content__blocks .blocks__list .list__item .item__info .info__img {
+    max-height: 65px;
+  }
+
+  .cart_page .cart__content .content__blocks .blocks__list .list__item .item__info .info__content .content__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2F2F2F;
+    font-size: 12px;
+  }
+
+  .cart_page .cart__content .content__blocks .blocks__list .list__item .item__price {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2F2F2F;
+    font-size: 16px;
+  }
+
+  .cart_page .cart__content .content__blocks .blocks__conclusion .conclusion__top {
+    padding: 12px;
+  }
+
+  .cart_page .cart__content .content__blocks .blocks__conclusion {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .cart_page {
+    padding-right: 16px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -13222,6 +13308,10 @@ input:focus .search_page__mb_search {
 
   .loyalty_page .detail_event__block .block__image {
     margin-top: 12px;
+  }
+
+  .cart_page .cart__content .content__blocks .blocks__list .list__item .item__info {
+    max-width: 80%;
   }
 }
 
