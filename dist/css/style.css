@@ -7286,6 +7286,562 @@ input:focus .search_page__mb_search {
           flex: 0 1 50%;
 }
 
+.profile_page {
+  padding-top: 40px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  min-height: 100vh;
+}
+
+.profile_page .page__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  color: #2F2F2F;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+.profile_page .profile__form {
+  max-width: 322px;
+  width: 100%;
+  margin-top: 24px;
+  /*Input focus sticky top label*/
+}
+
+.profile_page .profile__form .form__div {
+  position: relative;
+}
+
+.profile_page .profile__form .form__input {
+  padding: 18px 16px;
+  padding-top: 19px;
+  width: 100%;
+  font-size: 14px;
+  border: 0;
+  outline: none;
+  background: #fff;
+  color: #2F2F2F;
+}
+
+.profile_page .profile__form .form__label {
+  position: absolute;
+  left: 17px;
+  top: 20px;
+  z-index: 1;
+  color: #AAAFB4;
+  font-size: 14px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: text;
+}
+
+.profile_page .profile__form .form__input:not(:-moz-placeholder-shown).form__input:not(:focus) + .form__label {
+  top: 8px;
+  left: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.profile_page .profile__form .form__input:not(:-ms-input-placeholder).form__input:not(:focus) + .form__label {
+  top: 8px;
+  left: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.profile_page .profile__form .form__input:focus + .form__label,
+.profile_page .profile__form .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+  top: 8px;
+  left: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.profile_page .profile__form .form__input:not(:-moz-placeholder-shown) {
+  padding-top: 27px;
+  padding-bottom: 10px;
+}
+
+.profile_page .profile__form .form__input:not(:-ms-input-placeholder) {
+  padding-top: 27px;
+  padding-bottom: 10px;
+}
+
+.profile_page .profile__form .form__input:focus,
+.profile_page .profile__form .form__input:not(:placeholder-shown) {
+  padding-top: 27px;
+  padding-bottom: 10px;
+}
+
+.profile_page .profile__form .form__div {
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.profile_page .profile__form .form__div-req {
+  margin-bottom: 5px;
+}
+
+.profile_page .profile__form .form__div .file_label {
+  display: block;
+  border: 1px dashed #AAAFB4;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile_page .profile__form .form__div .file_label p {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #AAAFB4;
+  margin-bottom: 6px;
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+.profile_page .profile__form .form__div .file_label svg {
+  margin-bottom: 16px;
+}
+
+.profile_page .profile__form .form__div #gallery {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.profile_page .profile__form .form__div #gallery img {
+  width: 100%;
+}
+
+.profile_page .profile__form .form__div #file_name {
+  margin-top: 12px;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #585c60;
+}
+
+.profile_page .profile__form .form__input {
+  border: 1px solid #DEE2E6;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.profile_page .profile__form .form__input:focus {
+  border: 1px solid #AAAFB4;
+}
+
+.profile_page .profile__form .input__error {
+  font-size: 11px;
+  color: #EF3541;
+  margin-left: 12px;
+  opacity: 0;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.profile_page .profile__form .req_input:required:invalid {
+  border: 1px solid #EF3541;
+}
+
+.profile_page .profile__form .req_input:required:invalid + .form__label {
+  color: #EF3541;
+}
+
+.profile_page .profile__form .req_input:required:invalid ~ .input__error {
+  opacity: 1;
+}
+
+.profile_page .profile__form .block__btn {
+  display: block;
+  width: 100%;
+  padding: 11px;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2F2F2F;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: #fff;
+  border: 1px solid #DEE2E6;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.profile_page .profile__form .block__btn:hover {
+  color: #fff;
+  background: #585c60;
+  border: 1px solid #585c60;
+}
+
+.profile_page .profile__form .block__btn-leave {
+  margin-top: 16px;
+}
+
+.profile_page .page__line {
+  border: 0;
+  border-top: 1px solid rgba(55, 56, 57, 0.1);
+  margin-bottom: 23px;
+}
+
+.profile_page .payment__block {
+  max-width: 700px;
+  width: 100%;
+  margin-left: 147px;
+  padding-right: 16px;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.profile_page .payment__block .block__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2F2F2F;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.profile_page .payment__block .block__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #585c60;
+  margin-bottom: 18px;
+}
+
+.profile_page .payment__block .block__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.profile_page .payment__block .block__images .images__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31%;
+          flex: 0 1 31%;
+}
+
+.profile_page .payment__block .block__images .images__item img {
+  width: 100%;
+}
+
+.profile_page .payment__block .block__city_list {
+  margin-top: 27px;
+}
+
+.profile_page .payment__block .block__city_list .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #EFF3F3;
+  padding-bottom: 7px;
+  margin-top: 13px;
+}
+
+.profile_page .payment__block .block__city_list .list__item .item__name {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2F2F2F;
+}
+
+.profile_page .payment__block .block__city_list .list__item .item__days {
+  max-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile_page .payment__block .block__city_list .list__item .item__days .days__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 19%;
+          flex: 0 1 19%;
+  background: #DEE2E6;
+  margin-left: 4px;
+  text-transform: uppercase;
+  padding: 1px 6px;
+  padding-bottom: 2px;
+  border-radius: 3px;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #DEE2E6;
+  font-size: 12px;
+}
+
+.profile_page .payment__block .block__city_list .list__item .item__days .days__item-red {
+  color: #fff;
+  background: #EF3541;
+}
+
+.profile_page .payment__block .block__city_list .list__item .item__days .days__item-yellow {
+  color: #fff;
+  background: #F09E00;
+}
+
+.profile_page .payment__block .block__city_list .list__item .item__days .days__item-green {
+  color: #fff;
+  background: #008385;
+}
+
+.profile_page .payment__block .block__city_list .list__item .item__days .days__item-blue {
+  color: #fff;
+  background: #0089B5;
+}
+
+.profile_page .payment__block .block__city_list .list__item .item__days .days__item-pink {
+  color: #fff;
+  background: #D807B6;
+}
+
+.profile_page .payment__block .block__order_collection {
+  margin: 22px 0px;
+}
+
+.profile_page .payment__block .block__order_collection p {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #585c60;
+  font-size: 12px;
+}
+
+.profile_page .payment__block .block__order_collection .red {
+  color: #EF3541;
+}
+
+.profile_page .mobile__links {
+  display: none;
+  margin-bottom: 10px;
+  overflow-x: auto;
+}
+
+.profile_page .mobile__links::-webkit-scrollbar {
+  width: 1px;
+  height: 0;
+}
+
+.profile_page .mobile__links::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.profile_page .mobile__links .links__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+.profile_page .mobile__links .links__item span {
+  margin-left: 7px;
+  white-space: nowrap;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #AAAFB4;
+}
+
+.profile_page .mobile__links .links__item-active {
+  pointer-events: none;
+}
+
+.profile_page .mobile__links .links__item-active path {
+  fill: #008385;
+}
+
+.profile_page .mobile__links .links__item-active span {
+  color: #008385 !important;
+}
+
+.profile_page .empty_order_block {
+  max-width: 550px;
+  width: 100%;
+  word-wrap: break-word;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #EFF3F3;
+  padding: 40px;
+  margin-top: 30px;
+}
+
+.profile_page .empty_order_block .item__image {
+  position: relative;
+}
+
+.profile_page .empty_order_block .item__image::after {
+  content: " ";
+  position: absolute;
+  bottom: -16px;
+  left: -16px;
+  z-index: 1;
+  width: 152px;
+  height: 157px;
+  background: #fff;
+}
+
+.profile_page .empty_order_block .item__image .image__container {
+  position: relative;
+  border: 1px solid #DEE2E6;
+  z-index: 10;
+  padding: 42px;
+}
+
+.profile_page .empty_order_block .item__image .image__container img {
+  position: relative;
+  z-index: 10;
+}
+
+.profile_page .empty_order_block .item__info {
+  position: relative;
+  z-index: 10;
+  margin-left: 26px;
+}
+
+.profile_page .empty_order_block .item__info .info__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  color: #040507;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.profile_page .empty_order_block .item__info .info__link {
+  display: block;
+  text-align: center;
+  background: #008385;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 11px;
+  letter-spacing: 0.3em;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+  border: 1px solid #008385;
+}
+
+.profile_page .empty_order_block .item__info .info__link:hover {
+  background: transparent;
+  color: #008385;
+}
+
+.profile_page .payment_history_block {
+  max-width: 550px;
+  width: 100%;
+}
+
+.profile_page .payment_history_block .block__list a {
+  text-decoration: none;
+}
+
+.profile_page .payment_history_block .block__list .list__item {
+  border: 1px solid #EFF3F3;
+  padding: 10px;
+  padding-top: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.profile_page .payment_history_block .block__list .list__item .item__info {
+  margin-left: 12px;
+}
+
+.profile_page .payment_history_block .block__list .list__item .item__info .info__name {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2F2F2F;
+}
+
+.profile_page .payment_history_block .block__list .list__item .item__info .info__date {
+  margin-left: 6px;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #AAAFB4;
+  font-size: 12px;
+}
+
 .mn_opened .intro {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -8233,6 +8789,12 @@ input:focus .search_page__mb_search {
   .advantages__list .list__item:last-child {
     margin: 0;
   }
+
+  .mn_opened .profile_page .payment__block {
+    padding-left: 44px !important;
+    padding-right: 44px !important;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 1260px) {
@@ -9045,6 +9607,12 @@ input:focus .search_page__mb_search {
 
   .cart_page {
     padding-right: 24px;
+  }
+
+  .profile_page .payment__block {
+    padding-left: 44px !important;
+    padding-right: 44px !important;
+    margin-left: 0;
   }
 }
 
@@ -9904,6 +10472,19 @@ input:focus .search_page__mb_search {
   .shipping_and_payment_page .mobile__links {
     padding-left: 24px;
   }
+
+  .profile_page {
+    padding-right: 0px !important;
+  }
+
+  .profile_page .payment__block {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .profile_page .mobile__links {
+    padding-left: 24px;
+  }
 }
 
 @media screen and (max-width: 700px) and (max-width: 600px) {
@@ -10010,6 +10591,28 @@ input:focus .search_page__mb_search {
   }
 
   .shipping_and_payment_page .payment__block .block__city_list .list__item .item__days .days__item {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 18%;
+            flex: 0 1 18%;
+    margin-left: 0;
+  }
+
+  .profile_page .payment__block .block__city_list .list__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .profile_page .payment__block .block__city_list .list__item .item__days {
+    max-width: initial;
+    margin-top: 9px;
+  }
+
+  .profile_page .payment__block .block__city_list .list__item .item__days .days__item {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;
@@ -10635,6 +11238,34 @@ input:focus .search_page__mb_search {
 
   .cart_page .cart__content .content__blocks .blocks__list .list__item .item__info .info__content .content__measure .custom-select {
     margin-left: 0px;
+  }
+
+  .profile_page .mobile__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .profile_page .empty_order_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .profile_page .empty_order_block .item__info {
+    margin-top: 20px;
+  }
+
+  .empty_order_page {
+    min-height: 40vh;
+  }
+
+  .payment_history_page {
+    min-height: 40vh;
   }
 }
 
@@ -11522,6 +12153,76 @@ input:focus .search_page__mb_search {
   .cart_page {
     padding-right: 16px;
   }
+
+  .profile_page .page__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2F2F2F;
+    font-size: 16px;
+  }
+
+  .profile_page .page__line {
+    margin-bottom: 8px;
+  }
+
+  .profile_page .payment__block .block__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F2F2F;
+    font-size: 14px;
+  }
+
+  .profile_page .payment__block .block__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #585c60;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .profile_page .payment__block .block__images {
+    margin: 22px 0px;
+  }
+
+  .profile_page .payment__block .block__city_list .list__item .item__name {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2F2F2F;
+    font-size: 12px;
+  }
+
+  .profile_page .payment__block .block__city_list .list__item .item__name p {
+    display: inline;
+  }
+
+  .profile_page .payment__block .block__city_list {
+    margin-top: 0px;
+  }
+
+  .profile_page .payment__block .block__order_collection p {
+    margin-bottom: 10px;
+  }
+
+  .profile_page .payment__block {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .profile_page .mobile__links {
+    padding-left: 17px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -12289,6 +12990,51 @@ input:focus .search_page__mb_search {
 
   .loyalty_page .detail_event__block .block__text p:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  .profile_page .profile__form .form__input {
+    padding: 14px 12px;
+    padding-top: 11px;
+  }
+
+  .profile_page .profile__form .form__label {
+    left: 12px;
+    top: 11px;
+  }
+
+  .profile_page .profile__form .form__input:not(:-moz-placeholder-shown).form__input:not(:focus) + .form__label {
+    top: 2px;
+    left: 12px;
+    font-size: 10px;
+  }
+
+  .profile_page .profile__form .form__input:not(:-ms-input-placeholder).form__input:not(:focus) + .form__label {
+    top: 2px;
+    left: 12px;
+    font-size: 10px;
+  }
+
+  .profile_page .profile__form .form__input:focus + .form__label,
+  .profile_page .profile__form .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+    top: 2px;
+    left: 12px;
+    font-size: 10px;
+  }
+
+  .profile_page .profile__form .form__input:not(:-moz-placeholder-shown) {
+    padding-top: 18px;
+    padding-bottom: 7px;
+  }
+
+  .profile_page .profile__form .form__input:not(:-ms-input-placeholder) {
+    padding-top: 18px;
+    padding-bottom: 7px;
+  }
+
+  .profile_page .profile__form .form__input:focus,
+  .profile_page .profile__form .form__input:not(:placeholder-shown) {
+    padding-top: 18px;
+    padding-bottom: 7px;
   }
 }
 
@@ -13073,6 +13819,74 @@ input:focus .search_page__mb_search {
     line-height: 13px;
     color: #fff;
     font-size: 10px;
+  }
+
+  .profile_page .mobile__links .links__item span {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #AAAFB4;
+    font-size: 12px;
+  }
+
+  .profile_page .mobile__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 8px;
+  }
+
+  .profile_page .empty_order_block {
+    padding: 16px;
+  }
+
+  .profile_page .empty_order_block .item__image::after {
+    content: " ";
+    position: absolute;
+    bottom: -8px;
+    left: -8px;
+    z-index: 1;
+    width: 86px;
+    height: 93px;
+    background: #fff;
+  }
+
+  .profile_page .empty_order_block .item__image .image__container {
+    padding: 22px;
+  }
+
+  .profile_page .empty_order_block .item__image .image__container img {
+    max-width: 40px;
+  }
+
+  .profile_page .empty_order_block .item__info {
+    margin-top: 20px;
+    margin-left: 5px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .profile_page .empty_order_block .item__info .info__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2F2F2F;
+    font-size: 16px;
+  }
+
+  .profile_page .empty_order_block .item__info .info__link {
+    letter-spacing: 0.2em;
+    width: 100%;
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
   }
 }
 

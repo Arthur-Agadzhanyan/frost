@@ -497,3 +497,62 @@ window.addEventListener('scroll', () => {
 scrollTopBtn.addEventListener('click',()=>{
     window.scrollTo(0,0)
 })
+
+// Profile file input
+
+const profileFileInput = document.getElementById("file_inp")
+const gallery = document.getElementById('gallery')
+const fileName = document.getElementById("file_name")
+const fileLabel = document.getElementById("file_label")
+
+let file;
+let validExtensions = ["image/jpeg", "image/jpg", "image/png"];
+
+if(profileFileInput){
+
+    function previewFile(file) {
+        let reader = new FileReader()
+        reader.readAsDataURL(file)
+        reader.onloadend = function() {
+          let img = document.createElement('img')
+          img.src = reader.result
+          console.log(img)
+          gallery.innerHTML = ""
+          gallery.appendChild(img)
+        }
+    }
+
+    profileFileInput.addEventListener("change",()=>{
+        let file = profileFileInput.files[0]
+        let fileType = file.type;
+
+        if(validExtensions.includes(fileType)){
+            previewFile(file)
+
+            if(profileFileInput.value){
+                fileName.textContent = profileFileInput.value;
+            }
+        } else{
+            alert("Это не картинка")
+        }
+        
+    })
+
+    fileLabel.addEventListener("dragover",(e)=>{
+        e.preventDefault();
+    })
+
+    fileLabel.addEventListener("drop",(e)=>{
+        e.preventDefault();
+
+        file = e.dataTransfer.files[0]
+
+        let fileType = file.type;
+
+        if(validExtensions.includes(fileType)){
+            previewFile(file)
+        }else{
+            alert("Это не картинка")
+        }
+    })
+}
