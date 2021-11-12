@@ -167,3 +167,263 @@
         }
     }
 }
+
+.map_modal{
+    @include modal(1200px);
+
+    transition: .2s linear;
+
+    .mobile{
+        display: none;
+    }
+
+    .modal__content{
+        display: flex;
+        padding: 0;
+        text-align: left;
+
+        .modal__info{
+            flex: 0 1 50%;
+            padding-bottom: 77px;
+            padding-left: 64px;
+            padding-top: 40px;
+            padding-right: 8px;
+
+            .info__list {
+                padding-right: 52px;
+                overflow: auto;
+                max-height: 520px;
+
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+            
+                &::-webkit-scrollbar-track {
+                    background: transparent;
+                }
+            
+                &::-webkit-scrollbar-thumb {
+                    background: $green;
+                    border-radius: 5px;
+                }
+
+                .list__item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    
+                    padding-bottom: 17px;
+                    border-bottom: 1px solid $grey_4;
+                    margin-top: 18px;
+
+                    .item__info {
+                        .info__name {
+                            @include text($black,24px,bold);
+                            font-size: 18px;
+                        }
+                        .info__place {
+                            @include text($black,19px,600)
+                        }
+                        .info__time {
+                            @include text(#AEAEAE,16px,600);
+                            font-size: 12px;
+                            margin-top: 5px;
+                        }
+                    }
+    
+                    .item__price {
+                        @include text($grey_1,21px,bold);
+                        font-size: 16px
+                    }
+    
+                    .item__btn {
+                        padding: 11px 14px 10px 14px;
+                        padding-right: 12px;
+                        outline: none;
+                        @include text(#fff,19px,600);
+
+                        background: $green;
+                        border: 1px solid $green;
+                        letter-spacing: 0.3em;
+                        cursor: pointer;
+
+                        transition: .2s linear;
+
+                        &:hover{
+                            color: $green;
+                            background: #fff;
+                        }
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        text-align: left;
+                        flex-direction: column;
+                        align-items: initial;
+
+                        .item__info {
+                            width: 100%;
+                            .info__name {
+                                display: block;
+                            }
+                            .info__place {
+                                display: block;
+                            }
+                            .info__time {
+                                display: block;
+                            }
+                        }
+                        .item__price{
+                            display: block;
+                            margin-top: 4px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1100px) {
+                padding-left: 24px;
+                padding-right: 24px;
+                .info__list{
+                    padding-right: 0px;
+                }
+            }
+            
+            @media screen and (max-width: 500px) {
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-top: 0;
+            }
+        }
+
+        .info__title{
+            @include text($black,32px,600);
+            font-size: 24px;
+            margin-bottom: 13px;
+
+            @media screen and (max-width: 1100px) {
+                padding-left: 16px;
+                padding-top: 20px;
+            }
+
+            @media screen and (max-width: 500px) {
+                line-height: 22px;
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+
+            @media screen and (max-width: 380px) {
+                font-size: 17px;
+                line-height: 19px;
+                padding-right: 16px;
+            }
+        }
+    
+        .modal__map{
+            flex: 0 1 50%;
+            min-height: 500px;
+
+            position: relative;
+
+            .dis_full{
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                width: 40px;
+                height: 40px;
+                z-index: 100;
+            }
+            @media screen and (max-width: 500px) {
+                min-height: 350px;
+                max-height: 350px;
+            }
+            @media screen and (max-width: 400px){
+                min-height: 300px;
+                max-height: 300px;
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            .modal__info{
+                order: 2;
+
+                .info__list{
+                    max-height: initial;
+                }
+            }
+
+            .modal__map{
+                order: 1;
+                padding: 16px;
+                min-height: 400px;
+            }
+        }
+
+        
+    }
+
+    .close{
+        top: 0;
+        right: 0;
+        padding: 12px;
+        padding-bottom: 10px;
+        padding-left: 12px;
+        background: #fff;
+        z-index: 100000;
+
+        @media screen and (max-width: 1100px) {
+            background: transparent;
+            padding: 0;
+            top: 16px;
+            right: 16px;
+        }
+    }
+
+    @media screen and (min-width: 1100px) and (max-height:650px) {
+        align-items: initial;
+        justify-content: initial;
+        overflow: auto;
+
+        .modal__content{
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        align-items: initial;
+        justify-content: initial;
+        overflow: auto;
+
+        .modal__content{
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+                margin-right: 3px;
+            }
+        
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                background: $grey_3;
+                border-radius: 5px;
+            }
+        }
+
+        .mobile{
+            display: block;
+        }
+
+        .desktop{
+            display: none;
+        }
+    }
+}

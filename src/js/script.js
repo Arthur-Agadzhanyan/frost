@@ -281,6 +281,9 @@ const openChangePassTextModal = document.getElementById("openChangePassTextModal
 
 const closeModal = document.querySelectorAll(".close_modal")
 
+const openModalBtns = document.querySelectorAll(".openModalBtn")
+const modal = document.getElementById("modal")
+
 if(openChangePassInput && changePassInput){
     openChangePassInput.onclick = (e)=>{
         changePassInput.style.display = "flex"
@@ -349,6 +352,23 @@ if(openChangePasswordModal && changePasswordModal){
     }
 }
 
+if(modal && openModalBtns){
+    openModalBtns.forEach(el=>{
+        el.addEventListener("click",()=>{
+            if(textModal){
+                textModal.style.opacity = "0"
+                document.body.style.overflow = "auto"
+                setTimeout(()=>textModal.style.display = "none",300)
+            }
+    
+            modal.style.display = "flex"
+            document.body.style.overflow = "hidden"
+            setTimeout(()=>modal.style.opacity = "1", 200)
+            return
+        })
+    })
+}
+
 if(closeModal){
     closeModal.forEach(el=>{
         el.addEventListener("click",()=>{
@@ -374,6 +394,12 @@ if(closeModal){
                 changePassTextModal.style.opacity = "0"
                 document.body.style.overflow = "auto"
                 setTimeout(()=>changePassTextModal.style.display = "none",300)
+            }
+
+            if(modal){
+                modal.style.opacity = "0"
+                document.body.style.overflow = "auto"
+                setTimeout(()=>modal.style.display = "none",300)
             }
 
             return
