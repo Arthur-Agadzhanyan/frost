@@ -916,6 +916,10 @@
             }
         }
 
+        a{
+            text-decoration: none;
+        }
+
         .modal__btn{
             max-width: 322px;
             width: 100%;
@@ -936,6 +940,27 @@
             &:hover{
                 color: $green;
                 background: #fff;
+            }
+
+            &-white{
+                
+                display: block;
+                margin: 0 auto;
+                margin-top: 16px !important;
+
+                border: 1px solid $grey_3;
+                background: #fff;
+                color: $black;
+
+                &:hover{
+                    background: $grey_1;
+                    color: #fff;
+                    border-color: $grey_1;
+                }
+
+                @media screen and (max-width: 500px) {
+                    margin-top: 10px !important;
+                }
             }
 
             @media screen and (max-width: 450px) {

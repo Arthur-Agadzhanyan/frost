@@ -311,6 +311,7 @@ const openChangePassInput = document.getElementById("openChangePassInput")
 
 const textModal = document.getElementById("textModal")
 const openTextModal = document.getElementById("openTextModal")
+const openTextModalBtn = document.getElementById("openTextModalBtn")
 
 const closeModal = document.querySelectorAll(".close_modal")
 
@@ -337,6 +338,22 @@ if(openTextModal && textModal){
         document.body.style.overflow = "hidden"
         setTimeout(()=>textModal.style.opacity = "1", 200)
         return
+    }
+}
+
+if(openTextModalBtn && textModal){
+    openTextModalBtn.onclick = (e)=>{
+        e.preventDefault()
+        if(changePassInput){
+            changePassInput.style.opacity = "0"
+            document.body.style.overflow = "auto"
+            setTimeout(()=>changePassInput.style.display = "none",300)
+        }
+
+        textModal.style.display = "flex"
+        document.body.style.overflow = "hidden"
+        setTimeout(()=>textModal.style.opacity = "1", 200)
+        return 
     }
 }
 

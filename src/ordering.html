@@ -607,7 +607,7 @@
         <div class="cart__content">
             <h1 class="page__title">Оформление заказа</h1>
             
-                <form class="profile__form">
+                <form id="openTextModal" class="profile__form">
                     <h2 class="block__title">Личные данные</h2>
 
                     <div class="form__div">
@@ -806,12 +806,17 @@
             </div>
     
             <div class="modal__container">
-                <h2 class="modal__content__title">Обратная связь</h2>
+                <h2 class="modal__content__title">Ваш заказ успешно оплачен!</h2>
             </div>
             
-            <p class="modal__content__text">Спасибо за оставленные данные, мы позвоним вам в течение часа</p>
+            <p class="modal__content__text">Спасибо за доверие! <br> Отлеживать статус заказа вы можете в вашем профиле</p>
 
-            <button class="modal__btn close_modal">Закрыть</button>
+            <a href="/">
+                <button class="modal__btn">НА ГЛАВНУЮ</button>
+            </a>
+            <a href="/personal_data.html">
+                <button class="modal__btn modal__btn-white close_modal">НА СТРАНИЦУ ПРОФИЛЯ</button>
+            </a>
         </div>
     </div>
 

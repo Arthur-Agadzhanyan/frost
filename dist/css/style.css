@@ -1079,6 +1079,10 @@ template {
   padding-bottom: 8px;
 }
 
+.login_modal .modal__content a {
+  text-decoration: none;
+}
+
 .login_modal .modal__content .modal__btn {
   max-width: 322px;
   width: 100%;
@@ -1103,6 +1107,21 @@ template {
 .login_modal .modal__content .modal__btn:hover {
   color: #008385;
   background: #fff;
+}
+
+.login_modal .modal__content .modal__btn-white {
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px !important;
+  border: 1px solid #DEE2E6;
+  background: #fff;
+  color: #2F2F2F;
+}
+
+.login_modal .modal__content .modal__btn-white:hover {
+  background: #585c60;
+  color: #fff;
+  border-color: #585c60;
 }
 
 .login_modal .modal__content__phone {
@@ -12815,6 +12834,10 @@ input:focus .search_page__mb_search {
 }
 
 @media screen and (max-width: 500px) {
+  .login_modal .modal__content .modal__btn-white {
+    margin-top: 10px !important;
+  }
+
   .content {
     padding-left: 16px;
     padding-bottom: 16px;
@@ -13906,6 +13929,10 @@ input:focus .search_page__mb_search {
     padding-bottom: 8px;
   }
 
+  .login_modal .modal__content a {
+    text-decoration: none;
+  }
+
   .login_modal .modal__content .modal__btn {
     max-width: 322px;
     width: 100%;
@@ -13930,6 +13957,21 @@ input:focus .search_page__mb_search {
   .login_modal .modal__content .modal__btn:hover {
     color: #008385;
     background: #fff;
+  }
+
+  .login_modal .modal__content .modal__btn-white {
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px !important;
+    border: 1px solid #DEE2E6;
+    background: #fff;
+    color: #2F2F2F;
+  }
+
+  .login_modal .modal__content .modal__btn-white:hover {
+    background: #585c60;
+    color: #fff;
+    border-color: #585c60;
   }
 
   .login_modal .modal__content__phone {
@@ -14550,6 +14592,12 @@ input:focus .search_page__mb_search {
     margin-top: 0px;
     font-size: 12px;
     letter-spacing: 0.2em;
+  }
+}
+
+@media screen and (max-width: 450px) and (max-width: 500px) {
+  .login_modal .modal__content .modal__btn-white {
+    margin-top: 10px !important;
   }
 }
 

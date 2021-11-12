@@ -832,8 +832,8 @@
                         <p id="file_name"></p>
                     </div>
 
-                    <button class="block__btn">СМЕНИТЬ ПАРОЛЬ</button>
-                    <button class="block__btn block__btn-leave">Выйти из аккаунта</button>
+                    <button class="block__btn" type="button">СМЕНИТЬ ПАРОЛЬ</button>
+                    <button id="openTextModalBtn" class="block__btn block__btn-leave" type="button">Выйти из аккаунта</button>
                 </form>
         </div>
 
@@ -863,7 +863,6 @@
             </div>
         </div>
     </main>
-    
 
     <div id="textModal" class="login_modal login_modal-reg">
         <div class="overlay"></div>
@@ -875,12 +874,13 @@
             </div>
     
             <div class="modal__container">
-                <h2 class="modal__content__title">Обратная связь</h2>
+                <h2 class="modal__content__title">Выйти из аккаунта</h2>
             </div>
             
-            <p class="modal__content__text">Спасибо за оставленные данные, мы позвоним вам в течение часа</p>
+            <p class="modal__content__text">Вы действительно хотите выйти?</p>
 
-            <button class="modal__btn close_modal">Закрыть</button>
+            <button class="modal__btn">Выход</button>
+            <button class="modal__btn modal__btn-white close_modal">Назад</button>
         </div>
     </div>
 
