@@ -248,6 +248,7 @@ body{
             }
         }
     }
+    
 
     .contacts{
         margin-top: 124px;
@@ -334,6 +335,201 @@ body{
             padding-left: 24px;
         }
     }
+
+    .profile {
+        position: relative;
+        height: 100%;
+        .profile__name {
+            display: flex;
+            align-items: center;
+            padding: 36px 26px;
+            padding-right: 11px;
+            padding-bottom: 40px;
+
+            border-bottom: 1px solid #373839;
+
+            .name__icon {
+                @include text($black,24px,bold);
+                font-size: 18px;
+                background: $yellow;
+                padding: 12px 17px;
+                border-radius: 100%;
+                
+            }
+            .name__text {
+                @include text(#fff,24px,bold);
+                font-size: 18px;
+                margin-left: 16px;
+            }
+        }
+        
+        .profile__nav {
+            margin-top: 32px;
+            padding-left: 30px;
+
+            .nav__link{
+                text-decoration: none;
+                color: white;
+
+                &-active{
+                    pointer-events: none;
+                    .nav__item{
+                        path{
+                            fill: $green;
+                        }
+                        span{
+                            color:$green;
+                        }
+                    }
+                }
+            }
+
+            .nav__item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 27px;
+
+                span{
+                    @include text(#fff,21px,bold);
+                    font-size: 16px;
+                    margin-left: 14px;
+
+                    transition: .2s linear;
+                }
+
+                path{
+                    transition: .2s linear;
+                }
+
+                &:hover{
+                    path{
+                        fill: $green;
+                    }
+                    span{
+                        color:$green;
+                    }
+                }
+
+                
+            }
+        }
+        .profile__bottom{
+            position: absolute;
+            bottom: 0;
+
+            @media screen and (max-height: 800px) {
+                position: relative;
+                margin-top: 50px;
+            }
+
+            @media screen and (max-width: 1100px) {
+                position: relative;
+                margin-top: 50px;
+            }
+        }
+        .profile__duty {
+            margin-bottom: 40px;
+            padding: 0px 32px;
+            .duty__content {
+                text-align: center;
+                padding: 25px 38px;
+                background: #585C60;
+
+                .content__title {
+                    @include text(#fff,24px,600);
+                    font-size: 18px;  
+                    margin-bottom: 10px;  
+                }
+
+                .content__text {
+                    @include text($grey_3,19px,normal);
+                }
+
+                .content__price {
+                    @include text(#fff,26px,bold);
+                    font-size: 22px; 
+
+                    margin: 5px 0px;
+                }
+
+            }
+        }
+        .profile__manager {
+            width: 100%;
+            border-top: 1px solid #373839;
+            display: flex;
+            justify-content: space-between;
+            margin-top: auto;
+            .manager__info {
+                display: flex;
+                align-items: center;
+                padding: 40px 28px;
+
+                .info__text {
+                    margin-left: 16px;
+
+                    .text__name {
+                        @include text(#fff, 24px, 600);
+                        font-size: 18px;
+                    }
+                    .text__position {
+                        @include text($grey_2, 24px, normal);
+                        margin-bottom: 5px;
+                    }
+                    .text__phone {
+                        @include text(#fff, 21px, bold);
+                        font-size: 16px;
+                    }
+                }
+            }
+            
+            .manager__icons {
+                display: flex;
+                flex-direction: column;
+                border-left: 1px solid #373839;
+
+                padding: 40px 24px;
+
+                a:first-child{
+                    margin-bottom: 32px;
+                }
+            }
+
+            @media screen and (max-width: 1500px) {
+                .manager__icons{
+                    border-top: 1px solid #373839;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 20px 24px;
+                    a:first-child{
+                        margin-bottom: 0px;
+                        margin-left: 0;
+                    }
+
+                    a{
+                        margin: 0 10px;
+                    }
+                }
+                flex-direction: column;
+            }
+
+            @media screen and (max-width: 1100px) {
+                flex-direction: row;
+                .manager__icons {
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 1px solid #373839;
+    
+                    padding: 40px 24px;
+    
+                    a:first-child{
+                        margin-bottom: 32px;
+                    }
+                }
+            }
+        }
+    }
+    
 
     @media screen and (max-width: 1500px) {
         max-width: 370px;
@@ -2551,11 +2747,13 @@ body{
                 max-width: 85%;
             }
         }
+
         @media screen and (max-width: 800px) {
             .list__item{
                 max-width: 98%;
             }
         }
+        
         @media screen and (max-width: 650px) {
             .list__item{
                 max-width: 100%;

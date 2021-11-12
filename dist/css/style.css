@@ -1857,6 +1857,227 @@ body {
   fill: #008385;
 }
 
+.menu_poppup .profile {
+  position: relative;
+  height: 100%;
+}
+
+.menu_poppup .profile .profile__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 36px 26px;
+  padding-right: 11px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #373839;
+}
+
+.menu_poppup .profile .profile__name .name__icon {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2F2F2F;
+  font-size: 18px;
+  background: #FFC709;
+  padding: 12px 17px;
+  border-radius: 100%;
+}
+
+.menu_poppup .profile .profile__name .name__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 16px;
+}
+
+.menu_poppup .profile .profile__nav {
+  margin-top: 32px;
+  padding-left: 30px;
+}
+
+.menu_poppup .profile .profile__nav .nav__link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu_poppup .profile .profile__nav .nav__link-active {
+  pointer-events: none;
+}
+
+.menu_poppup .profile .profile__nav .nav__link-active .nav__item path {
+  fill: #008385;
+}
+
+.menu_poppup .profile .profile__nav .nav__link-active .nav__item span {
+  color: #008385;
+}
+
+.menu_poppup .profile .profile__nav .nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 27px;
+}
+
+.menu_poppup .profile .profile__nav .nav__item span {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 14px;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.menu_poppup .profile .profile__nav .nav__item path {
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.menu_poppup .profile .profile__nav .nav__item:hover path {
+  fill: #008385;
+}
+
+.menu_poppup .profile .profile__nav .nav__item:hover span {
+  color: #008385;
+}
+
+.menu_poppup .profile .profile__bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.menu_poppup .profile .profile__duty {
+  margin-bottom: 40px;
+  padding: 0px 32px;
+}
+
+.menu_poppup .profile .profile__duty .duty__content {
+  text-align: center;
+  padding: 25px 38px;
+  background: #585C60;
+}
+
+.menu_poppup .profile .profile__duty .duty__content .content__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.menu_poppup .profile .profile__duty .duty__content .content__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #DEE2E6;
+}
+
+.menu_poppup .profile .profile__duty .duty__content .content__price {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  font-size: 22px;
+  margin: 5px 0px;
+}
+
+.menu_poppup .profile .profile__manager {
+  width: 100%;
+  border-top: 1px solid #373839;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: auto;
+}
+
+.menu_poppup .profile .profile__manager .manager__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 28px;
+}
+
+.menu_poppup .profile .profile__manager .manager__info .info__text {
+  margin-left: 16px;
+}
+
+.menu_poppup .profile .profile__manager .manager__info .info__text .text__name {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.menu_poppup .profile .profile__manager .manager__info .info__text .text__position {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #AAAFB4;
+  margin-bottom: 5px;
+}
+
+.menu_poppup .profile .profile__manager .manager__info .info__text .text__phone {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.menu_poppup .profile .profile__manager .manager__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 1px solid #373839;
+  padding: 40px 24px;
+}
+
+.menu_poppup .profile .profile__manager .manager__icons a:first-child {
+  margin-bottom: 32px;
+}
+
 .filter_poppup {
   display: none;
   position: fixed;
@@ -7293,6 +7514,10 @@ input:focus .search_page__mb_search {
   min-height: 100vh;
 }
 
+.profile_page a {
+  text-decoration: none !important;
+}
+
 .profile_page .page__title {
   font-family: "Mont Blanc",sans-serif;
   font-style: normal;
@@ -7840,6 +8065,117 @@ input:focus .search_page__mb_search {
   line-height: 16px;
   color: #AAAFB4;
   font-size: 12px;
+}
+
+.profile_page .duty__content {
+  display: none;
+  text-align: center;
+  padding: 25px 38px;
+  background: #585C60;
+  margin-top: -23px;
+  margin-bottom: 16px;
+}
+
+.profile_page .duty__content .content__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile_page .duty__content .content__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #DEE2E6;
+}
+
+.profile_page .duty__content .content__price {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  font-size: 22px;
+  margin: 5px 0px;
+}
+
+.profile_page .profile__manager {
+  width: 100%;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: auto;
+  background: #2F2F2F;
+  margin-top: 36px;
+  margin-bottom: -16px;
+}
+
+.profile_page .profile__manager .manager__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 28px;
+}
+
+.profile_page .profile__manager .manager__info .info__text {
+  margin-left: 16px;
+}
+
+.profile_page .profile__manager .manager__info .info__text .text__name {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.profile_page .profile__manager .manager__info .info__text .text__position {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #AAAFB4;
+  margin-bottom: 5px;
+}
+
+.profile_page .profile__manager .manager__info .info__text .text__phone {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.profile_page .profile__manager .manager__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 24px;
+}
+
+.profile_page .profile__manager .manager__icons a:first-child {
+  margin-bottom: 32px;
 }
 
 .mn_opened .intro {
@@ -8447,6 +8783,34 @@ input:focus .search_page__mb_search {
 
   .menu_poppup .contacts {
     padding-left: 24px;
+  }
+
+  .menu_poppup .profile .profile__manager {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .menu_poppup .profile .profile__manager .manager__icons {
+    border-top: 1px solid #373839;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 24px;
+  }
+
+  .menu_poppup .profile .profile__manager .manager__icons a:first-child {
+    margin-bottom: 0px;
+    margin-left: 0;
+  }
+
+  .menu_poppup .profile .profile__manager .manager__icons a {
+    margin: 0 10px;
   }
 
   .menu_poppup {
@@ -9314,6 +9678,34 @@ input:focus .search_page__mb_search {
 
   .main_page {
     padding-right: 0;
+  }
+
+  .menu_poppup .profile .profile__bottom {
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .menu_poppup .profile .profile__manager {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .menu_poppup .profile .profile__manager .manager__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-left: 1px solid #373839;
+    padding: 40px 24px;
+  }
+
+  .menu_poppup .profile .profile__manager .manager__icons a:first-child {
+    margin-bottom: 32px;
   }
 
   .menu_poppup {
@@ -11260,6 +11652,20 @@ input:focus .search_page__mb_search {
     margin-top: 20px;
   }
 
+  .profile_page .duty__content {
+    display: block;
+  }
+
+  .profile_page .profile__manager {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .profile_page {
+    padding-bottom: 0;
+  }
+
   .empty_order_page {
     min-height: 40vh;
   }
@@ -12222,6 +12628,30 @@ input:focus .search_page__mb_search {
 
   .profile_page .mobile__links {
     padding-left: 17px;
+  }
+
+  .profile_page .duty__content {
+    margin-top: -10px;
+    padding: 16px;
+  }
+
+  .profile_page .profile__manager .manager__info {
+    padding: 16px 20px;
+    padding-right: 11px;
+  }
+
+  .profile_page .profile__manager .manager__icons {
+    padding: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .profile_page .profile__manager .manager__icons a:first-child {
+    margin-bottom: 16px;
   }
 }
 
@@ -13888,6 +14318,76 @@ input:focus .search_page__mb_search {
     line-height: 19px;
     color: #fff;
   }
+
+  .profile_page .duty__content .content__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .profile_page .duty__content .content__text {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #DEE2E6;
+    font-size: 12px;
+  }
+
+  .profile_page .duty__content .content__price {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-size: 18px;
+    margin: 3px 0px;
+  }
+
+  .profile_page .profile__manager .manager__info .info__img {
+    max-width: 76px;
+  }
+
+  .profile_page .profile__manager .manager__info .info__text .text__name {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .profile_page .profile__manager .manager__info .info__text .text__position {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #AAAFB4;
+    font-size: 14px;
+  }
+
+  .profile_page .profile__manager .manager__info .info__text .text__phone {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  .profile_page .profile__manager .manager__info .info__text {
+    margin-left: 10px;
+  }
 }
 
 @media screen and (max-width: 400px) and (max-width: 600px) {
@@ -14171,12 +14671,50 @@ input:focus .search_page__mb_search {
   .promotions .promotions__slider .promotions__item .item__info .info__subtitle {
     font-size: 12px;
   }
+
+  .profile_page .profile__manager .manager__info .info__text .text__name {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .profile_page .profile__manager .manager__info .info__text .text__position {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #AAAFB4;
+    font-size: 12px;
+  }
+
+  .profile_page .profile__manager .manager__info .info__text .text__phone {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 18px;
+  }
 }
 
 @media screen and (max-width: 330px) {
   .promotions .promotions__slider .promotions__item {
     min-height: 265px;
     max-height: 265px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .menu_poppup .profile .profile__bottom {
+    position: relative;
+    margin-top: 50px;
   }
 }
 
