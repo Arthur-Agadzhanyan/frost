@@ -138,3 +138,32 @@
         }
     }
 }
+
+.call-modal{
+    
+    @media screen and (max-height: 500px) {
+        justify-content: initial;
+        align-items: initial;
+
+        .modal__content{
+            max-width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+    }
+
+    .modal__content{
+        padding-bottom: 40px;
+
+        .phone-text{
+            margin-top: 25px;
+            margin-bottom: 0px !important;
+        }
+
+        .modal__content__call-phone{
+            @include text($black,24px,600);
+            margin-top: 2px;
+            font-size: 18px;
+        }
+    }
+}

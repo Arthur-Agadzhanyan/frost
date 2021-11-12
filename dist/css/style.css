@@ -1165,6 +1165,26 @@ template {
   margin-bottom: 20px !important;
 }
 
+.call-modal .modal__content {
+  padding-bottom: 40px;
+}
+
+.call-modal .modal__content .phone-text {
+  margin-top: 25px;
+  margin-bottom: 0px !important;
+}
+
+.call-modal .modal__content .modal__content__call-phone {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2F2F2F;
+  margin-top: 2px;
+  font-size: 18px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15825,6 +15845,23 @@ input:focus .search_page__mb_search {
   }
 
   .change-password .modal__content {
+    max-width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .call-modal {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+
+  .call-modal .modal__content {
     max-width: 100%;
     height: 100%;
     overflow: auto;
