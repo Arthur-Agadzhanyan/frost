@@ -15814,6 +15814,23 @@ input:focus .search_page__mb_search {
   }
 }
 
+@media screen and (max-height: 550px) {
+  .change-password {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+
+  .change-password .modal__content {
+    max-width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+}
+
 @media screen and (max-height: 800px) {
   .menu_poppup .profile .profile__bottom {
     position: relative;

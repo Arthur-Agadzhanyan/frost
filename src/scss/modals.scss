@@ -125,3 +125,16 @@
         }
     }
 }
+
+.change-password{
+    @media screen and (max-height: 550px) {
+        justify-content: initial;
+        align-items: initial;
+
+        .modal__content{
+            max-width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+    }
+}

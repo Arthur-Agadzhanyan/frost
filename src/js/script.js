@@ -270,7 +270,14 @@ const openChangePassInput = document.getElementById("openChangePassInput")
 
 const textModal = document.getElementById("textModal")
 const openTextModal = document.getElementById("openTextModal")
+
 const openTextModalBtn = document.getElementById("openTextModalBtn")
+
+const openChangePasswordModal = document.getElementById("openChangePasswordModal")
+const changePasswordModal = document.getElementById("changePasswordModal")
+
+const changePassTextModal = document.getElementById("changePassTextModal")
+const openChangePassTextModal = document.getElementById("openChangePassTextModal")
 
 const closeModal = document.querySelectorAll(".close_modal")
 
@@ -316,6 +323,31 @@ if(openTextModalBtn && textModal){
     }
 }
 
+if(openChangePassTextModal && changePassTextModal){
+    openChangePassTextModal.onsubmit = (e)=>{
+        e.preventDefault()
+
+        if(changePasswordModal){
+            changePasswordModal.style.opacity = "0"
+            document.body.style.overflow = "auto"
+            setTimeout(()=>changePasswordModal.style.display = "none",300)
+        }
+
+        changePassTextModal.style.display = "flex"
+        document.body.style.overflow = "hidden"
+        setTimeout(()=>changePassTextModal.style.opacity = "1", 200)
+        return
+    }
+}
+
+if(openChangePasswordModal && changePasswordModal){
+    openChangePasswordModal.onclick = (e)=>{
+        changePasswordModal.style.display = "flex"
+        document.body.style.overflow = "hidden"
+        setTimeout(()=>changePasswordModal.style.opacity = "1", 200)
+        return 
+    }
+}
 
 if(closeModal){
     closeModal.forEach(el=>{
@@ -330,6 +362,18 @@ if(closeModal){
                 textModal.style.opacity = "0"
                 document.body.style.overflow = "auto"
                 setTimeout(()=>textModal.style.display = "none",300)
+            }
+
+            if(changePasswordModal){
+                changePasswordModal.style.opacity = "0"
+                document.body.style.overflow = "auto"
+                setTimeout(()=>changePasswordModal.style.display = "none",300)
+            }
+
+            if(changePassTextModal){
+                changePassTextModal.style.opacity = "0"
+                document.body.style.overflow = "auto"
+                setTimeout(()=>changePassTextModal.style.display = "none",300)
             }
 
             return
