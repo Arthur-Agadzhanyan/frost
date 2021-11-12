@@ -8178,6 +8178,247 @@ input:focus .search_page__mb_search {
   margin-bottom: 32px;
 }
 
+.orders_page .orders__list .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px;
+  margin-top: 24px;
+  border: 1px solid #EFF3F3;
+}
+
+.orders_page .orders__list .list__item .item__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  border-right: 1px solid #EFF3F3;
+  padding-right: 24px;
+}
+
+.orders_page .orders__list .list__item .item__info .info__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #585c60;
+  font-size: 12px;
+}
+
+.orders_page .orders__list .list__item .item__info .info__date {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.orders_page .orders__list .list__item .item__info .info__date .date__item {
+  position: relative;
+}
+
+.orders_page .orders__list .list__item .item__info .info__date .date__item .item__title {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 110%;
+  color: #2F2F2F;
+  font-size: 20px;
+}
+
+.orders_page .orders__list .list__item .item__info .info__date .date__item .item__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #585c60;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+  content: " ";
+  position: absolute;
+  top: 30%;
+  right: -85px;
+  width: 77px;
+  height: 1px;
+  background: #2F2F2F;
+}
+
+.orders_page .orders__list .list__item .item__info .info__date .date__item-delivery {
+  text-align: right;
+}
+
+.orders_page .orders__list .list__item .item__info .info__status {
+  display: inline-block;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 12px;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  margin-right: auto;
+}
+
+.orders_page .orders__list .list__item .item__info .info__status-yellow {
+  background: #FFC709;
+}
+
+.orders_page .orders__list .list__item .item__info .info__status-grey {
+  background: #AAAFB4;
+}
+
+.orders_page .orders__list .list__item .item__info .info__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2F2F2F;
+  margin-bottom: 12px;
+}
+
+.orders_page .orders__list .list__item .item__info .info__price {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  color: #2F2F2F;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.orders_page .orders__list .list__item .item__info .info__btn {
+  width: 100%;
+  padding: 10px;
+  padding-top: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  background: #008385;
+  border: 1px solid #008385;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.orders_page .orders__list .list__item .item__info .info__btn:hover {
+  color: #008385;
+  background: #fff;
+}
+
+.orders_page .orders__list .list__item .item__products {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-left: 24px;
+  overflow: hidden;
+}
+
+.orders_page .orders__list .list__item .item__products .products__blocks .blocks__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #EFF3F3;
+  padding: 8px 16px;
+  padding-left: 15px;
+  margin-bottom: 14px;
+}
+
+.orders_page .orders__list .list__item .item__products .products__blocks .blocks__item .product__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+.orders_page .orders__list .list__item .item__products .products__blocks .blocks__item .product__info .info__img {
+  max-height: 54px;
+}
+
+.orders_page .orders__list .list__item .item__products .products__blocks .blocks__item .product__info .info__content {
+  margin-left: 18px;
+  overflow: hidden;
+}
+
+.orders_page .orders__list .list__item .item__products .products__blocks .blocks__item .product__info .info__content .content__text {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2F2F2F;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.orders_page .orders__list .list__item .item__products .products__blocks .blocks__item .product__info .info__content .content__measure .measure__price {
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #AAAFB4;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.orders_page .orders__list .list__item .item__products .info__btn {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  padding-top: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  background: #008385;
+  border: 1px solid #008385;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+  font-family: "Mont Blanc",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.orders_page .orders__list .list__item .item__products .info__btn:hover {
+  color: #008385;
+  background: #fff;
+}
+
 .mn_opened .intro {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -9006,6 +9247,21 @@ input:focus .search_page__mb_search {
             flex: 0 1 49%;
   }
 
+  .mn_opened .orders_page .payment__block {
+    padding-left: 44px !important;
+    padding-right: 44px !important;
+    margin-left: 0;
+  }
+
+  .mn_opened .orders_page .list__item .item__info .info__date {
+    width: 100%;
+  }
+
+  .mn_opened .orders_page .list__item .item__info .info__date .date__item-order:after {
+    right: -60px;
+    width: 55px;
+  }
+
   .mn_opened .advantages {
     padding: 50px 45px;
     -ms-flex-wrap: wrap;
@@ -9405,6 +9661,13 @@ input:focus .search_page__mb_search {
 
   .search_page {
     padding-right: 44px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mn_opened .orders_page .list__item .item__info .info__date .date__item-order:after {
+    right: -35px;
+    width: 25px;
   }
 }
 
@@ -10006,6 +10269,16 @@ input:focus .search_page__mb_search {
     padding-right: 44px !important;
     margin-left: 0;
   }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -220px;
+    width: 200px;
+  }
+
+  .orders_page .payment__block {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -10027,6 +10300,11 @@ input:focus .search_page__mb_search {
 
   .catalog .catalog__list .list__item .item__image {
     max-height: 500px;
+  }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -205%;
+    width: 200%;
   }
 }
 
@@ -10150,6 +10428,11 @@ input:focus .search_page__mb_search {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
+  }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -160%;
+    width: 150%;
   }
 }
 
@@ -10444,6 +10727,16 @@ input:focus .search_page__mb_search {
 
   .how_order_page {
     padding-bottom: 0px;
+  }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -110%;
+    width: 100%;
+  }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -80%;
+    width: 70%;
   }
 }
 
@@ -11012,6 +11305,11 @@ input:focus .search_page__mb_search {
         -ms-flex: 0 1 18%;
             flex: 0 1 18%;
     margin-left: 0;
+  }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -55%;
+    width: 50%;
   }
 }
 
@@ -11673,6 +11971,44 @@ input:focus .search_page__mb_search {
   .payment_history_page {
     min-height: 40vh;
   }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -220px;
+    width: 200px;
+  }
+
+  .orders_page .orders__list .list__item .item__info .info__btn {
+    display: none;
+  }
+
+  .orders_page .orders__list .list__item .item__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    border: none;
+    padding-right: 0px;
+  }
+
+  .orders_page .orders__list .list__item .item__products .products__blocks .blocks__item {
+    border: none;
+  }
+
+  .orders_page .orders__list .list__item .item__products .info__btn {
+    display: block;
+  }
+
+  .orders_page .orders__list .list__item .item__products {
+    margin-top: 14px;
+    padding-left: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .orders_page .orders__list .list__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 600px) and (max-width: 600px) {
@@ -11872,6 +12208,11 @@ input:focus .search_page__mb_search {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -190px;
+    width: 170px;
   }
 }
 
@@ -12652,6 +12993,15 @@ input:focus .search_page__mb_search {
 
   .profile_page .profile__manager .manager__icons a:first-child {
     margin-bottom: 16px;
+  }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -180px;
+    width: 170px;
+  }
+
+  .orders_page .orders__list .list__item {
+    padding: 12px;
   }
 }
 
@@ -13466,6 +13816,11 @@ input:focus .search_page__mb_search {
     padding-top: 18px;
     padding-bottom: 7px;
   }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -170px;
+    width: 160px;
+  }
 }
 
 @media screen and (max-width: 450px) and (max-width: 450px) {
@@ -13532,6 +13887,13 @@ input:focus .search_page__mb_search {
     margin-top: 0px;
     font-size: 12px;
     letter-spacing: 0.2em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -145px;
+    width: 140px;
   }
 }
 
@@ -14388,11 +14750,28 @@ input:focus .search_page__mb_search {
   .profile_page .profile__manager .manager__info .info__text {
     margin-left: 10px;
   }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item .item__title {
+    font-family: "Mont Blanc",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 110%;
+    color: #2F2F2F;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 400px) and (max-width: 600px) {
   .goods_of_the_day__products .products__big .big_mb .info__bottom {
     display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -105px;
+    width: 100px;
   }
 }
 
@@ -14626,6 +15005,11 @@ input:focus .search_page__mb_search {
 
   .cart_page .cart__content .content__blocks .blocks__list .list__item .item__info {
     max-width: 80%;
+  }
+
+  .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
+    right: -95px;
+    width: 100px;
   }
 }
 

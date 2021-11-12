@@ -711,6 +711,281 @@
     }
 }
 
+.orders_page{
+    .orders__list {
+        .list__item {
+            display: flex;
+            padding: 24px;
+            margin-top: 24px;
+            border: 1px solid $grey_4;
+
+            .item__info {
+                flex: 0 1 50%;
+                border-right: 1px solid $grey_4;
+                padding-right: 24px;
+
+                .info__title {
+                    @include text($grey_1,16px,600);
+                    font-size: 12px;
+                }
+
+                .info__date {
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 12px;
+
+                    .date__item {
+                        position: relative;
+                        .item__title {
+                            @include text($black,110%,600);
+                            font-size: 20px;
+
+                            @media screen and (max-width: 400px) {
+                                @include text($black,110%,600);
+                                font-size: 16px;
+                            }
+                        }
+                        .item__text {
+                            @include text($grey_1,16px,600);
+                            font-size: 12px;
+                            margin-top: 2px;
+                        }
+
+                        &-order{
+                            &:after{
+                                content: " ";
+                                position: absolute;
+                                top: 30%;
+                                right: -85px;
+                                width: 77px;
+                                height: 1px;
+                                background: $black;
+
+                                @media screen and (max-width: 1100px){
+                                    right: -220px;
+                                    width: 200px;
+                                }
+                                @media screen and (max-width: 1000px){
+                                    right: -205%;
+                                    width: 200%;
+                                }
+                                @media screen and (max-width: 900px){
+                                    right: -160%;
+                                    width: 150%;
+                                }
+
+                                @media screen and (max-width: 800px){
+                                    right: -110%;
+                                    width: 100%;
+                                }
+
+                                @media screen and (max-width: 800px){
+                                    right: -80%;
+                                    width: 70%;
+                                }
+                                @media screen and (max-width: 650px){
+                                    right: -55%;
+                                    width: 50%;
+                                }
+                                @media screen and (max-width: 600px){
+                                    right: -220px;
+                                    width: 200px;
+                                }
+                                @media screen and (max-width: 550px){
+                                    right: -190px;
+                                    width: 170px;
+                                }
+                                @media screen and (max-width: 500px){
+                                    right: -180px;
+                                    width: 170px;
+                                }
+                                @media screen and (max-width: 450px){
+                                    right: -170px;
+                                    width: 160px;
+                                }
+                                @media screen and (max-width: 420px){
+                                    right: -145px;
+                                    width: 140px;
+                                }
+                                @media screen and (max-width: 390px){
+                                    right: -105px;
+                                    width: 100px;
+                                }
+                                @media screen and (max-width: 350px){
+                                    right: -95px;
+                                    width: 100px;
+                                }
+                            }
+                        }
+
+                        &-delivery{
+                            text-align: right;
+                        }   
+                    }
+                }
+
+                .info__status {
+                    display: inline-block;
+                    @include text(#fff,16px,600);
+                    font-size: 12px;
+                    padding: 4px 12px;
+                    padding-bottom: 6px;
+                    margin-bottom: 12px;
+                    margin-right: auto;
+
+                    &-yellow{
+                        background: $yellow;
+                    }
+
+                    &-grey{
+                        background: $grey_2;
+                    }
+                }
+
+                .info__text {
+                    @include text($black,19px,600);
+                    margin-bottom: 12px;
+                }
+
+                .info__price{
+                    @include text($black,32px,600);
+                    font-size: 24px;
+                    margin-bottom: 12px;
+                }
+
+                .info__btn{
+                    width: 100%;
+                    padding: 10px;
+                    padding-top: 11px;
+                    letter-spacing: 0.3em;
+                    text-transform: uppercase;
+                    background: $green;
+                    border: 1px solid $green;
+                    cursor: pointer;
+
+                    transition: .2s linear;
+
+                    @include text(#fff,19px,600);
+
+                    &:hover{
+                        color: $green;
+                        background: #fff;;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        display: none;
+                    }
+                }
+
+                @media screen and (max-width: 600px) {
+                    flex: 0 1 100%;
+                    border: none;
+                    padding-right: 0px;
+                }
+            }
+            
+            .item__products {
+                flex: 0 1 50%;
+                padding-left: 24px;
+                overflow: hidden;
+                
+                .products__blocks{
+                    .blocks__item{
+                        position: relative;
+                        display: flex;
+                        justify-content: space-between;
+                        border: 1px solid $grey_4;
+                        padding: 8px 16px;
+                        padding-left: 15px;
+                        margin-bottom: 14px;
+    
+                        .product__info{
+                            display: flex;
+                            align-items: center;
+                            max-width: 100%;
+                            .info__img {
+                                max-height: 54px;
+                            }
+                            .info__content {
+                                margin-left: 18px;
+                                overflow: hidden;
+                                
+                                .content__text {
+                                    @include text($black,19px,normal);
+
+                                    overflow: hidden;
+                                    width: 100%;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                                .content__measure {
+                                    .measure__price {
+                                        @include text($grey_2,16px,600);
+                                        font-size: 12px;
+                                        margin-right: 6px;
+                                    }
+                                }
+                            }
+                            
+                            
+                        }
+                        @media screen and (max-width: 600px) {
+                            border: none;
+                        }
+                    }
+                }
+
+                .info__btn{
+                    display: none;
+                    width: 100%;
+                    padding: 10px;
+                    padding-top: 11px;
+                    letter-spacing: 0.3em;
+                    text-transform: uppercase;
+                    background: $green;
+                    border: 1px solid $green;
+                    cursor: pointer;
+
+                    transition: .2s linear;
+
+                    @include text(#fff,19px,600);
+
+                    &:hover{
+                        color: $green;
+                        background: #fff;;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        display: block;
+                    }
+                }
+                @media screen and (max-width: 600px) {
+                    margin-top: 14px;
+                    padding-left: 0;
+                    flex: 0 1 100%
+                }
+            }
+
+            @media screen and (max-width: 600px){
+                flex-wrap: wrap;
+            }
+
+            @media screen and (max-width: 500px){
+                padding: 12px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 1100px){
+        .payment__block{
+            max-width: 100%;
+            width: 100%;
+        }
+    } 
+}
+
 .mn_opened{
     .profile_page{
         @media screen and (max-width: 1300px){
@@ -720,5 +995,47 @@
                 margin-left: 0;
             }
         }
+    }
+
+    .orders_page{
+        @media screen and (max-width: 1400px){
+            .payment__block{
+                padding-left: 44px !important;
+                padding-right: 44px !important;
+                margin-left: 0;
+            }
+            .list__item {
+                .item__info {
+                    .info__date {
+                        width: 100%;
+                        .date__item{
+                            &-order{
+                                &:after{
+                                    right: -60px;
+                                    width: 55px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1150px){
+            .list__item {
+                .item__info {
+                    .info__date {
+                        .date__item{
+                            &-order{
+                                &:after{
+                                    right: -35px;
+                                    width: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }      
     }
 }
