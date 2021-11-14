@@ -77,6 +77,24 @@
             }
         }
 
+        .password-control{
+            position: absolute;
+            top: 18px;
+            right: 16px;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url("../../img/personal_data/eye-off.svg") 0 0 no-repeat;
+
+            @media screen and (max-width: 450px) {
+                top: 12px;
+            }
+        }
+
+        .view_password{
+            background: url("../../img/personal_data/eye-on.svg") 0 0 no-repeat;
+        }
+
         .input__error{
             font-size: 11px;
             color: $red;

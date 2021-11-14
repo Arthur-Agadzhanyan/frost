@@ -8059,6 +8059,20 @@ input:focus .search_page__mb_search {
   border: 1px solid #AAAFB4;
 }
 
+.profile_page .profile__form .password-control {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../../img/personal_data/eye-off.svg") 0 0 no-repeat;
+}
+
+.profile_page .profile__form .view_password {
+  background: url("../../img/personal_data/eye-on.svg") 0 0 no-repeat;
+}
+
 .profile_page .profile__form .input__error {
   font-size: 11px;
   color: #EF3541;
@@ -15111,6 +15125,10 @@ input:focus .search_page__mb_search {
   .profile_page .profile__form .form__input:not(:placeholder-shown) {
     padding-top: 18px;
     padding-bottom: 7px;
+  }
+
+  .profile_page .profile__form .password-control {
+    top: 12px;
   }
 
   .orders_page .orders__list .list__item .item__info .info__date .date__item-order:after {
