@@ -103,7 +103,7 @@
 
         font-size: 19px;
 
-        background: $red;
+        background: #EF3541;
         color: #fff;
 
         @media screen and (max-width: 600px) {
@@ -231,19 +231,20 @@
                         padding: 4px 2px 4px 5px;
                     }
 
-                    @media screen and (max-width: 550px) {
-                        font-size: 12px;
+                    @media screen and (max-width: 500px) {
+                        font-size: 10px;
                         line-height: 14px;
+                        font-weight: 300;
                         letter-spacing: 0.2em;
                     }
-
                     @media screen and (max-width: 400px) {
                         font-size: 8px;
                         line-height: 11px;
+                        font-weight: 300;
                         letter-spacing: 0.2em;
                     }
                 }
-                @media screen and (max-width: 550px) {
+                @media screen and (max-width: 400px) {
                     top: 5px;
                     font-size: 8px;
                     line-height: 11px;

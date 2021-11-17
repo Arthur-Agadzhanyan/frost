@@ -1657,25 +1657,49 @@ a{
         }
 
         .recommend__item{
+            display: flex;
+            word-wrap: break-word;
             height: 100%;
             @include product(#2F2F2F);
             
+            justify-content: start ;
             .item__image{
+                flex-grow: 2;
                 @media screen and (max-width:800px) {
                     max-height: 500px;
+                    height: 100%;
                 }
             }
-        }       
-        @media screen and (max-width: 400px) {
-            margin-top: 12px;  
-            padding-bottom: 36px;  
-        }
-    }
 
-    @media screen and (max-width: 1100px) {
-        .recommend__slider{
-            padding-bottom: 42px;
-            margin-top: 22px;
+            .item__info{
+                width: 95%;
+                max-height: 100%;
+                padding-top: 16px;
+                flex-grow: 1;
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .info__title{
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
+                    margin-bottom: 0px;
+                }
+
+                .info__price{
+                    line-height: 20px;
+                }
+
+                .info__btn {
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+        @media screen and (max-width: 600px) {
+            padding-bottom: 30px;
         }
     }
 }
@@ -1877,7 +1901,7 @@ a{
                                 background: #EF3541;
                             }
                             @media screen and (max-width: 450px) {
-                                font-size: 10px;
+                                font-size: 8px;
                                 padding: 2px 3px 2px 7px;
                             }
                         }
@@ -2153,9 +2177,9 @@ a{
                     .price__item{
                         @media screen and (max-width: 400px) {
                             top: 5px;
-                            font-size: 10px;
+                            font-size: 8px;
                             line-height: 11px;
-                            right: -5px;
+                            right: -4px;
                         }
                     }         
                 }
@@ -2965,8 +2989,8 @@ a{
             flex: 0 1 100%;
         }
         .intro__item{
-            margin-top: 40px;
-            flex: 0 1 45%;
+            margin-top: 24px;
+            flex: 0 1 49%;
 
             .item__image{
                 display: block;
