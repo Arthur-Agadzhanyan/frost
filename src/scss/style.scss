@@ -1622,7 +1622,7 @@ a{
             width: 70px;
             height: 100%;
             pointer-events: none;
-            @media screen and (max-width: 800px) {
+            @media screen and (max-width: 1100px) {
                 display: none;
             }
         }
@@ -2993,13 +2993,21 @@ a{
                 content: " ";
                 position: absolute;
                 top: 0;
-                right: 0;
+                right: -2px;
                 z-index: 1000;
                 background: linear-gradient(90deg,transparent ,#fff 50%);
-                // box-shadow: 0px 15px 50px #fff;
-                width: 420px;
+                width: 42px;
                 height: 100%;
                 pointer-events: none;
+
+                @media screen and (max-width: 1300px) {
+                    width: 32px;
+                }
+                @media screen and (max-width: 1200px) {
+                    background: linear-gradient(90deg,transparent ,#fff 60%);
+                    width: 32px;
+                }
+                
             }
         }
     }

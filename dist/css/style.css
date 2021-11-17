@@ -779,7 +779,7 @@ template {
 }
 
 .footer {
-  padding: 0px 64px 34px 24px;
+  padding: 0px 64px 18px 64px;
   border-top: 1px solid #EFF3F3;
 }
 
@@ -804,8 +804,8 @@ template {
 
 .footer__top .locations {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
 }
 
 .footer__top .locations .logo {
@@ -813,14 +813,14 @@ template {
 }
 
 .footer__top .locations .location__item {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   font-family: "Mont Blanc",sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #040507;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .footer__top .locations .location__link {
@@ -830,8 +830,8 @@ template {
   font-size: 14px;
   line-height: 16px;
   color: #008385;
+  font-size: 12px;
   text-decoration: none;
-  margin-top: 2px;
   letter-spacing: 0.115em;
 }
 
@@ -954,7 +954,7 @@ template {
 }
 
 .footer__bottom {
-  padding-top: 17px;
+  padding-top: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9521,12 +9521,12 @@ input:focus .search_page__mb_search {
   content: " ";
   position: absolute;
   top: 0;
-  right: 0;
+  right: -2px;
   z-index: 1000;
   background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, #fff));
   background: -o-linear-gradient(left, transparent, #fff 50%);
   background: linear-gradient(90deg, transparent, #fff 50%);
-  width: 420px;
+  width: 42px;
   height: 100%;
   pointer-events: none;
 }
@@ -10514,6 +10514,10 @@ input:focus .search_page__mb_search {
     padding-right: 44px !important;
     margin-left: 0;
   }
+
+  .mn_opened .categories .categories__slider:after {
+    width: 32px;
+  }
 }
 
 @media screen and (max-width: 1260px) {
@@ -10765,6 +10769,13 @@ input:focus .search_page__mb_search {
 
   .search_page {
     padding-right: 44px;
+  }
+
+  .mn_opened .categories .categories__slider:after {
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(60%, #fff));
+    background: -o-linear-gradient(left, transparent, #fff 60%);
+    background: linear-gradient(90deg, transparent, #fff 60%);
+    width: 32px;
   }
 }
 
@@ -11263,6 +11274,10 @@ input:focus .search_page__mb_search {
 
   .categories .categories__slider .categories-slider .categories__item .item__text {
     width: 120px;
+  }
+
+  .categories .categories__slider:after {
+    display: none;
   }
 
   .categories .categories__slider {
@@ -11850,10 +11865,6 @@ input:focus .search_page__mb_search {
   .intro .intro__item .item__info .info__subtitle {
     font-size: 20px;
     padding-top: 18px;
-  }
-
-  .categories .categories__slider:after {
-    display: none;
   }
 
   .recommend .recommend__slider .recommend__item .item__image {
