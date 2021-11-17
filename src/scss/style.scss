@@ -1480,6 +1480,7 @@ a{
     margin-bottom: 62px;
 
     .categories__slider{
+        position: relative;
         margin-top: 30px;
 
         .categories-slider{
@@ -1491,6 +1492,7 @@ a{
                 // cursor: pointer;
                 .item__image{
                     margin: 0 auto;
+                    margin-left: 0;
                     width: 119px;
                     height: 119px;
                     border-radius: 1000px;
@@ -1532,8 +1534,17 @@ a{
                             width: 54.5px;
                         }
                     }
+
+                    // .item__image{
+                    //     margin-left: 0;
+                    // }
+                    // .item__text{
+                    //    width: 120px;
+                    // }
                 }
+
                 .item__text{
+                    width: 120px;
                     text-transform: uppercase;
                     font-size: 12px;
                     letter-spacing: .3em;
@@ -1557,14 +1568,14 @@ a{
                 }
             }  
 
-            .first-item{
-                .item__image{
-                    margin-left: 0;
-                }
-                .item__text{
-                   width: 120px;
-                }
-            }   
+            // .first-item{
+            //     .item__image{
+            //         margin-left: 0;
+            //     }
+            //     .item__text{
+            //        width: 120px;
+            //     }
+            // }   
 
             @media screen and (max-width: 1100px) {
                 .categories__item{
@@ -1592,6 +1603,20 @@ a{
                     }
                 }
             }
+
+            
+        }
+        &:after{
+            content: " ";
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(90deg,transparent ,#fff 50%);
+            // box-shadow: 0px 15px 50px #fff;
+            width: 70px;
+            height: 100%;
+            pointer-events: none;
         }
         @media screen and (max-width: 1100px) {
             margin-top: 22px;
@@ -2216,6 +2241,17 @@ a{
                         max-height: initial;
                     }
                 }
+            }     
+        }
+        @media screen and (max-width: 450px) {
+            .products__big{
+                .big__image{  
+                    img{
+                        max-width: 100%;
+                        max-height: 35vh;
+                    }
+                }
+                padding-right: 10px;
             }     
         }
         @media screen and (max-width: 400px) {

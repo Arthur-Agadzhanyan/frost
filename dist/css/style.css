@@ -3561,6 +3561,7 @@ a {
 }
 
 .categories .categories__slider {
+  position: relative;
   margin-top: 30px;
 }
 
@@ -3576,6 +3577,7 @@ a {
 
 .categories .categories__slider .categories-slider .categories__item .item__image {
   margin: 0 auto;
+  margin-left: 0;
   width: 119px;
   height: 119px;
   border-radius: 1000px;
@@ -3593,6 +3595,7 @@ a {
 }
 
 .categories .categories__slider .categories-slider .categories__item .item__text {
+  width: 120px;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: .3em;
@@ -3602,12 +3605,18 @@ a {
   margin-top: 10px;
 }
 
-.categories .categories__slider .categories-slider .first-item .item__image {
-  margin-left: 0;
-}
-
-.categories .categories__slider .categories-slider .first-item .item__text {
-  width: 120px;
+.categories .categories__slider:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, #fff));
+  background: -o-linear-gradient(left, transparent, #fff 50%);
+  background: linear-gradient(90deg, transparent, #fff 50%);
+  width: 70px;
+  height: 100%;
+  pointer-events: none;
 }
 
 .recommend {
@@ -14859,6 +14868,15 @@ input:focus .search_page__mb_search {
   .goods_of_the_day__products .products__big .big__info .info__text {
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .goods_of_the_day__products .products__big {
+    padding-right: 10px;
+  }
+
+  .goods_of_the_day__products .products__big .big__image img {
+    max-width: 100%;
+    max-height: 35vh;
   }
 
   .advantages__title {

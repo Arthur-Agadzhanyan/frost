@@ -24,6 +24,7 @@ const introSlider = new Swiper(".swiper-slider",{
 const categoriesSlider = new Swiper(".categories-slider",{
     slidesPerView: 12,
     // loop: true,
+    spaceBetween: 24,
     grabCursor: true,
     speed: 400,
 
@@ -44,10 +45,16 @@ const categoriesSlider = new Swiper(".categories-slider",{
             slidesPerView: 6.5,  
         },
         1100:{
-            slidesPerView: 4.5,  
+            slidesPerView: 5,  
         },
         1200:{
-            slidesPerView: 5, 
+            slidesPerView: 5.5, 
+        },
+        1300:{
+            slidesPerView: 6.5, 
+        },
+        1400:{
+            slidesPerView: 7, 
         },
         1500:{
             slidesPerView: 8,  
@@ -659,3 +666,53 @@ function show_hide_password(target){
 	}
 	return false;
 }
+
+// const openedMenuPage = document.getElementById("menu_open_page")
+
+// if(openedMenuPage){
+//     if(document.documentElement.clientWidth > 1100){
+//         if(menuOpened){
+//             if(document.documentElement.clientWidth <= 1500){
+//                 document.body.style.paddingLeft = "0px"
+//                 document.body.style.marginLeft = "96px"
+//                 document.body.classList.remove("mn_opened") 
+    
+//                 content.style.paddingLeft = "24px"
+//                 menuPoppup.style.left = "-100%"
+//                 menuOpened = false
+//                 return
+//             }else{
+//                 document.body.style.paddingLeft = "0px"
+//                 document.body.style.marginLeft = "96px"
+//                 document.body.classList.remove("mn_opened") 
+    
+//                 content.style.paddingLeft = "64px"
+//                 menuPoppup.style.left = "-100%"
+//                 menuOpened = false
+//                 return
+//             }
+//         } 
+//         else{
+//             if(document.documentElement.clientWidth <= 1500){
+//                 console.log("aaa");
+//                 document.body.style.paddingLeft = `466px`
+//                 document.body.classList.add("mn_opened")
+//                 document.body.style.marginLeft = "0px"
+//                 content.style.paddingLeft = "24px"
+//                 menuPoppup.style.left = "0"
+//                 menuOpened = true
+//             }else{
+//                 document.body.style.paddingLeft =  `566px`
+//                 document.body.classList.add("mn_opened")
+//                 document.body.style.marginLeft = "0px"
+//                 content.style.paddingLeft = "24px"
+//                 menuPoppup.style.left = "0"
+//                 menuOpened = true
+//             }
+
+//             if(main_pop){
+//                 document.body.style.paddingLeft =  `466px`
+//             }
+//         }
+//     }
+// }
