@@ -708,52 +708,52 @@ function show_hide_password(target){
 	return false;
 }
 
-// const openedMenuPage = document.getElementById("menu_open_page")
+// Initial opened poppup
+const openedMenuPage = document.getElementById("menu_open_page")
 
-// if(openedMenuPage){
-//     if(document.documentElement.clientWidth > 1100){
-//         if(menuOpened){
-//             if(document.documentElement.clientWidth <= 1500){
-//                 document.body.style.paddingLeft = "0px"
-//                 document.body.style.marginLeft = "96px"
-//                 document.body.classList.remove("mn_opened") 
+if(openedMenuPage){
+    if(document.documentElement.clientWidth > 1100){
+        if(menuOpened){
+            if(document.documentElement.clientWidth <= 1500){
+                document.body.style.paddingLeft = "0px"
+                document.body.style.marginLeft = "96px"
+                document.body.classList.remove("mn_opened") 
     
-//                 content.style.paddingLeft = "24px"
-//                 menuPoppup.style.left = "-100%"
-//                 menuOpened = false
-//                 return
-//             }else{
-//                 document.body.style.paddingLeft = "0px"
-//                 document.body.style.marginLeft = "96px"
-//                 document.body.classList.remove("mn_opened") 
+                content.style.paddingLeft = "24px"
+                menuPoppup.style.left = "-100%"
+                menuOpened = false
+                
+            }else{
+                document.body.style.paddingLeft = "0px"
+                document.body.style.marginLeft = "96px"
+                document.body.classList.remove("mn_opened") 
     
-//                 content.style.paddingLeft = "64px"
-//                 menuPoppup.style.left = "-100%"
-//                 menuOpened = false
-//                 return
-//             }
-//         } 
-//         else{
-//             if(document.documentElement.clientWidth <= 1500){
-//                 console.log("aaa");
-//                 document.body.style.paddingLeft = `466px`
-//                 document.body.classList.add("mn_opened")
-//                 document.body.style.marginLeft = "0px"
-//                 content.style.paddingLeft = "24px"
-//                 menuPoppup.style.left = "0"
-//                 menuOpened = true
-//             }else{
-//                 document.body.style.paddingLeft =  `566px`
-//                 document.body.classList.add("mn_opened")
-//                 document.body.style.marginLeft = "0px"
-//                 content.style.paddingLeft = "24px"
-//                 menuPoppup.style.left = "0"
-//                 menuOpened = true
-//             }
+                content.style.paddingLeft = "64px"
+                menuPoppup.style.left = "-100%"
+                menuOpened = false
+                
+            }
+        } 
+        else{
+            if(document.documentElement.clientWidth <= 1500){
+                document.body.style.paddingLeft = `466px`
+                document.body.classList.add("mn_opened")
+                document.body.style.marginLeft = "0px"
+                content.style.paddingLeft = "24px"
+                menuPoppup.style.left = "0"
+                menuOpened = true
+            }else{
+                document.body.style.paddingLeft =  `566px`
+                document.body.classList.add("mn_opened")
+                document.body.style.marginLeft = "0px"
+                content.style.paddingLeft = "24px"
+                menuPoppup.style.left = "0"
+                menuOpened = true
+            }
 
-//             if(main_pop){
-//                 document.body.style.paddingLeft =  `466px`
-//             }
-//         }
-//     }
-// }
+            if(main_pop){
+                document.body.style.paddingLeft =  `466px`
+            }
+        }
+    }
+}

@@ -883,6 +883,11 @@ a{
     max-width: 370px;
 }
 
+.initial_opened{
+    width: 100%;
+    left: 0%;
+}
+
 // Main Page ----------------------------------------------
 .contact_us{
     position: fixed;
@@ -1617,6 +1622,9 @@ a{
             width: 70px;
             height: 100%;
             pointer-events: none;
+            @media screen and (max-width: 800px) {
+                display: none;
+            }
         }
         @media screen and (max-width: 1100px) {
             margin-top: 22px;
@@ -2018,7 +2026,15 @@ a{
                 }
                 .big_mb{  
                     display: block;
-                    flex: 0 1 60%;
+                    flex: 0 1 70%;
+
+                    .big__image{
+                        padding-top: 30px;
+                        img{
+                            max-height: 100%;
+                            width: 100%;
+                        }
+                    }
                     
                     .info__bottom{
                         display: block !important;
@@ -2971,6 +2987,19 @@ a{
                 .categories__item{
                     
                 }
+            }
+
+            &:after{
+                content: " ";
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1000;
+                background: linear-gradient(90deg,transparent ,#fff 50%);
+                // box-shadow: 0px 15px 50px #fff;
+                width: 420px;
+                height: 100%;
+                pointer-events: none;
             }
         }
     }

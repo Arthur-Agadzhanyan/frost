@@ -3198,6 +3198,11 @@ a {
   max-width: 370px;
 }
 
+.initial_opened {
+  width: 100%;
+  left: 0%;
+}
+
 .contact_us {
   position: fixed;
   bottom: 48px;
@@ -5106,15 +5111,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #fff;
 }
 
 .catalog .catalog__large_list .list__item .item__info .info__text .text__promotions .promotion__item {
-  font-family: "Mont Blanc",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
-  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
   font-size: 12px;
   background: #008385;
   padding: 6px 12px;
@@ -5209,6 +5214,10 @@ a {
   color: #EF3541;
   font-size: 16px;
   margin-left: auto;
+}
+
+.catalog .catalog__large_list .list__item .item__wholesale .wholesale__list .wholesale__item:last-child {
+  border-bottom: none;
 }
 
 .catalog .catalog__large_list .list__item .item__buy {
@@ -9508,6 +9517,20 @@ input:focus .search_page__mb_search {
   height: 100%;
 }
 
+.mn_opened .categories .categories__slider:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, #fff));
+  background: -o-linear-gradient(left, transparent, #fff 50%);
+  background: linear-gradient(90deg, transparent, #fff 50%);
+  width: 420px;
+  height: 100%;
+  pointer-events: none;
+}
+
 .mn_opened .goods_of_the_day .goods_of_the_day__products {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -11829,6 +11852,10 @@ input:focus .search_page__mb_search {
     padding-top: 18px;
   }
 
+  .categories .categories__slider:after {
+    display: none;
+  }
+
   .recommend .recommend__slider .recommend__item .item__image {
     max-height: 500px;
   }
@@ -12271,6 +12298,13 @@ input:focus .search_page__mb_search {
     font-size: 21px;
   }
 
+  .catalog .catalog__large_list .list__item .item__info .info__text .text__promotions .promotion__item {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+  }
+
   .catalog .bottom__panel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -12680,8 +12714,17 @@ input:focus .search_page__mb_search {
   .goods_of_the_day__products .products__big .big_mb {
     display: block;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 60%;
-            flex: 0 1 60%;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+  }
+
+  .goods_of_the_day__products .products__big .big_mb .big__image {
+    padding-top: 30px;
+  }
+
+  .goods_of_the_day__products .products__big .big_mb .big__image img {
+    max-height: 100%;
+    width: 100%;
   }
 
   .goods_of_the_day__products .products__big .big_mb .info__bottom {
