@@ -27,3 +27,30 @@
         margin-top: -100%;
     }
 }
+
+@keyframes intro-circle {
+    0%{
+        border: 1px solid rgba(255, 255, 255, .2);
+    }
+    25%{
+        border-top-color: $green;
+    }
+
+    50%{
+        border-right-color: $green;
+    }
+
+    75%{
+        border-bottom-color: $green;
+    }
+
+    100%{
+        border-width: 1px;
+        border-style: solid;
+
+        border-top-color: $green;
+        border-left-color: $green;
+        border-right-color: $green; 
+        border-bottom-color: $green; 
+    }
+}

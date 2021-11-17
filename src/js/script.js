@@ -467,7 +467,7 @@ if(menuPoppup){
             }else{
                 if(document.documentElement.clientWidth <= 1100 && document.documentElement.clientWidth > 600){
                     if(menuOpened){
-                        menuPoppup.style.top = "-1000px"
+                        menuPoppup.style.left = "-200%"
                         menuPoppup.style.bottom = "initial"
                         document.body.style.overflow = "auto"   
                         menuOpened = false
@@ -475,12 +475,14 @@ if(menuPoppup){
                     }
                     if(document.documentElement.clientWidth <= 700){
                         menuPoppup.style.top = "66px"
+                        menuPoppup.style.left = "0px"
                         setTimeout(()=>menuPoppup.style.bottom = "0px",300)  
                         document.body.style.overflow = "hidden"     
                         menuOpened = true
                         return
                     }else{
                         menuPoppup.style.top = "85px"
+                        menuPoppup.style.left = "0px"
                         setTimeout(()=>menuPoppup.style.bottom = "0px",300)  
                         document.body.style.overflow = "hidden"     
                         menuOpened = true
@@ -488,7 +490,8 @@ if(menuPoppup){
                     }
                 }else{
                     if(menuOpened){
-                        mobilePoppup.style.top = "-1000px"
+                        mobilePoppup.style.top = "66px"
+                        mobilePoppup.style.left = "-200%"
                         mobilePoppup.style.bottom = "initial"
                         document.body.style.overflow = "auto"   
                         menuOpened = false
@@ -498,6 +501,7 @@ if(menuPoppup){
                         mobilePoppup.style.display = "block"
 
                         mobilePoppup.style.top = "66px"
+                        mobilePoppup.style.left = "0px"
                         setTimeout(()=>mobilePoppup.style.bottom = "0px",300)  
                         document.body.style.overflow = "hidden"     
                         menuOpened = true

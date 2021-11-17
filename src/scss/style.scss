@@ -69,6 +69,10 @@ body{
     }
 }
 
+a{
+    text-decoration: none;
+}
+
 //Menu Poppup
 
 .menu_poppup{
@@ -537,9 +541,9 @@ body{
 
     @media screen and (max-width: 1100px) {
         position: fixed;
-        top: -1000px;
+        top: 66px;
         bottom: 0;
-        left: 0;
+        left: -200%;
         bottom: initial;
         z-index: 100000;
 
@@ -715,14 +719,15 @@ body{
 
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 17px 16px;
-
-        
+        padding-right: 11px;
 
         .item__text{
             position: relative;
             margin-left: 14px;
             transition: all .2s linear;
+            margin-right: auto;
 
             .mb_filter__count{
                 @include text(#fff,13px,600);
@@ -735,11 +740,14 @@ body{
                 top: -4px;
                 right: -18px;
             }
+
+            order: 1
         }
 
         .item__arrow{
+            order: 2;
             margin-right: 15px;
-            transform: rotate(180deg);
+            // transform: rotate(180deg);
         }
 
         .item__text{
@@ -878,7 +886,7 @@ body{
 // Main Page ----------------------------------------------
 .contact_us{
     position: fixed;
-    bottom: 137px;
+    bottom: 48px;
     right: 60px;
     z-index: 10000;
     padding: 11px 14px;
@@ -906,7 +914,7 @@ body{
 
 #scroll_top_btn{
     position: fixed;
-    bottom: 36px;
+    bottom: 128px;
     right: 64px;
     z-index: 100000;
     padding: 15px 17px;
@@ -934,6 +942,7 @@ body{
     }
 
     @media screen and (max-width: 1100px) {
+        bottom: 48px;
         z-index: 100;
     }
 
@@ -944,6 +953,7 @@ body{
     @media screen and (max-width: 500px) {
         right: 16px;
     }
+    
 }
 
 .scroll_top_btn-hide{
@@ -1126,14 +1136,16 @@ body{
                         left: 50%;
                         transform: translate(-50%,-50%);
 
-
                         padding: 7px;
 
                         background: transparent;
-                        border: 1px solid #008385;
                         border-radius: 100px;
 
-                        transition: all .2s linear;
+                        animation-name: intro-circle;
+                        animation-duration: 12s;
+                        animation-fill-mode: forwards;
+
+                        // transition: all .2s linear;
                     }
                 }
             }
@@ -1416,6 +1428,7 @@ body{
         }
     }
     @media screen and (max-width: 400px) {
+        margin-bottom: 24px;
         .intro__slider{
             .swiper-slider{
                 
@@ -1636,7 +1649,7 @@ body{
 
 .slider__prev{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: -25px;
     z-index: 10000;
     transform: translate(0%,-70%) rotate(180deg);
@@ -1658,6 +1671,10 @@ body{
         background: #2F2F2F;
         border: 1px solid #2F2F2F;
     }
+    @media screen and (max-width: 1200px) {
+        position: absolute;
+        left: -15px !important;
+    }
     @media screen and (max-width: 1100px) {
         display: none !important;
     }
@@ -1665,7 +1682,7 @@ body{
 
 .slider__next{
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: -6px;
     z-index: 10000;
     transform: translate(0%,-70%);
@@ -1773,7 +1790,7 @@ body{
 
         .products__big{
             flex: 0 1 50%;
-            padding-right: 1%;
+            padding-right: 5px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -1824,7 +1841,7 @@ body{
                             }
         
                             &-light_red{
-                                background: #F48C8B;
+                                background: #EF3541;
                             }
                             @media screen and (max-width: 450px) {
                                 font-size: 10px;
@@ -2076,6 +2093,18 @@ body{
         .products__item{
             flex: 0 1 24%;
             @include product(#2F2F2F);
+
+            &:first{
+                padding-right: 24px;
+            }
+
+            .item__image{
+                width: 100%;
+            }
+
+            .item__info{
+                width: 99%;
+            }
 
             .item__image{
                 padding: 18px 25px 26px 25px;

@@ -90,7 +90,7 @@
     top: 0px;
     right: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 10000000;
     background: #2F2F2F;
     padding: 16px 28px 16px 28px;
     align-items: center;
@@ -104,8 +104,10 @@
     .menu_group{
         display: flex;
         align-items: center;
+    }
 
-
+    .navigation__brand{
+        margin-left: -3px;
     }
 
     .menu{
@@ -177,6 +179,9 @@
         padding: 11px 20px 11px 20px;
         max-height: 66px;
         .navigation__brand{
+            .navigation__brand{
+                margin-left: 0px;
+            }
             a{
                 img{
                     width: 40px;
