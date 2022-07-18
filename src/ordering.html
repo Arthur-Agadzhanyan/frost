@@ -598,11 +598,11 @@
     </div>
 
     <main class="content profile_page ordering_page">
-            <div class="breadcrumbs">
-                <a href="/">Главная</a>
-                <a href="/cart.html">Корзина</a>    
-                <a href="/loyalty.html" class="active">Оформление заказа</a>   
-            </div> 
+        <div class="breadcrumbs">
+            <a href="/">Главная</a>
+            <a href="/cart.html">Корзина</a>    
+            <a href="/loyalty.html" class="active">Оформление заказа</a>   
+        </div> 
 
         <div class="cart__content">
             <h1 class="page__title">Оформление заказа</h1>
@@ -662,8 +662,17 @@
                     <h2 class="block__title">Адрес доставки</h2>
 
                     <div class="form__div">
+                        <input type="text" id="inp15" class="form__input" placeholder=" " required>
+                        <label for="inp15" class="form__label">Город доставки</label>
+                    </div>
+
+                    <div class="delivery_day">
+                        Ближайший день доставки<br> <span class="delivery_day__red">вторник</span>
+                    </div>
+
+                    <div class="form__div">
                         <input type="text" id="inp4" class="form__input" placeholder=" " required>
-                        <label for="inp4" class="form__label">Имя</label>
+                        <label for="inp4" class="form__label">Адрес</label>
                     </div>
 
                     <div class="form__div">

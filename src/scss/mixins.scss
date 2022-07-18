@@ -350,13 +350,27 @@
                 width: 100%;
                 @include button($button_bg);
                 font-size: 14px;
+                text-align: center;
+
+                &-active{
+                    pointer-events: none;
+                    background: #008385 !important;
+
+                    .to_cart_msg{
+                        display: none !important;
+                    }
+
+                    .count{
+                        display: none !important;
+                    }
+                }
 
                 &-count_units{
-                    background: #016565;
+                    // background: #016565;
                     padding: 15px 79px;
 
                     .count{
-                        display: flex;
+                        display: none;
                         // align-items: center;
                         justify-content: space-between;
                         cursor: initial;
@@ -376,7 +390,7 @@
                 }
 
                 &:hover{
-                    background: #008385;
+                    background: #016565;
                 }
 
                 @media screen and (max-width: 400px){

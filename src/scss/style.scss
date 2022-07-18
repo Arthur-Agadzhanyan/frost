@@ -34,6 +34,10 @@ body{
     }
 }
 
+#menu_default_open_page{
+    transition: all .01s ease;
+}
+
 .content{
     padding: 64px;
     min-height: calc(100vh - 270px);
@@ -111,6 +115,10 @@ a{
     &-p0{
         padding: 0 !important;
     }
+
+    // &-default_show{
+    //     left: 0%;
+    // }
 
     .mb_menu_poppup_trigger{
         position: absolute;
@@ -417,13 +425,35 @@ a{
                 
             }
         }
+
+        .profile__discount{
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 20px;
+
+            .discount__text{
+                display: block;
+                text-align: center;
+                width: 100%;
+                background: #E8972E;
+                padding: 15px 10px;
+                margin-bottom: 32px;
+                @include text(#fff,24px,600);
+                font-size: 18px;
+
+                @media screen and (max-width: 1500px) {
+                    font-size: 16px;
+                }
+            }
+        }
+
         .profile__bottom{
             position: absolute;
             bottom: 0;
 
-            @media screen and (max-height: 800px) {
+            @media screen and (max-height: 860px) {
                 position: relative;
-                margin-top: 50px;
+                margin-top: 32px;
             }
 
             @media screen and (max-width: 1100px) {
@@ -886,6 +916,36 @@ a{
 .initial_opened{
     width: 100%;
     left: 0%;
+}
+
+.initial_opened-md{
+    width: 100%;
+    left: 0%;
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
+}
+
+.menu_poppup-catalog{
+    @media screen and (min-width: 1101px) {
+        display: block;
+    }
+    @media screen and (max-width: 1101px) {
+        display: none;
+    }
+    @media screen and (max-width: 600px) {
+        display: block;
+    }
+}
+
+.menu_poppup-md{
+    display: none;
+    bottom: 0 !important;
+    @media screen and (max-width: 1100px) {
+        display: block;
+        z-index: 900001;
+    }
 }
 
 // Main Page ----------------------------------------------
