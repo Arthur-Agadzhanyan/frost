@@ -839,3 +839,11 @@ toCartBtn.forEach((btn)=>{
         toCartMsg.style.display = 'block'
     })
 })
+
+const showCategoriesButton = document.querySelector('#show_categories_button')
+
+if(showCategoriesButton){
+    showCategoriesButton.addEventListener('click',()=>{
+        moveBody(!!menuPoppup)
+    })
+}

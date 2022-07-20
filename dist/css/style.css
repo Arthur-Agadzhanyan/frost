@@ -4835,6 +4835,13 @@ a {
   font-size: 12px;
 }
 
+.catalog .top__panel .panel__info .categoryes .categoryes__item-filter {
+  color: #fff;
+  background: #008385;
+  border: 1px solid #008385;
+  cursor: pointer;
+}
+
 .catalog .top__panel .panel__info .categoryes .categoryes__item .item__close {
   background: transparent;
   padding: 0;
@@ -4844,6 +4851,14 @@ a {
   outline: none;
   margin-bottom: -4px;
   cursor: pointer;
+}
+
+.catalog .top__panel .panel__info .categoryes .item_hidden {
+  opacity: 0;
+}
+
+.catalog .top__panel .panel__info .categoryes .dn {
+  display: none;
 }
 
 .catalog .top__panel .panel__info .categoryes .categoryes__dumping {

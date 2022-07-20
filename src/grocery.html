@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
-<body id="menu_open_page">
+<body>
     @@include('_header.html')
 
-    <div id="menu_poppup" class="menu_poppup initial_opened">
+    <div id="menu_poppup" class="menu_poppup">
        <div class="detail__catalog">
            <div class="catalog__title">
                <a href="/catalog.html" class="back_icon">
@@ -1123,33 +1123,34 @@
         </div>
 
         <div class="top__panel">
-
             <div class="panel__info">
                 <div class="panel__title">
                     <h1>Бакалея</h1>
                     <span>32 товаров</span>
                 </div>
                 
-                <div class="categoryes">
-                    <div class="categoryes__item">
+                <div id="filter-categoryes" class="categoryes">
+                    <button id="show_categories_button" class="categoryes__item categoryes__item-filter">Фильтр</button>
+                    
+                    <div class="categoryes__item categoryes__item-filter_item">
                         Бренды: БМК
 
                         <button class="item__close"><img src="img/catalog/close_category.svg" alt=""></button>
                     </div>
 
-                    <div class="categoryes__item">
+                    <div class="categoryes__item categoryes__item-filter_item">
                         Бренды: HIKARI
 
                         <button class="item__close"><img src="img/catalog/close_category.svg" alt=""></button>
                     </div>
 
-                    <div class="categoryes__item">
+                    <div class="categoryes__item categoryes__item-filter_item">
                         от 10 до 1030 
 
                         <button class="item__close"><img src="img/catalog/close_category.svg" alt=""></button>
                     </div>
 
-                    <button class="categoryes__item categoryes__dumping">Сбросить всё</button>
+                    <button class="categoryes__item categoryes__dumping categoryes__item-filter_item">Сбросить всё</button>
                 </div>
             </div>
             

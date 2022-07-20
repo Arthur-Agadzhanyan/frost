@@ -38,6 +38,7 @@
                     display: flex;
                     align-items: center;
                     margin-top: 12px;
+                    
 
                     margin-right: 8px;
                     background: $yellow;
@@ -50,6 +51,19 @@
                     @include text($black,16px,600);
                     font-size: 12px;
 
+                    &-filter{
+                        color: #fff;
+                        background: $green;
+                        border: 1px solid $green;
+                        cursor: pointer;
+                    }
+
+                    &-filter_item{
+                        
+                    }
+
+                    
+
                     .item__close{
                         background: transparent;
                         padding: 0;
@@ -61,6 +75,14 @@
 
                         cursor: pointer;
                     }
+                }
+
+                .item_hidden{
+                    opacity: 0;
+                }
+
+                .dn{
+                    display: none;
                 }
 
                 .categoryes__dumping{
